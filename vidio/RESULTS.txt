@@ -1,0 +1,4 @@
+Write throughput for 1 stream = 281.14
+Read throughput for 1 stream = 887.23
+Write throughput for 4 streams = 232.55
+Read throughput for 4 streams = 985.05

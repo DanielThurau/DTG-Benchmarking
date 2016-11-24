@@ -1,0 +1,1249 @@
+<<< Wed Nov 23 19:11:34 2016: Starting run 1 of 2: VDA1 >>>
+
+     SPEC SFS2014 Release         $Revision: 1072 $
+
+     This product contains benchmarks acquired from several sources who
+     understand and agree with SPEC's goal of creating fair and objective
+     benchmarks to measure computer performance.
+
+     This copyright notice is placed here only to protect SPEC in the
+     event the source is misused in any manner that is contrary to the
+     spirit, the goals and the intent of SPEC.
+
+     The source code is provided to the user or company under the license
+     agreement for the SPEC Benchmark Suite for this product.
+
+     Test run time = 300 seconds, Warmup = 100 seconds.
+     Request Op_rate = 100000.00 ops/second
+     Op latency reporting activated
+     Files per directory set to 100
+     Directories per proc set to 10
+     Using custom workload
+     Running 4 copies of the test on 1 clients
+     Results directory: /root/SPEC/results
+     Clients have a total of 1024 MiBytes of memory
+     Clients have 256 MiBytes of memory size per process
+     Clients each have 4 processes
+     Adjustable aggregate data set value set to 1024 MiBytes
+     Each process file size = 262 kbytes
+     Client data set size       = 11257 MiBytes
+     Total starting data set size = 11257 MiBytes
+     Total initial file space   = 11257 MiBytes
+     Total max file space       = 12281 MiBytes
+
+[INFO][Wed Nov 23 19:11:35 2016]Exec validation successful
+
+     SPEC SFS2014 Release         $Revision: 1072 $
+
+     This product contains benchmarks acquired from several sources who
+     understand and agree with SPEC's goal of creating fair and objective
+     benchmarks to measure computer performance.
+
+     This copyright notice is placed here only to protect SPEC in the
+     event the source is misused in any manner that is contrary to the
+     spirit, the goals and the intent of SPEC.
+
+     The source code is provided to the user or company under the license
+     agreement for the SPEC Benchmark Suite for this product.
+
+     Test run time = 300 seconds, Warmup = 100 seconds.
+     Request Op_rate = 100000.00 ops/second
+     Op latency reporting activated
+     Files per directory set to 100
+     Directories per proc set to 10
+     Using custom workload
+     Running 4 copies of the test on 1 clients
+     Results directory: /root/SPEC/results
+     Clients have a total of 1024 MiBytes of memory
+     Clients have 256 MiBytes of memory size per process
+     Clients each have 4 processes
+     Adjustable aggregate data set value set to 1024 MiBytes
+     Each process file size = 262 kbytes
+     Client data set size       = 11257 MiBytes
+     Total starting data set size = 11257 MiBytes
+     Total initial file space   = 11257 MiBytes
+     Total max file space       = 12281 MiBytes
+
+     Starting tests: Wed Nov 23 19:11:35 2016 
+
+	Launching 4 processes.
+	Starting test client: 0 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Starting test client: 1 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Starting test client: 2 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Starting test client: 3 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Waiting to finish initialization. Wed Nov 23 19:11:43 2016
+	Wed Nov 23 19:11:46 2016 Starting INIT phase
+	Wed Nov 23 19:11:46 2016 Init Heartbeat __/\_/\__ Client 3
+	Wed Nov 23 19:12:34 2016 Init 10 percent complete
+	Wed Nov 23 19:12:46 2016 Init Heartbeat __/\_/\__ Client 3
+	Wed Nov 23 19:13:04 2016 Init 20 percent complete
+	Wed Nov 23 19:13:06 2016 Init 30 percent complete
+	Wed Nov 23 19:13:07 2016 Init 40 percent complete
+	Wed Nov 23 19:13:08 2016 Init 50 percent complete
+	Wed Nov 23 19:13:08 2016 Init 60 percent complete
+	Wed Nov 23 19:13:11 2016 Init 70 percent complete
+	Wed Nov 23 19:13:12 2016 Init 80 percent complete
+	Wed Nov 23 19:13:13 2016 Init 90 percent complete
+	Wed Nov 23 19:13:15 2016 Init 100 percent complete
+	Initialization finished: Wed Nov 23 19:13:24 2016
+	Testing begins: Wed Nov 23 19:13:24 2016
+	Waiting for tests to finish. Wed Nov 23 19:13:24 2016
+	Wed Nov 23 19:13:29 2016 Starting WARM phase
+	Wed Nov 23 19:13:32 2016 Warm-up 10 percent complete
+	Wed Nov 23 19:13:42 2016 Warm-up 20 percent complete
+	Wed Nov 23 19:13:46 2016 Warm Heartbeat Client 3: 438.40 Ops/sec
+	Wed Nov 23 19:13:52 2016 Warm-up 30 percent complete
+	Wed Nov 23 19:14:02 2016 Warm-up 40 percent complete
+	Wed Nov 23 19:14:12 2016 Warm-up 50 percent complete
+	Wed Nov 23 19:14:22 2016 Warm-up 60 percent complete
+	Wed Nov 23 19:14:32 2016 Warm-up 70 percent complete
+	Wed Nov 23 19:14:43 2016 Warm-up 80 percent complete
+	Wed Nov 23 19:14:46 2016 Warm Heartbeat Client 3: 336.80 Ops/sec
+	Wed Nov 23 19:14:52 2016 Warm-up 90 percent complete
+	Wed Nov 23 19:15:03 2016 Warm-up 100 percent complete
+	Wed Nov 23 19:15:06 2016 Starting RUN phase
+	Wed Nov 23 19:15:34 2016 Run 10 percent complete
+	Wed Nov 23 19:15:46 2016 Run  Heartbeat Client 3: 383.10 Ops/sec
+	Wed Nov 23 19:16:04 2016 Run 20 percent complete
+	Wed Nov 23 19:16:34 2016 Run 30 percent complete
+	Wed Nov 23 19:16:46 2016 Run  Heartbeat Client 3: 509.21 Ops/sec
+	Wed Nov 23 19:17:05 2016 Run 40 percent complete
+	Wed Nov 23 19:17:35 2016 Run 50 percent complete
+	Wed Nov 23 19:17:46 2016 Run  Heartbeat Client 3: 462.00 Ops/sec
+	Wed Nov 23 19:18:05 2016 Run 60 percent complete
+
+     SPEC SFS2014 Release         $Revision: 1072 $
+
+     This product contains benchmarks acquired from several sources who
+     understand and agree with SPEC's goal of creating fair and objective
+     benchmarks to measure computer performance.
+
+     This copyright notice is placed here only to protect SPEC in the
+     event the source is misused in any manner that is contrary to the
+     spirit, the goals and the intent of SPEC.
+
+     The source code is provided to the user or company under the license
+     agreement for the SPEC Benchmark Suite for this product.
+
+     Test run time = 300 seconds, Warmup = 100 seconds.
+     Request Op_rate = 20000.00 ops/second
+     Op latency reporting activated
+     Files per directory set to 100
+     Directories per proc set to 10
+     Using custom workload
+     Running 4 copies of the test on 1 clients
+     Results directory: /root/SPEC/results
+     Clients have a total of 1024 MiBytes of memory
+     Clients have 256 MiBytes of memory size per process
+     Clients each have 4 processes
+     Adjustable aggregate data set value set to 1024 MiBytes
+     Each process file size = 262 kbytes
+     Client data set size       = 11257 MiBytes
+     Total starting data set size = 11257 MiBytes
+     Total initial file space   = 11257 MiBytes
+     Total max file space       = 12281 MiBytes
+
+
+     SPEC SFS2014 Release         $Revision: 1072 $
+
+     This product contains benchmarks acquired from several sources who
+     understand and agree with SPEC's goal of creating fair and objective
+     benchmarks to measure computer performance.
+
+     This copyright notice is placed here only to protect SPEC in the
+     event the source is misused in any manner that is contrary to the
+     spirit, the goals and the intent of SPEC.
+
+     The source code is provided to the user or company under the license
+     agreement for the SPEC Benchmark Suite for this product.
+
+     Test run time = 300 seconds, Warmup = 100 seconds.
+     Request Op_rate = 20000.00 ops/second
+     Op latency reporting activated
+     Files per directory set to 100
+     Directories per proc set to 10
+     Using custom workload
+     Running 4 copies of the test on 1 clients
+     Results directory: /root/SPEC/results
+     Clients have a total of 1024 MiBytes of memory
+     Clients have 256 MiBytes of memory size per process
+     Clients each have 4 processes
+     Adjustable aggregate data set value set to 1024 MiBytes
+     Each process file size = 262 kbytes
+     Client data set size       = 11257 MiBytes
+     Total starting data set size = 11257 MiBytes
+     Total initial file space   = 11257 MiBytes
+     Total max file space       = 12281 MiBytes
+
+     Starting tests: Wed Nov 23 19:18:20 2016 
+
+	Launching 4 processes.
+	Starting test client: 0 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Starting test client: 1 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Starting test client: 2 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Starting test client: 3 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Waiting to finish initialization. Wed Nov 23 19:18:31 2016
+	Wed Nov 23 19:18:33 2016 Starting INIT phase
+	Wed Nov 23 19:18:33 2016 Init Heartbeat __/\_/\__ Client 3
+	Wed Nov 23 19:18:35 2016 Run 70 percent complete
+	Wed Nov 23 19:18:38 2016 Init 10 percent complete
+	Wed Nov 23 19:18:45 2016 Init 20 percent complete
+	Wed Nov 23 19:18:46 2016 Init 30 percent complete
+	Wed Nov 23 19:18:46 2016 Run  Heartbeat Client 3: 1475.73 Ops/sec
+	Wed Nov 23 19:18:47 2016 Init 40 percent complete
+	Wed Nov 23 19:18:48 2016 Init 50 percent complete
+	Wed Nov 23 19:18:49 2016 Init 60 percent complete
+	Wed Nov 23 19:18:50 2016 Init 70 percent complete
+	Wed Nov 23 19:18:51 2016 Init 80 percent complete
+	Wed Nov 23 19:18:52 2016 Init 90 percent complete
+	Wed Nov 23 19:18:52 2016 Init 100 percent complete
+	Initialization finished: Wed Nov 23 19:18:53 2016
+	Testing begins: Wed Nov 23 19:18:53 2016
+	Waiting for tests to finish. Wed Nov 23 19:18:53 2016
+	Wed Nov 23 19:18:58 2016 Starting WARM phase
+	Wed Nov 23 19:19:01 2016 Warm-up 10 percent complete
+	Wed Nov 23 19:19:05 2016 Run 80 percent complete
+	Wed Nov 23 19:19:11 2016 Warm-up 20 percent complete
+	Wed Nov 23 19:19:21 2016 Warm-up 30 percent complete
+	Wed Nov 23 19:19:31 2016 Warm-up 40 percent complete
+	Wed Nov 23 19:19:33 2016 Warm Heartbeat Client 3: 401.71 Ops/sec
+	Wed Nov 23 19:19:35 2016 Run 90 percent complete
+	Wed Nov 23 19:19:41 2016 Warm-up 50 percent complete
+	Wed Nov 23 19:19:46 2016 Run  Heartbeat Client 3: 388.02 Ops/sec
+	Wed Nov 23 19:19:51 2016 Warm-up 60 percent complete
+	Wed Nov 23 19:20:01 2016 Warm-up 70 percent complete
+	Wed Nov 23 19:20:05 2016 Run 100 percent complete
+	Wed Nov 23 19:20:06 2016 Prime receiving results from child 3
+	Tests finished: Wed Nov 23 19:20:06 2016 
+	------------------------------------------------------------
+	Overall average latency               1.77 Milli-seconds
+	Overall SPEC SFS2014               2259.67 Ops/sec
+	Overall Read_throughput        ~ 444941.10 Kbytes/sec
+	Overall Write_throughput       ~      0.00 Kbytes/sec
+	Overall throughput             ~ 444941.10 Kbytes/sec
+	Registered Finger Print         34066
+	------------------------------------------------------------
+Band 1:  20us:31       40us:1408     60us:7154     80us:4239    100us:4835    
+Band 2: 200us:23102   400us:26366   600us:14796   800us:11689     1ms:9825    
+Band 3:   2ms:47112     4ms:87401     6ms:63767     8ms:26086    10ms:7579    
+Band 4:  12ms:2242     14ms:871      16ms:410      18ms:249      20ms:144     
+Band 5:  40ms:609      60ms:391      80ms:274     100ms:181     
+Band 6: 200ms:687     400ms:46      600ms:3       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+	------------------------------------------------------------
+netmist completed successfully, summarizing.
+<<< Wed Nov 23 19:20:07 2016: Starting run 2 of 2: VDA1 >>>
+
+     SPEC SFS2014 Release         $Revision: 1072 $
+
+     This product contains benchmarks acquired from several sources who
+     understand and agree with SPEC's goal of creating fair and objective
+     benchmarks to measure computer performance.
+
+     This copyright notice is placed here only to protect SPEC in the
+     event the source is misused in any manner that is contrary to the
+     spirit, the goals and the intent of SPEC.
+
+     The source code is provided to the user or company under the license
+     agreement for the SPEC Benchmark Suite for this product.
+
+     Test run time = 300 seconds, Warmup = 100 seconds.
+     Request Op_rate = 110000.00 ops/second
+     Op latency reporting activated
+     Files per directory set to 100
+     Directories per proc set to 10
+     Using custom workload
+     Running 4 copies of the test on 1 clients
+     Results directory: /root/SPEC/results
+     Clients have a total of 1024 MiBytes of memory
+     Clients have 256 MiBytes of memory size per process
+     Clients each have 4 processes
+     Adjustable aggregate data set value set to 1024 MiBytes
+     Each process file size = 262 kbytes
+     Client data set size       = 11257 MiBytes
+     Total starting data set size = 11257 MiBytes
+     Total initial file space   = 11257 MiBytes
+     Total max file space       = 12281 MiBytes
+
+[INFO][Wed Nov 23 19:20:07 2016]Exec validation successful
+
+     SPEC SFS2014 Release         $Revision: 1072 $
+
+     This product contains benchmarks acquired from several sources who
+     understand and agree with SPEC's goal of creating fair and objective
+     benchmarks to measure computer performance.
+
+     This copyright notice is placed here only to protect SPEC in the
+     event the source is misused in any manner that is contrary to the
+     spirit, the goals and the intent of SPEC.
+
+     The source code is provided to the user or company under the license
+     agreement for the SPEC Benchmark Suite for this product.
+
+     Test run time = 300 seconds, Warmup = 100 seconds.
+     Request Op_rate = 110000.00 ops/second
+     Op latency reporting activated
+     Files per directory set to 100
+     Directories per proc set to 10
+     Using custom workload
+     Running 4 copies of the test on 1 clients
+     Results directory: /root/SPEC/results
+     Clients have a total of 1024 MiBytes of memory
+     Clients have 256 MiBytes of memory size per process
+     Clients each have 4 processes
+     Adjustable aggregate data set value set to 1024 MiBytes
+     Each process file size = 262 kbytes
+     Client data set size       = 11257 MiBytes
+     Total starting data set size = 11257 MiBytes
+     Total initial file space   = 11257 MiBytes
+     Total max file space       = 12281 MiBytes
+
+     Starting tests: Wed Nov 23 19:20:08 2016 
+
+	Launching 4 processes.
+	Starting test client: 0 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Starting test client: 1 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Starting test client: 2 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Starting test client: 3 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Wed Nov 23 19:20:11 2016 Warm-up 80 percent complete
+	Waiting to finish initialization. Wed Nov 23 19:20:17 2016
+	Wed Nov 23 19:20:20 2016 Starting INIT phase
+	Wed Nov 23 19:20:20 2016 Init Heartbeat __/\_/\__ Client 3
+	Wed Nov 23 19:20:21 2016 Warm-up 90 percent complete
+	Wed Nov 23 19:20:31 2016 Warm-up 100 percent complete
+	Wed Nov 23 19:20:33 2016 Warm Heartbeat Client 3: 431.96 Ops/sec
+	Wed Nov 23 19:20:35 2016 Starting RUN phase
+	Wed Nov 23 19:21:03 2016 Run 10 percent complete
+	Wed Nov 23 19:21:10 2016 Init 10 percent complete
+	Wed Nov 23 19:21:20 2016 Init Heartbeat __/\_/\__ Client 3
+	Wed Nov 23 19:21:30 2016 Init 20 percent complete
+	Wed Nov 23 19:21:30 2016 Init 30 percent complete
+	Wed Nov 23 19:21:30 2016 Init 40 percent complete
+	Wed Nov 23 19:21:31 2016 Init 50 percent complete
+	Wed Nov 23 19:21:33 2016 Run  Heartbeat Client 3: 329.19 Ops/sec
+	Wed Nov 23 19:21:34 2016 Init 60 percent complete
+	Wed Nov 23 19:21:34 2016 Run 20 percent complete
+	Wed Nov 23 19:21:34 2016 Init 70 percent complete
+	Wed Nov 23 19:21:35 2016 Init 80 percent complete
+	Wed Nov 23 19:21:37 2016 Init 90 percent complete
+	Wed Nov 23 19:21:37 2016 Init 100 percent complete
+	Initialization finished: Wed Nov 23 19:21:51 2016
+	Testing begins: Wed Nov 23 19:21:51 2016
+	Waiting for tests to finish. Wed Nov 23 19:21:51 2016
+	Wed Nov 23 19:21:56 2016 Starting WARM phase
+	Wed Nov 23 19:21:59 2016 Warm-up 10 percent complete
+	Wed Nov 23 19:22:04 2016 Run 30 percent complete
+	Wed Nov 23 19:22:09 2016 Warm-up 20 percent complete
+	Wed Nov 23 19:22:19 2016 Warm-up 30 percent complete
+	Wed Nov 23 19:22:20 2016 Warm Heartbeat Client 3: 421.80 Ops/sec
+	Wed Nov 23 19:22:29 2016 Warm-up 40 percent complete
+	Wed Nov 23 19:22:33 2016 Run  Heartbeat Client 3: 370.77 Ops/sec
+	Wed Nov 23 19:22:34 2016 Run 40 percent complete
+	Wed Nov 23 19:22:39 2016 Warm-up 50 percent complete
+	Wed Nov 23 19:22:49 2016 Warm-up 60 percent complete
+	Wed Nov 23 19:22:59 2016 Warm-up 70 percent complete
+	Wed Nov 23 19:23:05 2016 Run 50 percent complete
+	Wed Nov 23 19:23:09 2016 Warm-up 80 percent complete
+	Wed Nov 23 19:23:19 2016 Warm-up 90 percent complete
+	Wed Nov 23 19:23:20 2016 Warm Heartbeat Client 3: 504.59 Ops/sec
+	Wed Nov 23 19:23:29 2016 Warm-up 100 percent complete
+	Wed Nov 23 19:23:33 2016 Starting RUN phase
+	Wed Nov 23 19:23:33 2016 Run  Heartbeat Client 3: 277.05 Ops/sec
+	Wed Nov 23 19:23:34 2016 Run 60 percent complete
+	Wed Nov 23 19:24:01 2016 Run 10 percent complete
+	Wed Nov 23 19:24:04 2016 Run 70 percent complete
+	Wed Nov 23 19:24:20 2016 Run  Heartbeat Client 3: 447.92 Ops/sec
+	Wed Nov 23 19:24:31 2016 Run 20 percent complete
+	Wed Nov 23 19:24:33 2016 Run  Heartbeat Client 3: 262.41 Ops/sec
+	Wed Nov 23 19:24:34 2016 Run 80 percent complete
+	Wed Nov 23 19:25:01 2016 Run 30 percent complete
+	Wed Nov 23 19:25:05 2016 Run 90 percent complete
+	Wed Nov 23 19:25:20 2016 Run  Heartbeat Client 3: 535.82 Ops/sec
+	Wed Nov 23 19:25:32 2016 Run 40 percent complete
+	Wed Nov 23 19:25:34 2016 Run  Heartbeat Client 3: 280.17 Ops/sec
+	Wed Nov 23 19:25:35 2016 Run 100 percent complete
+	Wed Nov 23 19:25:35 2016 Prime receiving results from child 3
+	Tests finished: Wed Nov 23 19:25:35 2016 
+	------------------------------------------------------------
+	Overall average latency               2.94 Milli-seconds
+	Overall SPEC SFS2014               1364.33 Ops/sec
+	Overall Read_throughput        ~      0.00 Kbytes/sec
+	Overall Write_throughput       ~ 320662.61 Kbytes/sec
+	Overall throughput             ~ 320662.61 Kbytes/sec
+	Registered Finger Print         34066
+	------------------------------------------------------------
+Band 1:  20us:0        40us:0        60us:0        80us:0       100us:0       
+Band 2: 200us:2000    400us:6309    600us:7747    800us:9642      1ms:11896   
+Band 3:   2ms:44728     4ms:56676     6ms:34017     8ms:19496    10ms:8098    
+Band 4:  12ms:3214     14ms:1191     16ms:490      18ms:185      20ms:106     
+Band 5:  40ms:129      60ms:38       80ms:43      100ms:19      
+Band 6: 200ms:24      400ms:2       600ms:4       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+	------------------------------------------------------------
+<<< Wed Nov 23 19:25:37 2016: Starting run 1 of 2: VDA1 >>>
+
+     SPEC SFS2014 Release         $Revision: 1072 $
+
+     This product contains benchmarks acquired from several sources who
+     understand and agree with SPEC's goal of creating fair and objective
+     benchmarks to measure computer performance.
+
+     This copyright notice is placed here only to protect SPEC in the
+     event the source is misused in any manner that is contrary to the
+     spirit, the goals and the intent of SPEC.
+
+     The source code is provided to the user or company under the license
+     agreement for the SPEC Benchmark Suite for this product.
+
+     Test run time = 300 seconds, Warmup = 100 seconds.
+     Request Op_rate = 10000.00 ops/second
+     Op latency reporting activated
+     Files per directory set to 100
+     Directories per proc set to 10
+     Using custom workload
+     Running 4 copies of the test on 1 clients
+     Results directory: /root/SPEC/results
+     Clients have a total of 1024 MiBytes of memory
+     Clients have 256 MiBytes of memory size per process
+     Clients each have 4 processes
+     Adjustable aggregate data set value set to 1024 MiBytes
+     Each process file size = 262 kbytes
+     Client data set size       = 11257 MiBytes
+     Total starting data set size = 11257 MiBytes
+     Total initial file space   = 11257 MiBytes
+     Total max file space       = 12281 MiBytes
+
+[INFO][Wed Nov 23 19:25:37 2016]Exec validation successful
+
+     SPEC SFS2014 Release         $Revision: 1072 $
+
+     This product contains benchmarks acquired from several sources who
+     understand and agree with SPEC's goal of creating fair and objective
+     benchmarks to measure computer performance.
+
+     This copyright notice is placed here only to protect SPEC in the
+     event the source is misused in any manner that is contrary to the
+     spirit, the goals and the intent of SPEC.
+
+     The source code is provided to the user or company under the license
+     agreement for the SPEC Benchmark Suite for this product.
+
+     Test run time = 300 seconds, Warmup = 100 seconds.
+     Request Op_rate = 10000.00 ops/second
+     Op latency reporting activated
+     Files per directory set to 100
+     Directories per proc set to 10
+     Using custom workload
+     Running 4 copies of the test on 1 clients
+     Results directory: /root/SPEC/results
+     Clients have a total of 1024 MiBytes of memory
+     Clients have 256 MiBytes of memory size per process
+     Clients each have 4 processes
+     Adjustable aggregate data set value set to 1024 MiBytes
+     Each process file size = 262 kbytes
+     Client data set size       = 11257 MiBytes
+     Total starting data set size = 11257 MiBytes
+     Total initial file space   = 11257 MiBytes
+     Total max file space       = 12281 MiBytes
+
+     Starting tests: Wed Nov 23 19:25:37 2016 
+
+	Launching 4 processes.
+	Starting test client: 0 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Starting test client: 1 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Starting test client: 2 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Starting test client: 3 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Waiting to finish initialization. Wed Nov 23 19:25:46 2016
+	Wed Nov 23 19:25:49 2016 Starting INIT phase
+	Wed Nov 23 19:25:49 2016 Init Heartbeat __/\_/\__ Client 3
+	Wed Nov 23 19:25:53 2016 Init 10 percent complete
+	Wed Nov 23 19:26:00 2016 Init 20 percent complete
+	Wed Nov 23 19:26:00 2016 Init 30 percent complete
+	Wed Nov 23 19:26:01 2016 Init 40 percent complete
+	Wed Nov 23 19:26:02 2016 Run 50 percent complete
+	Wed Nov 23 19:26:02 2016 Init 50 percent complete
+	Wed Nov 23 19:26:03 2016 Init 60 percent complete
+	Wed Nov 23 19:26:04 2016 Init 70 percent complete
+	Wed Nov 23 19:26:05 2016 Init 80 percent complete
+	Wed Nov 23 19:26:06 2016 Init 90 percent complete
+	Wed Nov 23 19:26:06 2016 Init 100 percent complete
+	Initialization finished: Wed Nov 23 19:26:07 2016
+	Testing begins: Wed Nov 23 19:26:07 2016
+	Waiting for tests to finish. Wed Nov 23 19:26:07 2016
+	Wed Nov 23 19:26:12 2016 Starting WARM phase
+	Wed Nov 23 19:26:15 2016 Warm-up 10 percent complete
+	Wed Nov 23 19:26:20 2016 Run  Heartbeat Client 3: 949.37 Ops/sec
+	Wed Nov 23 19:26:25 2016 Warm-up 20 percent complete
+	Wed Nov 23 19:26:32 2016 Run 60 percent complete
+	Wed Nov 23 19:26:36 2016 Warm-up 30 percent complete
+	Wed Nov 23 19:26:45 2016 Warm-up 40 percent complete
+	Wed Nov 23 19:26:49 2016 Warm Heartbeat Client 3: 656.20 Ops/sec
+	Wed Nov 23 19:26:55 2016 Warm-up 50 percent complete
+	Wed Nov 23 19:27:02 2016 Run 70 percent complete
+	Wed Nov 23 19:27:06 2016 Warm-up 60 percent complete
+	Wed Nov 23 19:27:16 2016 Warm-up 70 percent complete
+	Wed Nov 23 19:27:20 2016 Run  Heartbeat Client 3: 750.56 Ops/sec
+	Wed Nov 23 19:27:26 2016 Warm-up 80 percent complete
+	Wed Nov 23 19:27:32 2016 Run 80 percent complete
+	Wed Nov 23 19:27:36 2016 Warm-up 90 percent complete
+	Wed Nov 23 19:27:46 2016 Warm-up 100 percent complete
+	Wed Nov 23 19:27:49 2016 Warm Heartbeat Client 3: 562.05 Ops/sec
+	Wed Nov 23 19:27:49 2016 Starting RUN phase
+	Wed Nov 23 19:28:02 2016 Run 90 percent complete
+	Wed Nov 23 19:28:17 2016 Run 10 percent complete
+	Wed Nov 23 19:28:20 2016 Run  Heartbeat Client 3: 588.51 Ops/sec
+	Wed Nov 23 19:28:32 2016 Run 100 percent complete
+	Wed Nov 23 19:28:33 2016 Prime receiving results from child 3
+	Tests finished: Wed Nov 23 19:28:33 2016 
+	------------------------------------------------------------
+	Overall average latency               1.46 Milli-seconds
+	Overall SPEC SFS2014               2735.92 Ops/sec
+	Overall Read_throughput        ~ 509510.69 Kbytes/sec
+	Overall Write_throughput       ~      0.00 Kbytes/sec
+	Overall throughput             ~ 509510.69 Kbytes/sec
+	Registered Finger Print         34066
+	------------------------------------------------------------
+Band 1:  20us:36       40us:1760     60us:10221    80us:5974    100us:6806    
+Band 2: 200us:32248   400us:36345   600us:19967   800us:15049     1ms:12230   
+Band 3:   2ms:57067     4ms:111501    6ms:70125     8ms:24409    10ms:6388    
+Band 4:  12ms:1705     14ms:463      16ms:198      18ms:117      20ms:74      
+Band 5:  40ms:284      60ms:176      80ms:174     100ms:135     
+Band 6: 200ms:321     400ms:28      600ms:1       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+	------------------------------------------------------------
+netmist completed successfully, summarizing.
+<<< Wed Nov 23 19:28:34 2016: Starting run 1 of 2: VDA1 >>>
+
+     SPEC SFS2014 Release         $Revision: 1072 $
+
+     This product contains benchmarks acquired from several sources who
+     understand and agree with SPEC's goal of creating fair and objective
+     benchmarks to measure computer performance.
+
+     This copyright notice is placed here only to protect SPEC in the
+     event the source is misused in any manner that is contrary to the
+     spirit, the goals and the intent of SPEC.
+
+     The source code is provided to the user or company under the license
+     agreement for the SPEC Benchmark Suite for this product.
+
+     Test run time = 300 seconds, Warmup = 100 seconds.
+     Request Op_rate = 10000.00 ops/second
+     Op latency reporting activated
+     Files per directory set to 100
+     Directories per proc set to 10
+     Using custom workload
+     Running 4 copies of the test on 1 clients
+     Results directory: /root/SPEC/results
+     Clients have a total of 1024 MiBytes of memory
+     Clients have 256 MiBytes of memory size per process
+     Clients each have 4 processes
+     Adjustable aggregate data set value set to 1024 MiBytes
+     Each process file size = 262 kbytes
+     Client data set size       = 11257 MiBytes
+     Total starting data set size = 11257 MiBytes
+     Total initial file space   = 11257 MiBytes
+     Total max file space       = 12281 MiBytes
+
+[INFO][Wed Nov 23 19:28:35 2016]Exec validation successful
+
+     SPEC SFS2014 Release         $Revision: 1072 $
+
+     This product contains benchmarks acquired from several sources who
+     understand and agree with SPEC's goal of creating fair and objective
+     benchmarks to measure computer performance.
+
+     This copyright notice is placed here only to protect SPEC in the
+     event the source is misused in any manner that is contrary to the
+     spirit, the goals and the intent of SPEC.
+
+     The source code is provided to the user or company under the license
+     agreement for the SPEC Benchmark Suite for this product.
+
+     Test run time = 300 seconds, Warmup = 100 seconds.
+     Request Op_rate = 10000.00 ops/second
+     Op latency reporting activated
+     Files per directory set to 100
+     Directories per proc set to 10
+     Using custom workload
+     Running 4 copies of the test on 1 clients
+     Results directory: /root/SPEC/results
+     Clients have a total of 1024 MiBytes of memory
+     Clients have 256 MiBytes of memory size per process
+     Clients each have 4 processes
+     Adjustable aggregate data set value set to 1024 MiBytes
+     Each process file size = 262 kbytes
+     Client data set size       = 11257 MiBytes
+     Total starting data set size = 11257 MiBytes
+     Total initial file space   = 11257 MiBytes
+     Total max file space       = 12281 MiBytes
+
+     Starting tests: Wed Nov 23 19:28:35 2016 
+
+	Launching 4 processes.
+	Starting test client: 0 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Starting test client: 1 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Starting test client: 2 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Starting test client: 3 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Waiting to finish initialization. Wed Nov 23 19:28:45 2016
+	Wed Nov 23 19:28:47 2016 Run 20 percent complete
+	Wed Nov 23 19:28:47 2016 Starting INIT phase
+	Wed Nov 23 19:28:47 2016 Init Heartbeat __/\_/\__ Client 3
+	Wed Nov 23 19:28:49 2016 Run  Heartbeat Client 3: 700.32 Ops/sec
+	Wed Nov 23 19:29:03 2016 Init 10 percent complete
+	Wed Nov 23 19:29:16 2016 Init 20 percent complete
+	Wed Nov 23 19:29:17 2016 Init 30 percent complete
+	Wed Nov 23 19:29:18 2016 Run 30 percent complete
+	Wed Nov 23 19:29:18 2016 Init 40 percent complete
+	Wed Nov 23 19:29:19 2016 Init 50 percent complete
+	Wed Nov 23 19:29:21 2016 Init 60 percent complete
+	Wed Nov 23 19:29:22 2016 Init 70 percent complete
+	Wed Nov 23 19:29:23 2016 Init 80 percent complete
+	Wed Nov 23 19:29:24 2016 Init 90 percent complete
+	Wed Nov 23 19:29:24 2016 Init 100 percent complete
+	Initialization finished: Wed Nov 23 19:29:25 2016
+	Testing begins: Wed Nov 23 19:29:25 2016
+	Waiting for tests to finish. Wed Nov 23 19:29:26 2016
+	Wed Nov 23 19:29:31 2016 Starting WARM phase
+	Wed Nov 23 19:29:34 2016 Warm-up 10 percent complete
+	Wed Nov 23 19:29:44 2016 Warm-up 20 percent complete
+	Wed Nov 23 19:29:47 2016 Warm Heartbeat Client 3: 326.27 Ops/sec
+	Wed Nov 23 19:29:48 2016 Run 40 percent complete
+	Wed Nov 23 19:29:49 2016 Run  Heartbeat Client 3: 406.13 Ops/sec
+	Wed Nov 23 19:29:54 2016 Warm-up 30 percent complete
+	Wed Nov 23 19:30:04 2016 Warm-up 40 percent complete
+	Wed Nov 23 19:30:14 2016 Warm-up 50 percent complete
+	Wed Nov 23 19:30:18 2016 Run 50 percent complete
+	Wed Nov 23 19:30:24 2016 Warm-up 60 percent complete
+	Wed Nov 23 19:30:34 2016 Warm-up 70 percent complete
+	Wed Nov 23 19:30:44 2016 Warm-up 80 percent complete
+	Wed Nov 23 19:30:47 2016 Warm Heartbeat Client 3: 205.94 Ops/sec
+	Wed Nov 23 19:30:48 2016 Run 60 percent complete
+	Wed Nov 23 19:30:49 2016 Run  Heartbeat Client 3: 331.24 Ops/sec
+	Wed Nov 23 19:30:54 2016 Warm-up 90 percent complete
+	Wed Nov 23 19:31:04 2016 Warm-up 100 percent complete
+	Wed Nov 23 19:31:06 2016 Starting RUN phase
+	Wed Nov 23 19:31:19 2016 Run 70 percent complete
+	Wed Nov 23 19:31:34 2016 Run 10 percent complete
+	Wed Nov 23 19:31:47 2016 Run 80 percent complete
+	Wed Nov 23 19:31:47 2016 Run  Heartbeat Client 3: 261.66 Ops/sec
+	Wed Nov 23 19:31:49 2016 Run  Heartbeat Client 3: 380.41 Ops/sec
+	Wed Nov 23 19:32:04 2016 Run 20 percent complete
+	Wed Nov 23 19:32:18 2016 Run 90 percent complete
+	Wed Nov 23 19:32:35 2016 Run 30 percent complete
+	Wed Nov 23 19:32:47 2016 Run  Heartbeat Client 3: 282.82 Ops/sec
+	Wed Nov 23 19:32:48 2016 Run 100 percent complete
+	Wed Nov 23 19:32:49 2016 Prime receiving results from child 3
+	Tests finished: Wed Nov 23 19:32:49 2016 
+	------------------------------------------------------------
+	Overall average latency               2.18 Milli-seconds
+	Overall SPEC SFS2014               1829.84 Ops/sec
+	Overall Read_throughput        ~ 280318.39 Kbytes/sec
+	Overall Write_throughput       ~ 108396.48 Kbytes/sec
+	Overall throughput             ~ 388714.87 Kbytes/sec
+	Registered Finger Print         34066
+	------------------------------------------------------------
+Band 1:  20us:2        40us:195      60us:2757     80us:1776    100us:2116    
+Band 2: 200us:9911    400us:17458   600us:12850   800us:10893     1ms:10500   
+Band 3:   2ms:40486     4ms:76576     6ms:51634     8ms:23515    10ms:8493    
+Band 4:  12ms:2817     14ms:962      16ms:419      18ms:211      20ms:148     
+Band 5:  40ms:520      60ms:324      80ms:221     100ms:147     
+Band 6: 200ms:485     400ms:41      600ms:2       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+	------------------------------------------------------------
+netmist completed successfully, summarizing.
+<<< Wed Nov 23 19:32:50 2016: Starting run 2 of 2: VDA1 >>>
+
+     SPEC SFS2014 Release         $Revision: 1072 $
+
+     This product contains benchmarks acquired from several sources who
+     understand and agree with SPEC's goal of creating fair and objective
+     benchmarks to measure computer performance.
+
+     This copyright notice is placed here only to protect SPEC in the
+     event the source is misused in any manner that is contrary to the
+     spirit, the goals and the intent of SPEC.
+
+     The source code is provided to the user or company under the license
+     agreement for the SPEC Benchmark Suite for this product.
+
+     Test run time = 300 seconds, Warmup = 100 seconds.
+     Request Op_rate = 20000.00 ops/second
+     Op latency reporting activated
+     Files per directory set to 100
+     Directories per proc set to 10
+     Using custom workload
+     Running 4 copies of the test on 1 clients
+     Results directory: /root/SPEC/results
+     Clients have a total of 1024 MiBytes of memory
+     Clients have 256 MiBytes of memory size per process
+     Clients each have 4 processes
+     Adjustable aggregate data set value set to 1024 MiBytes
+     Each process file size = 262 kbytes
+     Client data set size       = 11257 MiBytes
+     Total starting data set size = 11257 MiBytes
+     Total initial file space   = 11257 MiBytes
+     Total max file space       = 12281 MiBytes
+
+[INFO][Wed Nov 23 19:32:50 2016]Exec validation successful
+
+     SPEC SFS2014 Release         $Revision: 1072 $
+
+     This product contains benchmarks acquired from several sources who
+     understand and agree with SPEC's goal of creating fair and objective
+     benchmarks to measure computer performance.
+
+     This copyright notice is placed here only to protect SPEC in the
+     event the source is misused in any manner that is contrary to the
+     spirit, the goals and the intent of SPEC.
+
+     The source code is provided to the user or company under the license
+     agreement for the SPEC Benchmark Suite for this product.
+
+     Test run time = 300 seconds, Warmup = 100 seconds.
+     Request Op_rate = 20000.00 ops/second
+     Op latency reporting activated
+     Files per directory set to 100
+     Directories per proc set to 10
+     Using custom workload
+     Running 4 copies of the test on 1 clients
+     Results directory: /root/SPEC/results
+     Clients have a total of 1024 MiBytes of memory
+     Clients have 256 MiBytes of memory size per process
+     Clients each have 4 processes
+     Adjustable aggregate data set value set to 1024 MiBytes
+     Each process file size = 262 kbytes
+     Client data set size       = 11257 MiBytes
+     Total starting data set size = 11257 MiBytes
+     Total initial file space   = 11257 MiBytes
+     Total max file space       = 12281 MiBytes
+
+     Starting tests: Wed Nov 23 19:32:50 2016 
+
+	Launching 4 processes.
+	Starting test client: 0 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Starting test client: 1 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Starting test client: 2 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Starting test client: 3 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Waiting to finish initialization. Wed Nov 23 19:33:00 2016
+	Wed Nov 23 19:33:02 2016 Starting INIT phase
+	Wed Nov 23 19:33:02 2016 Init Heartbeat __/\_/\__ Client 3
+	Wed Nov 23 19:33:05 2016 Run 40 percent complete
+	Wed Nov 23 19:33:36 2016 Run 50 percent complete
+	Wed Nov 23 19:33:46 2016 Init 10 percent complete
+	Wed Nov 23 19:33:47 2016 Run  Heartbeat Client 3: 307.20 Ops/sec
+	Wed Nov 23 19:34:02 2016 Init Heartbeat __/\_/\__ Client 3
+	Wed Nov 23 19:34:04 2016 Run 60 percent complete
+	Wed Nov 23 19:34:17 2016 Init 20 percent complete
+	Wed Nov 23 19:34:18 2016 Init 30 percent complete
+	Wed Nov 23 19:34:20 2016 Init 40 percent complete
+	Wed Nov 23 19:34:21 2016 Init 50 percent complete
+	Wed Nov 23 19:34:21 2016 Init 60 percent complete
+	Wed Nov 23 19:34:22 2016 Init 70 percent complete
+	Wed Nov 23 19:34:23 2016 Init 80 percent complete
+	Wed Nov 23 19:34:25 2016 Init 90 percent complete
+	Wed Nov 23 19:34:25 2016 Init 100 percent complete
+	Wed Nov 23 19:34:35 2016 Run 70 percent complete
+	Initialization finished: Wed Nov 23 19:34:37 2016
+	Testing begins: Wed Nov 23 19:34:37 2016
+	Waiting for tests to finish. Wed Nov 23 19:34:37 2016
+	Wed Nov 23 19:34:42 2016 Starting WARM phase
+	Wed Nov 23 19:34:45 2016 Warm-up 10 percent complete
+	Wed Nov 23 19:34:47 2016 Run  Heartbeat Client 3: 178.97 Ops/sec
+	Wed Nov 23 19:34:55 2016 Warm-up 20 percent complete
+	Wed Nov 23 19:35:03 2016 Warm Heartbeat Client 3: 323.79 Ops/sec
+	Wed Nov 23 19:35:05 2016 Run 80 percent complete
+	Wed Nov 23 19:35:05 2016 Warm-up 30 percent complete
+	Wed Nov 23 19:35:15 2016 Warm-up 40 percent complete
+	Wed Nov 23 19:35:25 2016 Warm-up 50 percent complete
+	Wed Nov 23 19:35:35 2016 Warm-up 60 percent complete
+	Wed Nov 23 19:35:35 2016 Run 90 percent complete
+	Wed Nov 23 19:35:45 2016 Warm-up 70 percent complete
+	Wed Nov 23 19:35:48 2016 Run  Heartbeat Client 3: 293.96 Ops/sec
+	Wed Nov 23 19:35:55 2016 Warm-up 80 percent complete
+	Wed Nov 23 19:36:05 2016 Warm-up 90 percent complete
+	Wed Nov 23 19:36:06 2016 Run 100 percent complete
+	Wed Nov 23 19:36:06 2016 Prime receiving results from child 3
+	Tests finished: Wed Nov 23 19:36:08 2016 
+	------------------------------------------------------------
+	Overall average latency               3.02 Milli-seconds
+	Overall SPEC SFS2014               1322.79 Ops/sec
+	Overall Read_throughput        ~      0.00 Kbytes/sec
+	Overall Write_throughput       ~ 312024.32 Kbytes/sec
+	Overall throughput             ~ 312024.32 Kbytes/sec
+	Registered Finger Print         34066
+	------------------------------------------------------------
+Band 1:  20us:0        40us:0        60us:0        80us:0       100us:2       
+Band 2: 200us:1657    400us:6033    600us:7823    800us:9862      1ms:12396   
+Band 3:   2ms:45494     4ms:55349     6ms:33815     8ms:16856    10ms:6414    
+Band 4:  12ms:2284     14ms:792      16ms:336      18ms:151      20ms:95      
+Band 5:  40ms:215      60ms:58       80ms:49      100ms:31      
+Band 6: 200ms:40      400ms:15      600ms:3       800ms:3          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+	------------------------------------------------------------
+netmist completed successfully, summarizing.
+<<< Wed Nov 23 19:36:09 2016: Starting run 2 of 2: VDA1 >>>
+
+     SPEC SFS2014 Release         $Revision: 1072 $
+
+     This product contains benchmarks acquired from several sources who
+     understand and agree with SPEC's goal of creating fair and objective
+     benchmarks to measure computer performance.
+
+     This copyright notice is placed here only to protect SPEC in the
+     event the source is misused in any manner that is contrary to the
+     spirit, the goals and the intent of SPEC.
+
+     The source code is provided to the user or company under the license
+     agreement for the SPEC Benchmark Suite for this product.
+
+     Test run time = 300 seconds, Warmup = 100 seconds.
+     Request Op_rate = 20000.00 ops/second
+     Op latency reporting activated
+     Files per directory set to 100
+     Directories per proc set to 10
+     Using custom workload
+     Running 4 copies of the test on 1 clients
+     Results directory: /root/SPEC/results
+     Clients have a total of 1024 MiBytes of memory
+     Clients have 256 MiBytes of memory size per process
+     Clients each have 4 processes
+     Adjustable aggregate data set value set to 1024 MiBytes
+     Each process file size = 262 kbytes
+     Client data set size       = 11257 MiBytes
+     Total starting data set size = 11257 MiBytes
+     Total initial file space   = 11257 MiBytes
+     Total max file space       = 12281 MiBytes
+
+[INFO][Wed Nov 23 19:36:09 2016]Exec validation successful
+
+     SPEC SFS2014 Release         $Revision: 1072 $
+
+     This product contains benchmarks acquired from several sources who
+     understand and agree with SPEC's goal of creating fair and objective
+     benchmarks to measure computer performance.
+
+     This copyright notice is placed here only to protect SPEC in the
+     event the source is misused in any manner that is contrary to the
+     spirit, the goals and the intent of SPEC.
+
+     The source code is provided to the user or company under the license
+     agreement for the SPEC Benchmark Suite for this product.
+
+     Test run time = 300 seconds, Warmup = 100 seconds.
+     Request Op_rate = 20000.00 ops/second
+     Op latency reporting activated
+     Files per directory set to 100
+     Directories per proc set to 10
+     Using custom workload
+     Running 4 copies of the test on 1 clients
+     Results directory: /root/SPEC/results
+     Clients have a total of 1024 MiBytes of memory
+     Clients have 256 MiBytes of memory size per process
+     Clients each have 4 processes
+     Adjustable aggregate data set value set to 1024 MiBytes
+     Each process file size = 262 kbytes
+     Client data set size       = 11257 MiBytes
+     Total starting data set size = 11257 MiBytes
+     Total initial file space   = 11257 MiBytes
+     Total max file space       = 12281 MiBytes
+
+     Starting tests: Wed Nov 23 19:36:09 2016 
+
+	Launching 4 processes.
+	Starting test client: 0 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Starting test client: 1 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Starting test client: 2 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Starting test client: 3 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Wed Nov 23 19:36:15 2016 Warm-up 100 percent complete
+	Wed Nov 23 19:36:17 2016 Starting RUN phase
+	Waiting to finish initialization. Wed Nov 23 19:36:19 2016
+	Wed Nov 23 19:36:21 2016 Starting INIT phase
+	Wed Nov 23 19:36:21 2016 Init Heartbeat __/\_/\__ Client 3
+	Wed Nov 23 19:36:38 2016 Init 10 percent complete
+	Wed Nov 23 19:36:46 2016 Run 10 percent complete
+	Wed Nov 23 19:36:50 2016 Init 20 percent complete
+	Wed Nov 23 19:36:50 2016 Init 30 percent complete
+	Wed Nov 23 19:36:52 2016 Init 40 percent complete
+	Wed Nov 23 19:36:53 2016 Init 50 percent complete
+	Wed Nov 23 19:36:54 2016 Init 60 percent complete
+	Wed Nov 23 19:36:55 2016 Init 70 percent complete
+	Wed Nov 23 19:36:56 2016 Init 80 percent complete
+	Wed Nov 23 19:36:57 2016 Init 90 percent complete
+	Wed Nov 23 19:36:57 2016 Init 100 percent complete
+	Initialization finished: Wed Nov 23 19:36:59 2016
+	Testing begins: Wed Nov 23 19:36:59 2016
+	Waiting for tests to finish. Wed Nov 23 19:36:59 2016
+	Wed Nov 23 19:37:02 2016 Run  Heartbeat Client 3: 908.74 Ops/sec
+	Wed Nov 23 19:37:04 2016 Starting WARM phase
+	Wed Nov 23 19:37:07 2016 Warm-up 10 percent complete
+	Wed Nov 23 19:37:16 2016 Run 20 percent complete
+	Wed Nov 23 19:37:17 2016 Warm-up 20 percent complete
+	Wed Nov 23 19:37:21 2016 Warm Heartbeat Client 3: 333.53 Ops/sec
+	Wed Nov 23 19:37:27 2016 Warm-up 30 percent complete
+	Wed Nov 23 19:37:37 2016 Warm-up 40 percent complete
+	Wed Nov 23 19:37:46 2016 Run 30 percent complete
+	Wed Nov 23 19:37:47 2016 Warm-up 50 percent complete
+	Wed Nov 23 19:37:57 2016 Warm-up 60 percent complete
+	Wed Nov 23 19:38:02 2016 Run  Heartbeat Client 3: 298.21 Ops/sec
+	Wed Nov 23 19:38:07 2016 Warm-up 70 percent complete
+	Wed Nov 23 19:38:17 2016 Run 40 percent complete
+	Wed Nov 23 19:38:17 2016 Warm-up 80 percent complete
+	Wed Nov 23 19:38:21 2016 Warm Heartbeat Client 3: 225.47 Ops/sec
+	Wed Nov 23 19:38:27 2016 Warm-up 90 percent complete
+	Wed Nov 23 19:38:37 2016 Warm-up 100 percent complete
+	Wed Nov 23 19:38:39 2016 Starting RUN phase
+	Wed Nov 23 19:38:47 2016 Run 50 percent complete
+	Wed Nov 23 19:39:02 2016 Run  Heartbeat Client 3: 284.38 Ops/sec
+	Wed Nov 23 19:39:08 2016 Run 10 percent complete
+	Wed Nov 23 19:39:15 2016 Run 60 percent complete
+	Wed Nov 23 19:39:21 2016 Run  Heartbeat Client 3: 225.22 Ops/sec
+	Wed Nov 23 19:39:39 2016 Run 20 percent complete
+	Wed Nov 23 19:39:46 2016 Run 70 percent complete
+	Wed Nov 23 19:40:03 2016 Run  Heartbeat Client 3: 253.10 Ops/sec
+	Wed Nov 23 19:40:07 2016 Run 30 percent complete
+	Wed Nov 23 19:40:17 2016 Run 80 percent complete
+	Wed Nov 23 19:40:21 2016 Run  Heartbeat Client 3: 250.19 Ops/sec
+	Wed Nov 23 19:40:38 2016 Run 40 percent complete
+	Wed Nov 23 19:40:47 2016 Run 90 percent complete
+	Wed Nov 23 19:41:03 2016 Run  Heartbeat Client 3: 316.64 Ops/sec
+	Wed Nov 23 19:41:08 2016 Run 50 percent complete
+	Wed Nov 23 19:41:16 2016 Run 100 percent complete
+	Wed Nov 23 19:41:17 2016 Prime receiving results from child 3
+	Tests finished: Wed Nov 23 19:41:18 2016 
+	------------------------------------------------------------
+	Overall average latency               2.52 Milli-seconds
+	Overall SPEC SFS2014               1584.69 Ops/sec
+	Overall Read_throughput        ~ 246673.21 Kbytes/sec
+	Overall Write_throughput       ~  93566.61 Kbytes/sec
+	Overall throughput             ~ 340239.82 Kbytes/sec
+	Registered Finger Print         34066
+	------------------------------------------------------------
+Band 1:  20us:0        40us:136      60us:1793     80us:1288    100us:1550    
+Band 2: 200us:7561    400us:13413   600us:10255   800us:9238      1ms:8805    
+Band 3:   2ms:34686     4ms:65958     6ms:46877     8ms:22634    10ms:8221    
+Band 4:  12ms:2667     14ms:950      16ms:439      18ms:257      20ms:139     
+Band 5:  40ms:648      60ms:419      80ms:287     100ms:221     
+Band 6: 200ms:700     400ms:86      600ms:3       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+	------------------------------------------------------------
+netmist completed successfully, summarizing.
+[ERROR][Wed Nov 23 19:41:19 2016]Error reading the RC file
+	Wed Nov 23 19:41:21 2016 Run  Heartbeat Client 3: 401.76 Ops/sec
+	Wed Nov 23 19:41:38 2016 Run 60 percent complete
+	Wed Nov 23 19:42:07 2016 Run 70 percent complete
+	Wed Nov 23 19:42:21 2016 Run  Heartbeat Client 3: 456.22 Ops/sec
+	Wed Nov 23 19:42:37 2016 Run 80 percent complete
+	Wed Nov 23 19:43:08 2016 Run 90 percent complete
+	Wed Nov 23 19:43:21 2016 Run  Heartbeat Client 3: 297.67 Ops/sec
+	Wed Nov 23 19:43:38 2016 Run 100 percent complete
+	Wed Nov 23 19:43:39 2016 Prime receiving results from child 3
+	Tests finished: Wed Nov 23 19:43:41 2016 
+	------------------------------------------------------------
+	Overall average latency               3.17 Milli-seconds
+	Overall SPEC SFS2014               1264.91 Ops/sec
+	Overall Read_throughput        ~      0.00 Kbytes/sec
+	Overall Write_throughput       ~ 298707.20 Kbytes/sec
+	Overall throughput             ~ 298707.20 Kbytes/sec
+	Registered Finger Print         34066
+	------------------------------------------------------------
+Band 1:  20us:0        40us:0        60us:0        80us:0       100us:2       
+Band 2: 200us:2099    400us:6354    600us:8302    800us:10506     1ms:12510   
+Band 3:   2ms:44533     4ms:52448     6ms:32362     8ms:13935    10ms:4976    
+Band 4:  12ms:1744     14ms:625      16ms:242      18ms:129      20ms:62      
+Band 5:  40ms:157      60ms:61       80ms:57      100ms:33      
+Band 6: 200ms:22      400ms:2       600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+	------------------------------------------------------------
+netmist completed successfully, summarizing.
+<<< Wed Nov 23 19:43:42 2016: Starting run 1 of 2: VDA1 >>>
+
+     SPEC SFS2014 Release         $Revision: 1072 $
+
+     This product contains benchmarks acquired from several sources who
+     understand and agree with SPEC's goal of creating fair and objective
+     benchmarks to measure computer performance.
+
+     This copyright notice is placed here only to protect SPEC in the
+     event the source is misused in any manner that is contrary to the
+     spirit, the goals and the intent of SPEC.
+
+     The source code is provided to the user or company under the license
+     agreement for the SPEC Benchmark Suite for this product.
+
+     Test run time = 300 seconds, Warmup = 100 seconds.
+     Request Op_rate = 10000.00 ops/second
+     Op latency reporting activated
+     Files per directory set to 100
+     Directories per proc set to 10
+     Using custom workload
+     Running 4 copies of the test on 1 clients
+     Results directory: /root/SPEC/results
+     Clients have a total of 1024 MiBytes of memory
+     Clients have 256 MiBytes of memory size per process
+     Clients each have 4 processes
+     Adjustable aggregate data set value set to 1024 MiBytes
+     Each process file size = 262 kbytes
+     Client data set size       = 11257 MiBytes
+     Total starting data set size = 11257 MiBytes
+     Total initial file space   = 11257 MiBytes
+     Total max file space       = 12281 MiBytes
+
+[INFO][Wed Nov 23 19:43:42 2016]Exec validation successful
+
+     SPEC SFS2014 Release         $Revision: 1072 $
+
+     This product contains benchmarks acquired from several sources who
+     understand and agree with SPEC's goal of creating fair and objective
+     benchmarks to measure computer performance.
+
+     This copyright notice is placed here only to protect SPEC in the
+     event the source is misused in any manner that is contrary to the
+     spirit, the goals and the intent of SPEC.
+
+     The source code is provided to the user or company under the license
+     agreement for the SPEC Benchmark Suite for this product.
+
+     Test run time = 300 seconds, Warmup = 100 seconds.
+     Request Op_rate = 10000.00 ops/second
+     Op latency reporting activated
+     Files per directory set to 100
+     Directories per proc set to 10
+     Using custom workload
+     Running 4 copies of the test on 1 clients
+     Results directory: /root/SPEC/results
+     Clients have a total of 1024 MiBytes of memory
+     Clients have 256 MiBytes of memory size per process
+     Clients each have 4 processes
+     Adjustable aggregate data set value set to 1024 MiBytes
+     Each process file size = 262 kbytes
+     Client data set size       = 11257 MiBytes
+     Total starting data set size = 11257 MiBytes
+     Total initial file space   = 11257 MiBytes
+     Total max file space       = 12281 MiBytes
+
+     Starting tests: Wed Nov 23 19:43:42 2016 
+
+	Launching 4 processes.
+	Starting test client: 0 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Starting test client: 1 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Starting test client: 2 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Starting test client: 3 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Waiting to finish initialization. Wed Nov 23 19:43:52 2016
+	Wed Nov 23 19:43:54 2016 Starting INIT phase
+	Wed Nov 23 19:43:54 2016 Init Heartbeat __/\_/\__ Client 3
+	Wed Nov 23 19:43:57 2016 Init 10 percent complete
+	Wed Nov 23 19:44:02 2016 Init 20 percent complete
+	Wed Nov 23 19:44:02 2016 Init 30 percent complete
+	Wed Nov 23 19:44:03 2016 Init 40 percent complete
+	Wed Nov 23 19:44:03 2016 Init 50 percent complete
+	Wed Nov 23 19:44:04 2016 Init 60 percent complete
+	Wed Nov 23 19:44:04 2016 Init 70 percent complete
+	Wed Nov 23 19:44:05 2016 Init 80 percent complete
+	Wed Nov 23 19:44:05 2016 Init 90 percent complete
+	Wed Nov 23 19:44:06 2016 Init 100 percent complete
+	Initialization finished: Wed Nov 23 19:44:07 2016
+	Testing begins: Wed Nov 23 19:44:07 2016
+	Waiting for tests to finish. Wed Nov 23 19:44:07 2016
+	Wed Nov 23 19:44:12 2016 Starting WARM phase
+	Wed Nov 23 19:44:15 2016 Warm-up 10 percent complete
+	Wed Nov 23 19:44:25 2016 Warm-up 20 percent complete
+	Wed Nov 23 19:44:35 2016 Warm-up 30 percent complete
+	Wed Nov 23 19:44:45 2016 Warm-up 40 percent complete
+	Wed Nov 23 19:44:54 2016 Warm Heartbeat Client 3: 884.31 Ops/sec
+	Wed Nov 23 19:44:55 2016 Warm-up 50 percent complete
+	Wed Nov 23 19:45:05 2016 Warm-up 60 percent complete
+	Wed Nov 23 19:45:15 2016 Warm-up 70 percent complete
+	Wed Nov 23 19:45:25 2016 Warm-up 80 percent complete
+	Wed Nov 23 19:45:36 2016 Warm-up 90 percent complete
+	Wed Nov 23 19:45:45 2016 Warm-up 100 percent complete
+	Wed Nov 23 19:45:49 2016 Starting RUN phase
+	Wed Nov 23 19:45:54 2016 Run  Heartbeat Client 3: 841.75 Ops/sec
+	Wed Nov 23 19:46:17 2016 Run 10 percent complete
+	Wed Nov 23 19:46:47 2016 Run 20 percent complete
+	Wed Nov 23 19:46:54 2016 Run  Heartbeat Client 3: 857.60 Ops/sec
+	Wed Nov 23 19:47:17 2016 Run 30 percent complete
+	Wed Nov 23 19:47:47 2016 Run 40 percent complete
+	Wed Nov 23 19:47:54 2016 Run  Heartbeat Client 3: 806.02 Ops/sec
+	Wed Nov 23 19:48:17 2016 Run 50 percent complete
+	Wed Nov 23 19:48:48 2016 Run 60 percent complete
+	Wed Nov 23 19:48:54 2016 Run  Heartbeat Client 3: 716.10 Ops/sec
+	Wed Nov 23 19:49:18 2016 Run 70 percent complete
+	Wed Nov 23 19:49:48 2016 Run 80 percent complete
+	Wed Nov 23 19:49:54 2016 Run  Heartbeat Client 3: 862.56 Ops/sec
+	Wed Nov 23 19:50:18 2016 Run 90 percent complete
+	Wed Nov 23 19:50:48 2016 Run 100 percent complete
+	Wed Nov 23 19:50:49 2016 Prime receiving results from child 3
+	Tests finished: Wed Nov 23 19:50:49 2016 
+	------------------------------------------------------------
+	Overall average latency               1.24 Milli-seconds
+	Overall SPEC SFS2014               3210.56 Ops/sec
+	Overall Read_throughput        ~ 548590.24 Kbytes/sec
+	Overall Write_throughput       ~ 189348.05 Kbytes/sec
+	Overall throughput             ~ 737938.29 Kbytes/sec
+	Registered Finger Print         34066
+	------------------------------------------------------------
+Band 1:  20us:2        40us:738      60us:9067     80us:4994    100us:5484    
+Band 2: 200us:25087   400us:51436   600us:33337   800us:30818     1ms:24631   
+Band 3:   2ms:79164     4ms:151647    6ms:59352     8ms:8311     10ms:897     
+Band 4:  12ms:85       14ms:16       16ms:13       18ms:8        20ms:7       
+Band 5:  40ms:72       60ms:71       80ms:44      100ms:24      
+Band 6: 200ms:98      400ms:1       600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+	------------------------------------------------------------
+netmist completed successfully, summarizing.
+<<< Wed Nov 23 19:50:50 2016: Starting run 2 of 2: VDA1 >>>
+
+     SPEC SFS2014 Release         $Revision: 1072 $
+
+     This product contains benchmarks acquired from several sources who
+     understand and agree with SPEC's goal of creating fair and objective
+     benchmarks to measure computer performance.
+
+     This copyright notice is placed here only to protect SPEC in the
+     event the source is misused in any manner that is contrary to the
+     spirit, the goals and the intent of SPEC.
+
+     The source code is provided to the user or company under the license
+     agreement for the SPEC Benchmark Suite for this product.
+
+     Test run time = 300 seconds, Warmup = 100 seconds.
+     Request Op_rate = 20000.00 ops/second
+     Op latency reporting activated
+     Files per directory set to 100
+     Directories per proc set to 10
+     Using custom workload
+     Running 4 copies of the test on 1 clients
+     Results directory: /root/SPEC/results
+     Clients have a total of 1024 MiBytes of memory
+     Clients have 256 MiBytes of memory size per process
+     Clients each have 4 processes
+     Adjustable aggregate data set value set to 1024 MiBytes
+     Each process file size = 262 kbytes
+     Client data set size       = 11257 MiBytes
+     Total starting data set size = 11257 MiBytes
+     Total initial file space   = 11257 MiBytes
+     Total max file space       = 12281 MiBytes
+
+[INFO][Wed Nov 23 19:50:50 2016]Exec validation successful
+
+     SPEC SFS2014 Release         $Revision: 1072 $
+
+     This product contains benchmarks acquired from several sources who
+     understand and agree with SPEC's goal of creating fair and objective
+     benchmarks to measure computer performance.
+
+     This copyright notice is placed here only to protect SPEC in the
+     event the source is misused in any manner that is contrary to the
+     spirit, the goals and the intent of SPEC.
+
+     The source code is provided to the user or company under the license
+     agreement for the SPEC Benchmark Suite for this product.
+
+     Test run time = 300 seconds, Warmup = 100 seconds.
+     Request Op_rate = 20000.00 ops/second
+     Op latency reporting activated
+     Files per directory set to 100
+     Directories per proc set to 10
+     Using custom workload
+     Running 4 copies of the test on 1 clients
+     Results directory: /root/SPEC/results
+     Clients have a total of 1024 MiBytes of memory
+     Clients have 256 MiBytes of memory size per process
+     Clients each have 4 processes
+     Adjustable aggregate data set value set to 1024 MiBytes
+     Each process file size = 262 kbytes
+     Client data set size       = 11257 MiBytes
+     Total starting data set size = 11257 MiBytes
+     Total initial file space   = 11257 MiBytes
+     Total max file space       = 12281 MiBytes
+
+     Starting tests: Wed Nov 23 19:50:50 2016 
+
+	Launching 4 processes.
+	Starting test client: 0 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Starting test client: 1 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Starting test client: 2 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Starting test client: 3 Host: 10.0.40.216    Workload:     VDA1  Workdir: /mnt/rozofs01/
+	Waiting to finish initialization. Wed Nov 23 19:50:59 2016
+	Wed Nov 23 19:51:01 2016 Starting INIT phase
+	Wed Nov 23 19:51:01 2016 Init Heartbeat __/\_/\__ Client 3
+	Wed Nov 23 19:51:05 2016 Init 10 percent complete
+	Wed Nov 23 19:51:11 2016 Init 20 percent complete
+	Wed Nov 23 19:51:11 2016 Init 30 percent complete
+	Wed Nov 23 19:51:12 2016 Init 40 percent complete
+	Wed Nov 23 19:51:12 2016 Init 50 percent complete
+	Wed Nov 23 19:51:13 2016 Init 60 percent complete
+	Wed Nov 23 19:51:13 2016 Init 70 percent complete
+	Wed Nov 23 19:51:14 2016 Init 80 percent complete
+	Wed Nov 23 19:51:14 2016 Init 90 percent complete
+	Wed Nov 23 19:51:14 2016 Init 100 percent complete
+	Initialization finished: Wed Nov 23 19:51:15 2016
+	Testing begins: Wed Nov 23 19:51:15 2016
+	Waiting for tests to finish. Wed Nov 23 19:51:15 2016
+	Wed Nov 23 19:51:20 2016 Starting WARM phase
+	Wed Nov 23 19:51:23 2016 Warm-up 10 percent complete
+	Wed Nov 23 19:51:33 2016 Warm-up 20 percent complete
+	Wed Nov 23 19:51:43 2016 Warm-up 30 percent complete
+	Wed Nov 23 19:51:53 2016 Warm-up 40 percent complete
+	Wed Nov 23 19:52:01 2016 Warm Heartbeat Client 3: 887.62 Ops/sec
+	Wed Nov 23 19:52:03 2016 Warm-up 50 percent complete
+	Wed Nov 23 19:52:13 2016 Warm-up 60 percent complete
+	Wed Nov 23 19:52:23 2016 Warm-up 70 percent complete
+	Wed Nov 23 19:52:33 2016 Warm-up 80 percent complete
+	Wed Nov 23 19:52:43 2016 Warm-up 90 percent complete
+	Wed Nov 23 19:52:53 2016 Warm-up 100 percent complete
+	Wed Nov 23 19:52:57 2016 Starting RUN phase
+	Wed Nov 23 19:53:01 2016 Run  Heartbeat Client 3: 910.31 Ops/sec
+	Wed Nov 23 19:53:25 2016 Run 10 percent complete
+	Wed Nov 23 19:53:55 2016 Run 20 percent complete
+	Wed Nov 23 19:54:01 2016 Run  Heartbeat Client 3: 803.79 Ops/sec
+	Wed Nov 23 19:54:25 2016 Run 30 percent complete
+	Wed Nov 23 19:54:55 2016 Run 40 percent complete
+	Wed Nov 23 19:55:01 2016 Run  Heartbeat Client 3: 867.50 Ops/sec
+	Wed Nov 23 19:55:25 2016 Run 50 percent complete
+	Wed Nov 23 19:55:56 2016 Run 60 percent complete
+	Wed Nov 23 19:56:01 2016 Run  Heartbeat Client 3: 804.15 Ops/sec
+	Wed Nov 23 19:56:26 2016 Run 70 percent complete
+	Wed Nov 23 19:56:56 2016 Run 80 percent complete
+	Wed Nov 23 19:57:01 2016 Run  Heartbeat Client 3: 748.74 Ops/sec
+	Wed Nov 23 19:57:26 2016 Run 90 percent complete
+	Wed Nov 23 19:57:56 2016 Run 100 percent complete
+	Wed Nov 23 19:57:57 2016 Prime receiving results from child 3
+	Tests finished: Wed Nov 23 19:57:57 2016 
+	------------------------------------------------------------
+	Overall average latency               1.24 Milli-seconds
+	Overall SPEC SFS2014               3232.16 Ops/sec
+	Overall Read_throughput        ~ 551313.95 Kbytes/sec
+	Overall Write_throughput       ~ 191756.05 Kbytes/sec
+	Overall throughput             ~ 743070.01 Kbytes/sec
+	Registered Finger Print         34066
+	------------------------------------------------------------
+Band 1:  20us:3        40us:800      60us:9343     80us:4934    100us:5149    
+Band 2: 200us:25021   400us:52010   600us:33400   800us:30962     1ms:24667   
+Band 3:   2ms:80370     4ms:152443    6ms:59276     8ms:8411     10ms:926     
+Band 4:  12ms:107      14ms:17       16ms:11       18ms:4        20ms:11      
+Band 5:  40ms:77       60ms:49       80ms:35      100ms:27      
+Band 6: 200ms:53      400ms:2       600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+	------------------------------------------------------------
+netmist completed successfully, summarizing.
+[ERROR][Wed Nov 23 19:57:58 2016]Error reading the RC file

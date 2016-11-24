@@ -1,0 +1,14 @@
+#!/bin/bash
+cp results/sfssum_sfs2014.txt results/backup.txt
+rm results/s*
+#python SfsManager -r LinuxTestFiles/100r/100r_1s
+#python SfsManager -r LinuxTestFiles/100w/100w_1s
+#python SfsManager -r LinuxTestFiles/mixed/mixed_1s
+#python SfsManager -r LinuxTestFiles/meta/meta_1s
+python SfsManager -r LinuxTestFiles/100r/100r_4s
+python SfsManager -r LinuxTestFiles/100w/100w_4s
+python SfsManager -r LinuxTestFiles/mixed/mixed_4s
+python SfsManager -r LinuxTestFiles/meta/meta_4s
+touch sfssum_sfs2014_humanReadable.txt 
+python resultsParser.py results/sfssum_sfs2014.txt sfssum_sfs2014_humanReadable.txt
+cat sfssum_sfs2014_humanReadable.txt

@@ -1,0 +1,39 @@
+#!/bin/bash
+
+
+echo "[arg0]=Desired Repository"
+echo "[arg1]=client:/server/share"
+echo "[arg2]=user"
+
+echo "Desired Directory: "
+read input_variable
+repo=$input_variable
+echo "client:/server/share/"
+read input_variable
+server=$input_variable
+echo "user"
+read input_variable
+user=$input_variable
+
+
+# repo=$1
+# server=$2
+# user=$3
+
+echo $repo 
+echo $server
+echo $user
+
+
+sudo cp -r /mnt/eng/Software/VersionControl/Spec/LinuxTestFiles $repo/LinuxTestFiles
+sudo chmod -R 0777 LinuxTestFiles
+
+
+sudo python FindAndReplaceLinux.py $repo/LinuxTestFiles/100r/100r_1s $repo/LinuxTestFiles/100r/100r_1s $server $user
+sudo python FindAndReplaceLinux.py $repo/LinuxTestFiles/100w/100w_1s $repo/LinuxTestFiles/100w/100w_1s $server $user
+sudo python FindAndReplaceLinux.py $repo/LinuxTestFiles/meta/meta_1s $repo/LinuxTestFiles/meta/meta_1s $server $user
+sudo python FindAndReplaceLinux.py $repo/LinuxTestFiles/mixed/mixed_1s $repo/LinuxTestFiles/mixed/mixed_1s $server $user
+sudo python FindAndReplaceLinux.py $repo/LinuxTestFiles/100r/100r_4s $repo/LinuxTestFiles/100r/100r_4s $server $user
+sudo python FindAndReplaceLinux.py $repo/LinuxTestFiles/100w/100w_4s $repo/LinuxTestFiles/100w/100w_4s $server $user
+sudo python FindAndReplaceLinux.py $repo/LinuxTestFiles/meta/meta_4s $repo/LinuxTestFiles/meta/meta_4s $server $user
+sudo python FindAndReplaceLinux.py $repo/LinuxTestFiles/mixed/mixed_4s $repo/LinuxTestFiles/mixed/mixed_4s $server $user

@@ -1,0 +1,2020 @@
+
+<<< Wed Nov 23 19:18:20 2016: Run 1 of 2 >>>
+--------------------------------------------------------------------
+Client centos7-216    ID:3
+Workload Name    : VDA1
+Run time           300
+Ops/sec                306.31
+Avg Latency          3.254
+Total file ops          91893
+Read throughput         0.000 Kbytes/sec
+Write throughput    72137.067 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      46327 	Avg Latency:   0.003632
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =          0 	Avg Latency:   Not collected
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      22783	Avg Latency:   Not collected
+	Close file                          ops =      22783	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:0        40us:0        60us:0        80us:0       100us:1       
+Band 2: 200us:374     400us:1277    600us:1626    800us:1882      1ms:2397    
+Band 3:   2ms:9566      4ms:12884     6ms:7553      8ms:4897     10ms:2368    
+Band 4:  12ms:880      14ms:345      16ms:129      18ms:56       20ms:27      
+Band 5:  40ms:42       60ms:9        80ms:5       100ms:3       
+Band 6: 200ms:6       400ms:0       600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:1
+Workload Name    : VDA1
+Run time           300
+Ops/sec                309.53
+Avg Latency          3.230
+Total file ops          92859
+Read throughput         0.000 Kbytes/sec
+Write throughput    72989.333 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      46687 	Avg Latency:   0.003833
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =          0 	Avg Latency:   Not collected
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      23086	Avg Latency:   Not collected
+	Close file                          ops =      23086	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:0        40us:0        60us:0        80us:0       100us:1       
+Band 2: 200us:334     400us:1205    600us:1501    800us:1842      1ms:2196    
+Band 3:   2ms:9381      4ms:12878     6ms:7376      8ms:5298     10ms:2720    
+Band 4:  12ms:1181     14ms:432      16ms:156      18ms:86       20ms:28      
+Band 5:  40ms:38       60ms:10       80ms:13      100ms:6       
+Band 6: 200ms:5       400ms:0       600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:0
+Workload Name    : VDA1
+Run time           300
+Ops/sec                316.04
+Avg Latency          3.163
+Total file ops          94812
+Read throughput         0.000 Kbytes/sec
+Write throughput    74773.973 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      47854 	Avg Latency:   0.003774
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =          0 	Avg Latency:   Not collected
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      23479	Avg Latency:   Not collected
+	Close file                          ops =      23479	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:0        40us:0        60us:0        80us:0       100us:0       
+Band 2: 200us:407     400us:1246    600us:1505    800us:1894      1ms:2446    
+Band 3:   2ms:9771      4ms:12981     6ms:7726      8ms:5298     10ms:2734    
+Band 4:  12ms:1108     14ms:406      16ms:143      18ms:83       20ms:32      
+Band 5:  40ms:42       60ms:15       80ms:6       100ms:4       
+Band 6: 200ms:7       400ms:0       600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:2
+Workload Name    : VDA1
+Run time           300
+Ops/sec                311.11
+Avg Latency          3.213
+Total file ops          93333
+Read throughput         0.000 Kbytes/sec
+Write throughput    72981.653 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      46831 	Avg Latency:   0.003643
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =          0 	Avg Latency:   Not collected
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      23251	Avg Latency:   Not collected
+	Close file                          ops =      23251	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:0        40us:0        60us:0        80us:0       100us:1       
+Band 2: 200us:441     400us:1279    600us:1561    800us:1927      1ms:2379    
+Band 3:   2ms:9702      4ms:13012     6ms:7786      8ms:4970     10ms:2226    
+Band 4:  12ms:915      14ms:325      16ms:132      18ms:59       20ms:32      
+Band 5:  40ms:50       60ms:13       80ms:9       100ms:3       
+Band 6: 200ms:9       400ms:0       600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+
+<<< Wed Nov 23 19:20:07 2016: Run 1 of 2 >>>
+--------------------------------------------------------------------
+Client centos7-216    ID:3
+Workload Name    : VDA1
+Run time           300
+Ops/sec                561.33
+Avg Latency          1.775
+Total file ops         168398
+Read throughput    110254.683 Kbytes/sec
+Write throughput        0.000 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =          0 	Avg Latency:   Not collected
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =      84830 	Avg Latency:   0.003393
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      41784	Avg Latency:   Not collected
+	Close file                          ops =      41784	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:10       40us:326      60us:1802     80us:1017    100us:1190    
+Band 2: 200us:5636    400us:6537    600us:3685    800us:2905      1ms:2487    
+Band 3:   2ms:11700     4ms:21846     6ms:15765     8ms:6508     10ms:1901    
+Band 4:  12ms:565      14ms:204      16ms:96       18ms:61       20ms:29      
+Band 5:  40ms:163      60ms:93       80ms:69      100ms:46      
+Band 6: 200ms:178     400ms:10      600ms:1       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:1
+Workload Name    : VDA1
+Run time           300
+Ops/sec                562.72
+Avg Latency          1.776
+Total file ops         168815
+Read throughput    110506.017 Kbytes/sec
+Write throughput        0.000 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =          0 	Avg Latency:   Not collected
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =      84931 	Avg Latency:   0.003398
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      41942	Avg Latency:   Not collected
+	Close file                          ops =      41942	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:7        40us:278      60us:1718     80us:1006    100us:1190    
+Band 2: 200us:5649    400us:6606    600us:3731    800us:2884      1ms:2521    
+Band 3:   2ms:11608     4ms:21690     6ms:16061     8ms:6588     10ms:1833    
+Band 4:  12ms:574      14ms:225      16ms:109      18ms:75       20ms:25      
+Band 5:  40ms:147      60ms:102      80ms:78      100ms:41      
+Band 6: 200ms:175     400ms:10      600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:0
+Workload Name    : VDA1
+Run time           300
+Ops/sec                574.87
+Avg Latency          1.739
+Total file ops         172460
+Read throughput    112976.913 Kbytes/sec
+Write throughput        0.000 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =          0 	Avg Latency:   Not collected
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =      86840 	Avg Latency:   0.003326
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      42810	Avg Latency:   Not collected
+	Close file                          ops =      42810	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:7        40us:458      60us:1823     80us:1171    100us:1241    
+Band 2: 200us:6034    400us:6713    600us:3698    800us:2968      1ms:2373    
+Band 3:   2ms:12145     4ms:22389     6ms:16070     8ms:6451     10ms:1877    
+Band 4:  12ms:498      14ms:198      16ms:92       18ms:54       20ms:33      
+Band 5:  40ms:156      60ms:101      80ms:62      100ms:47      
+Band 6: 200ms:169     400ms:12      600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:2
+Workload Name    : VDA1
+Run time           300
+Ops/sec                560.75
+Avg Latency          1.783
+Total file ops         168224
+Read throughput    111203.490 Kbytes/sec
+Write throughput        0.000 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =          0 	Avg Latency:   Not collected
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =      84896 	Avg Latency:   0.003401
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      41664	Avg Latency:   Not collected
+	Close file                          ops =      41664	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:7        40us:346      60us:1811     80us:1045    100us:1214    
+Band 2: 200us:5783    400us:6510    600us:3682    800us:2932      1ms:2444    
+Band 3:   2ms:11659     4ms:21476     6ms:15871     8ms:6539     10ms:1968    
+Band 4:  12ms:605      14ms:244      16ms:113      18ms:59       20ms:57      
+Band 5:  40ms:143      60ms:95       80ms:65      100ms:47      
+Band 6: 200ms:165     400ms:14      600ms:2       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+
+<<< Wed Nov 23 19:25:36 2016: Run 2 of 2 >>>
+--------------------------------------------------------------------
+Client centos7-216    ID:3
+Workload Name    : VDA1
+Run time           300
+Ops/sec                320.30
+Avg Latency          3.113
+Total file ops          96091
+Read throughput         0.000 Kbytes/sec
+Write throughput    74975.040 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      48251 	Avg Latency:   0.003503
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =          0 	Avg Latency:   Not collected
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      23920	Avg Latency:   Not collected
+	Close file                          ops =      23920	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:0        40us:0        60us:0        80us:0       100us:0       
+Band 2: 200us:433     400us:1400    600us:1710    800us:2152      1ms:2667    
+Band 3:   2ms:10287     4ms:13259     6ms:8047      8ms:4721     10ms:2114    
+Band 4:  12ms:896      14ms:295      16ms:133      18ms:54       20ms:24      
+Band 5:  40ms:31       60ms:8        80ms:14      100ms:4       
+Band 6: 200ms:2       400ms:0       600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:1
+Workload Name    : VDA1
+Run time           300
+Ops/sec                356.73
+Avg Latency          2.802
+Total file ops         107019
+Read throughput         0.000 Kbytes/sec
+Write throughput    83622.400 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      53889 	Avg Latency:   0.003365
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =          0 	Avg Latency:   Not collected
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      26565	Avg Latency:   Not collected
+	Close file                          ops =      26565	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:0        40us:0        60us:0        80us:0       100us:0       
+Band 2: 200us:532     400us:1715    600us:2079    800us:2512      1ms:3152    
+Band 3:   2ms:11801     4ms:14756     6ms:9020      8ms:5052     10ms:1980    
+Band 4:  12ms:762      14ms:288      16ms:116      18ms:37       20ms:24      
+Band 5:  40ms:34       60ms:12       80ms:6       100ms:3       
+Band 6: 200ms:6       400ms:0       600ms:2       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:0
+Workload Name    : VDA1
+Run time           300
+Ops/sec                358.97
+Avg Latency          2.785
+Total file ops         107690
+Read throughput         0.000 Kbytes/sec
+Write throughput    84203.520 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      54270 	Avg Latency:   0.003330
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =          0 	Avg Latency:   Not collected
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      26710	Avg Latency:   Not collected
+	Close file                          ops =      26710	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:0        40us:0        60us:0        80us:0       100us:0       
+Band 2: 200us:574     400us:1758    600us:2091    800us:2693      1ms:3225    
+Band 3:   2ms:11984     4ms:14946     6ms:8875      8ms:4940     10ms:1927    
+Band 4:  12ms:733      14ms:280      16ms:112      18ms:39       20ms:18      
+Band 5:  40ms:35       60ms:6        80ms:15      100ms:7       
+Band 6: 200ms:10      400ms:1       600ms:1       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:2
+Workload Name    : VDA1
+Run time           300
+Ops/sec                328.33
+Avg Latency          3.045
+Total file ops          98498
+Read throughput         0.000 Kbytes/sec
+Write throughput    77861.653 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      49644 	Avg Latency:   0.003478
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =          0 	Avg Latency:   Not collected
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      24427	Avg Latency:   Not collected
+	Close file                          ops =      24427	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:0        40us:0        60us:0        80us:0       100us:0       
+Band 2: 200us:461     400us:1436    600us:1867    800us:2285      1ms:2852    
+Band 3:   2ms:10656     4ms:13715     6ms:8075      8ms:4783     10ms:2077    
+Band 4:  12ms:823      14ms:328      16ms:129      18ms:55       20ms:40      
+Band 5:  40ms:29       60ms:12       80ms:8       100ms:5       
+Band 6: 200ms:6       400ms:1       600ms:1       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+
+<<< Wed Nov 23 19:28:34 2016: Run 2 of 2 >>>
+--------------------------------------------------------------------
+Client centos7-216    ID:3
+Workload Name    : VDA1
+Run time           300
+Ops/sec                680.37
+Avg Latency          1.465
+Total file ops         204110
+Read throughput    126941.723 Kbytes/sec
+Write throughput        0.000 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =          0 	Avg Latency:   Not collected
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =     102918 	Avg Latency:   0.002795
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      50596	Avg Latency:   Not collected
+	Close file                          ops =      50596	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:9        40us:446      60us:2578     80us:1426    100us:1658    
+Band 2: 200us:8044    400us:8941    600us:4988    800us:3739      1ms:3083    
+Band 3:   2ms:14165     4ms:27811     6ms:17485     8ms:6020     10ms:1614    
+Band 4:  12ms:409      14ms:107      16ms:46       18ms:31       20ms:18      
+Band 5:  40ms:85       60ms:39       80ms:47      100ms:37      
+Band 6: 200ms:87      400ms:5       600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:1
+Workload Name    : VDA1
+Run time           300
+Ops/sec                680.95
+Avg Latency          1.468
+Total file ops         204285
+Read throughput    126449.907 Kbytes/sec
+Write throughput        0.000 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =          0 	Avg Latency:   Not collected
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =     102771 	Avg Latency:   0.002806
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      50757	Avg Latency:   Not collected
+	Close file                          ops =      50757	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:5        40us:396      60us:2457     80us:1447    100us:1719    
+Band 2: 200us:7852    400us:8928    600us:5002    800us:3654      1ms:3058    
+Band 3:   2ms:14172     4ms:27755     6ms:17651     8ms:6104     10ms:1636    
+Band 4:  12ms:436      14ms:122      16ms:54       18ms:30       20ms:21      
+Band 5:  40ms:63       60ms:53       80ms:39      100ms:32      
+Band 6: 200ms:77      400ms:8       600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:0
+Workload Name    : VDA1
+Run time           300
+Ops/sec                687.41
+Avg Latency          1.454
+Total file ops         206222
+Read throughput    127630.963 Kbytes/sec
+Write throughput        0.000 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =          0 	Avg Latency:   Not collected
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =     104048 	Avg Latency:   0.002773
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      51087	Avg Latency:   Not collected
+	Close file                          ops =      51087	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:14       40us:448      60us:2547     80us:1522    100us:1746    
+Band 2: 200us:8134    400us:9213    600us:4976    800us:3829      1ms:3041    
+Band 3:   2ms:14359     4ms:28066     6ms:17473     8ms:6170     10ms:1579    
+Band 4:  12ms:434      14ms:129      16ms:52       18ms:30       20ms:17      
+Band 5:  40ms:60       60ms:42       80ms:46      100ms:37      
+Band 6: 200ms:79      400ms:5       600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:2
+Workload Name    : VDA1
+Run time           300
+Ops/sec                687.19
+Avg Latency          1.454
+Total file ops         206157
+Read throughput    128488.100 Kbytes/sec
+Write throughput        0.000 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =          0 	Avg Latency:   Not collected
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =     104065 	Avg Latency:   0.002774
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      51046	Avg Latency:   Not collected
+	Close file                          ops =      51046	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:8        40us:470      60us:2639     80us:1579    100us:1683    
+Band 2: 200us:8218    400us:9263    600us:5001    800us:3827      1ms:3048    
+Band 3:   2ms:14371     4ms:27869     6ms:17516     8ms:6115     10ms:1559    
+Band 4:  12ms:426      14ms:105      16ms:46       18ms:26       20ms:18      
+Band 5:  40ms:76       60ms:42       80ms:42      100ms:29      
+Band 6: 200ms:78      400ms:10      600ms:1       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+
+<<< Wed Nov 23 19:32:50 2016: Run 1 of 2 >>>
+--------------------------------------------------------------------
+Client centos7-216    ID:3
+Workload Name    : VDA1
+Run time           300
+Ops/sec                451.52
+Avg Latency          2.208
+Total file ops         135456
+Read throughput     68748.557 Kbytes/sec
+Write throughput    26897.067 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      17104 	Avg Latency:   0.003399
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =      50868 	Avg Latency:   0.003695
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      33742	Avg Latency:   Not collected
+	Close file                          ops =      33742	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:0        40us:62       60us:719      80us:442     100us:508     
+Band 2: 200us:2469    400us:4317    600us:3172    800us:2691      1ms:2593    
+Band 3:   2ms:10107     4ms:18832     6ms:12685     8ms:5772     10ms:2066    
+Band 4:  12ms:706      14ms:234      16ms:95       18ms:39       20ms:26      
+Band 5:  40ms:124      60ms:97       80ms:54      100ms:33      
+Band 6: 200ms:120     400ms:7       600ms:2       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:1
+Workload Name    : VDA1
+Run time           300
+Ops/sec                462.44
+Avg Latency          2.162
+Total file ops         138733
+Read throughput     71001.980 Kbytes/sec
+Write throughput    27367.893 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      17395 	Avg Latency:   0.003362
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =      52220 	Avg Latency:   0.003684
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      34559	Avg Latency:   Not collected
+	Close file                          ops =      34559	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:1        40us:35       60us:659      80us:490     100us:535     
+Band 2: 200us:2477    400us:4418    600us:3245    800us:2734      1ms:2629    
+Band 3:   2ms:10168     4ms:19462     6ms:13094     8ms:5906     10ms:2180    
+Band 4:  12ms:717      14ms:247      16ms:105      18ms:57       20ms:42      
+Band 5:  40ms:125      60ms:74       80ms:49      100ms:38      
+Band 6: 200ms:121     400ms:7       600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:0
+Workload Name    : VDA1
+Run time           300
+Ops/sec                461.88
+Avg Latency          2.164
+Total file ops         138565
+Read throughput     70905.763 Kbytes/sec
+Write throughput    27283.840 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      17363 	Avg Latency:   0.003414
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =      52142 	Avg Latency:   0.003729
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      34530	Avg Latency:   Not collected
+	Close file                          ops =      34530	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:1        40us:41       60us:680      80us:435     100us:528     
+Band 2: 200us:2478    400us:4392    600us:3266    800us:2737      1ms:2666    
+Band 3:   2ms:10106     4ms:19330     6ms:13105     8ms:5985     10ms:2147    
+Band 4:  12ms:718      14ms:240      16ms:117      18ms:54       20ms:40      
+Band 5:  40ms:133      60ms:82       80ms:56      100ms:35      
+Band 6: 200ms:121     400ms:12      600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:2
+Workload Name    : VDA1
+Run time           300
+Ops/sec                454.00
+Avg Latency          2.202
+Total file ops         136199
+Read throughput     69662.087 Kbytes/sec
+Write throughput    26847.680 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      17075 	Avg Latency:   0.003391
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =      51292 	Avg Latency:   0.003748
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      33916	Avg Latency:   Not collected
+	Close file                          ops =      33916	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:0        40us:57       60us:699      80us:409     100us:545     
+Band 2: 200us:2487    400us:4331    600us:3167    800us:2731      1ms:2612    
+Band 3:   2ms:10105     4ms:18952     6ms:12750     8ms:5852     10ms:2100    
+Band 4:  12ms:676      14ms:241      16ms:102      18ms:61       20ms:40      
+Band 5:  40ms:138      60ms:71       80ms:62      100ms:41      
+Band 6: 200ms:123     400ms:15      600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+
+<<< Wed Nov 23 19:36:09 2016: Run 1 of 2 >>>
+--------------------------------------------------------------------
+Client centos7-216    ID:3
+Workload Name    : VDA1
+Run time           300
+Ops/sec                321.35
+Avg Latency          3.104
+Total file ops          96405
+Read throughput         0.000 Kbytes/sec
+Write throughput    75958.400 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      48479 	Avg Latency:   0.003251
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =          0 	Avg Latency:   Not collected
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      23963	Avg Latency:   Not collected
+	Close file                          ops =      23963	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:0        40us:0        60us:0        80us:0       100us:0       
+Band 2: 200us:422     400us:1452    600us:1971    800us:2482      1ms:3049    
+Band 3:   2ms:11082     4ms:13332     6ms:8311      8ms:4035     10ms:1444    
+Band 4:  12ms:504      14ms:180      16ms:68       18ms:28       20ms:21      
+Band 5:  40ms:50       60ms:14       80ms:16      100ms:8       
+Band 6: 200ms:8       400ms:1       600ms:0       800ms:1          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:1
+Workload Name    : VDA1
+Run time           300
+Ops/sec                333.45
+Avg Latency          2.998
+Total file ops         100034
+Read throughput         0.000 Kbytes/sec
+Write throughput    78614.933 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      50416 	Avg Latency:   0.003391
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =          0 	Avg Latency:   Not collected
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      24809	Avg Latency:   Not collected
+	Close file                          ops =      24809	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:0        40us:0        60us:0        80us:0       100us:2       
+Band 2: 200us:389     400us:1497    600us:1866    800us:2394      1ms:3134    
+Band 3:   2ms:11282     4ms:14009     6ms:8607      8ms:4283     10ms:1795    
+Band 4:  12ms:633      14ms:232      16ms:105      18ms:52       20ms:27      
+Band 5:  40ms:57       60ms:16       80ms:10      100ms:7       
+Band 6: 200ms:12      400ms:5       600ms:1       800ms:1          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:0
+Workload Name    : VDA1
+Run time           300
+Ops/sec                338.78
+Avg Latency          2.951
+Total file ops         101635
+Read throughput         0.000 Kbytes/sec
+Write throughput    79845.973 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      51203 	Avg Latency:   0.003325
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =          0 	Avg Latency:   Not collected
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      25216	Avg Latency:   Not collected
+	Close file                          ops =      25216	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:0        40us:0        60us:0        80us:0       100us:0       
+Band 2: 200us:413     400us:1526    600us:1968    800us:2505      1ms:3131    
+Band 3:   2ms:11733     4ms:14225     6ms:8574      8ms:4420     10ms:1645    
+Band 4:  12ms:602      14ms:210      16ms:80       18ms:37       20ms:26      
+Band 5:  40ms:59       60ms:11       80ms:14      100ms:9       
+Band 6: 200ms:7       400ms:6       600ms:2       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:2
+Workload Name    : VDA1
+Run time           300
+Ops/sec                329.21
+Avg Latency          3.037
+Total file ops          98763
+Read throughput         0.000 Kbytes/sec
+Write throughput    77605.013 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      49675 	Avg Latency:   0.003263
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =          0 	Avg Latency:   Not collected
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      24544	Avg Latency:   Not collected
+	Close file                          ops =      24544	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:0        40us:0        60us:0        80us:0       100us:0       
+Band 2: 200us:433     400us:1558    600us:2018    800us:2481      1ms:3082    
+Band 3:   2ms:11397     4ms:13783     6ms:8323      8ms:4118     10ms:1530    
+Band 4:  12ms:545      14ms:170      16ms:83       18ms:34       20ms:21      
+Band 5:  40ms:49       60ms:17       80ms:9       100ms:7       
+Band 6: 200ms:13      400ms:3       600ms:0       800ms:1          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+
+<<< Wed Nov 23 19:41:19 2016: Run 2 of 2 >>>
+--------------------------------------------------------------------
+Client centos7-216    ID:3
+Workload Name    : VDA1
+Run time           300
+Ops/sec                387.63
+Avg Latency          2.573
+Total file ops         116290
+Read throughput     60012.430 Kbytes/sec
+Write throughput    22824.213 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      14505 	Avg Latency:   0.003430
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =      43929 	Avg Latency:   0.004409
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      28928	Avg Latency:   Not collected
+	Close file                          ops =      28928	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:0        40us:33       60us:439      80us:326     100us:371     
+Band 2: 200us:1912    400us:3332    600us:2494    800us:2307      1ms:2109    
+Band 3:   2ms:8384      4ms:15993     6ms:11430     8ms:5575     10ms:2032    
+Band 4:  12ms:674      14ms:227      16ms:93       18ms:66       20ms:34      
+Band 5:  40ms:171      60ms:96       80ms:75      100ms:58      
+Band 6: 200ms:178     400ms:24      600ms:1       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:1
+Workload Name    : VDA1
+Run time           300
+Ops/sec                401.66
+Avg Latency          2.489
+Total file ops         120499
+Read throughput     62740.193 Kbytes/sec
+Write throughput    23710.293 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      15165 	Avg Latency:   0.003429
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =      45488 	Avg Latency:   0.004270
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      29923	Avg Latency:   Not collected
+	Close file                          ops =      29923	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:0        40us:35       60us:445      80us:311     100us:370     
+Band 2: 200us:1901    400us:3394    600us:2691    800us:2322      1ms:2223    
+Band 3:   2ms:8785      4ms:16748     6ms:12093     8ms:5691     10ms:1961    
+Band 4:  12ms:640      14ms:238      16ms:126      18ms:68       20ms:34      
+Band 5:  40ms:164      60ms:94       80ms:77      100ms:48      
+Band 6: 200ms:174     400ms:20      600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:0
+Workload Name    : VDA1
+Run time           300
+Ops/sec                394.96
+Avg Latency          2.531
+Total file ops         118489
+Read throughput     61540.793 Kbytes/sec
+Write throughput    23349.227 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      14915 	Avg Latency:   0.003495
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =      44742 	Avg Latency:   0.004393
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      29416	Avg Latency:   Not collected
+	Close file                          ops =      29416	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:0        40us:34       60us:434      80us:311     100us:399     
+Band 2: 200us:1803    400us:3286    600us:2498    800us:2249      1ms:2172    
+Band 3:   2ms:8712      4ms:16407     6ms:11690     8ms:5754     10ms:2140    
+Band 4:  12ms:672      14ms:255      16ms:115      18ms:69       20ms:37      
+Band 5:  40ms:173      60ms:124      80ms:64      100ms:58      
+Band 6: 200ms:178     400ms:23      600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:2
+Workload Name    : VDA1
+Run time           300
+Ops/sec                400.44
+Avg Latency          2.497
+Total file ops         120133
+Read throughput     62379.790 Kbytes/sec
+Write throughput    23682.880 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      15124 	Avg Latency:   0.003416
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =      45363 	Avg Latency:   0.004280
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      29823	Avg Latency:   Not collected
+	Close file                          ops =      29823	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:0        40us:34       60us:475      80us:340     100us:410     
+Band 2: 200us:1945    400us:3401    600us:2572    800us:2360      1ms:2301    
+Band 3:   2ms:8805      4ms:16810     6ms:11664     8ms:5614     10ms:2088    
+Band 4:  12ms:681      14ms:230      16ms:105      18ms:54       20ms:34      
+Band 5:  40ms:140      60ms:105      80ms:71      100ms:57      
+Band 6: 200ms:170     400ms:19      600ms:2       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+
+<<< Wed Nov 23 19:43:42 2016: Run 2 of 2 >>>
+--------------------------------------------------------------------
+Client centos7-216    ID:3
+Workload Name    : VDA1
+Run time           300
+Ops/sec                302.43
+Avg Latency          3.298
+Total file ops          90728
+Read throughput         0.000 Kbytes/sec
+Write throughput    71517.013 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      45540 	Avg Latency:   0.003057
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =          0 	Avg Latency:   Not collected
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      22594	Avg Latency:   Not collected
+	Close file                          ops =      22594	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:0        40us:0        60us:0        80us:0       100us:0       
+Band 2: 200us:483     400us:1483    600us:1940    800us:2489      1ms:2952    
+Band 3:   2ms:10839     4ms:12565     6ms:7748      8ms:3226     10ms:1150    
+Band 4:  12ms:373      14ms:139      16ms:38       18ms:27       20ms:10      
+Band 5:  40ms:30       60ms:19       80ms:19      100ms:5       
+Band 6: 200ms:5       400ms:0       600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:1
+Workload Name    : VDA1
+Run time           300
+Ops/sec                329.25
+Avg Latency          3.037
+Total file ops          98776
+Read throughput         0.000 Kbytes/sec
+Write throughput    77571.733 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      49814 	Avg Latency:   0.003127
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =          0 	Avg Latency:   Not collected
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      24481	Avg Latency:   Not collected
+	Close file                          ops =      24481	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:0        40us:0        60us:0        80us:0       100us:1       
+Band 2: 200us:556     400us:1655    600us:2212    800us:2838      1ms:3186    
+Band 3:   2ms:11528     4ms:13521     6ms:8351      8ms:3630     10ms:1397    
+Band 4:  12ms:520      14ms:187      16ms:79       18ms:37       20ms:25      
+Band 5:  40ms:42       60ms:16       80ms:15      100ms:11      
+Band 6: 200ms:7       400ms:0       600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:0
+Workload Name    : VDA1
+Run time           300
+Ops/sec                333.17
+Avg Latency          3.001
+Total file ops          99950
+Read throughput         0.000 Kbytes/sec
+Write throughput    78993.493 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      50388 	Avg Latency:   0.003017
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =          0 	Avg Latency:   Not collected
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      24781	Avg Latency:   Not collected
+	Close file                          ops =      24781	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:0        40us:0        60us:0        80us:0       100us:0       
+Band 2: 200us:586     400us:1739    600us:2219    800us:2730      1ms:3395    
+Band 3:   2ms:11722     4ms:13939     6ms:8618      8ms:3577     10ms:1169    
+Band 4:  12ms:375      14ms:147      16ms:57       18ms:35       20ms:7       
+Band 5:  40ms:39       60ms:11       80ms:9       100ms:10      
+Band 6: 200ms:4       400ms:0       600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:2
+Workload Name    : VDA1
+Run time           300
+Ops/sec                300.06
+Avg Latency          3.335
+Total file ops          90017
+Read throughput         0.000 Kbytes/sec
+Write throughput    70624.960 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      45419 	Avg Latency:   0.003155
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =          0 	Avg Latency:   Not collected
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      22299	Avg Latency:   Not collected
+	Close file                          ops =      22299	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:0        40us:0        60us:0        80us:0       100us:1       
+Band 2: 200us:474     400us:1477    600us:1931    800us:2449      1ms:2977    
+Band 3:   2ms:10444     4ms:12423     6ms:7645      8ms:3502     10ms:1260    
+Band 4:  12ms:476      14ms:152      16ms:68       18ms:30       20ms:20      
+Band 5:  40ms:46       60ms:15       80ms:14      100ms:7       
+Band 6: 200ms:6       400ms:2       600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+
+<<< Wed Nov 23 19:50:50 2016: Run 1 of 2 >>>
+--------------------------------------------------------------------
+Client centos7-216    ID:3
+Workload Name    : VDA1
+Run time           300
+Ops/sec                791.36
+Avg Latency          1.260
+Total file ops         237409
+Read throughput    134896.007 Kbytes/sec
+Write throughput    46857.173 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      29822 	Avg Latency:   0.002452
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =      89635 	Avg Latency:   0.001996
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      58976	Avg Latency:   Not collected
+	Close file                          ops =      58976	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:1        40us:185      60us:2215     80us:1158    100us:1340    
+Band 2: 200us:6095    400us:12558   600us:8148    800us:7508      1ms:5969    
+Band 3:   2ms:19318     4ms:37820     6ms:14752     8ms:2075     10ms:215     
+Band 4:  12ms:19       14ms:6        16ms:1        18ms:3        20ms:3       
+Band 5:  40ms:13       60ms:17       80ms:13      100ms:3       
+Band 6: 200ms:22      400ms:0       600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:1
+Workload Name    : VDA1
+Run time           300
+Ops/sec                812.50
+Avg Latency          1.230
+Total file ops         243751
+Read throughput    138889.690 Kbytes/sec
+Write throughput    48061.440 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      30668 	Avg Latency:   0.002442
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =      92317 	Avg Latency:   0.001975
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      60383	Avg Latency:   Not collected
+	Close file                          ops =      60383	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:0        40us:202      60us:2363     80us:1279    100us:1411    
+Band 2: 200us:6465    400us:13038   600us:8486    800us:7951      1ms:6303    
+Band 3:   2ms:19989     4ms:38083     6ms:14981     8ms:2108     10ms:220     
+Band 4:  12ms:21       14ms:3        16ms:5        18ms:0        20ms:2       
+Band 5:  40ms:14       60ms:17       80ms:11      100ms:7       
+Band 6: 200ms:26      400ms:0       600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:0
+Workload Name    : VDA1
+Run time           300
+Ops/sec                812.81
+Avg Latency          1.230
+Total file ops         243843
+Read throughput    139007.757 Kbytes/sec
+Write throughput    47797.760 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      30640 	Avg Latency:   0.002408
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =      92271 	Avg Latency:   0.001984
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      60466	Avg Latency:   Not collected
+	Close file                          ops =      60466	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:0        40us:174      60us:2330     80us:1261    100us:1439    
+Band 2: 200us:6403    400us:13159   600us:8426    800us:7760      1ms:6226    
+Band 3:   2ms:20271     4ms:38522     6ms:14664     8ms:1944     10ms:208     
+Band 4:  12ms:22       14ms:1        16ms:6        18ms:1        20ms:1       
+Band 5:  40ms:26       60ms:20       80ms:10      100ms:8       
+Band 6: 200ms:29      400ms:0       600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:2
+Workload Name    : VDA1
+Run time           300
+Ops/sec                793.89
+Avg Latency          1.259
+Total file ops         238167
+Read throughput    135796.783 Kbytes/sec
+Write throughput    46631.680 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      29923 	Avg Latency:   0.002455
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =      90128 	Avg Latency:   0.001995
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      59058	Avg Latency:   Not collected
+	Close file                          ops =      59058	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:1        40us:177      60us:2159     80us:1296    100us:1294    
+Band 2: 200us:6124    400us:12681   600us:8277    800us:7599      1ms:6133    
+Band 3:   2ms:19586     4ms:37222     6ms:14955     8ms:2184     10ms:254     
+Band 4:  12ms:23       14ms:6        16ms:1        18ms:4        20ms:1       
+Band 5:  40ms:19       60ms:17       80ms:10      100ms:6       
+Band 6: 200ms:21      400ms:1       600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+
+<<< Wed Nov 23 19:57:58 2016: Run 2 of 2 >>>
+--------------------------------------------------------------------
+Client centos7-216    ID:3
+Workload Name    : VDA1
+Run time           300
+Ops/sec                795.44
+Avg Latency          1.253
+Total file ops         238631
+Read throughput    135076.893 Kbytes/sec
+Write throughput    47277.120 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      30235 	Avg Latency:   0.002450
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =      90122 	Avg Latency:   0.001969
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      59137	Avg Latency:   Not collected
+	Close file                          ops =      59137	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:1        40us:159      60us:2312     80us:1279    100us:1291    
+Band 2: 200us:6187    400us:12779   600us:8466    800us:7584      1ms:6018    
+Band 3:   2ms:19832     4ms:37193     6ms:14738     8ms:2205     10ms:213     
+Band 4:  12ms:30       14ms:3        16ms:6        18ms:2        20ms:3       
+Band 5:  40ms:14       60ms:10       80ms:6       100ms:9       
+Band 6: 200ms:15      400ms:2       600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:1
+Workload Name    : VDA1
+Run time           300
+Ops/sec                815.59
+Avg Latency          1.226
+Total file ops         244678
+Read throughput    139411.867 Kbytes/sec
+Write throughput    48317.013 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      30776 	Avg Latency:   0.002438
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =      92318 	Avg Latency:   0.001957
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      60792	Avg Latency:   Not collected
+	Close file                          ops =      60792	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:1        40us:204      60us:2273     80us:1207    100us:1330    
+Band 2: 200us:6311    400us:13236   600us:8303    800us:7714      1ms:6370    
+Band 3:   2ms:20208     4ms:38583     6ms:14925     8ms:2080     10ms:252     
+Band 4:  12ms:34       14ms:6        16ms:1        18ms:0        20ms:4       
+Band 5:  40ms:19       60ms:10       80ms:8       100ms:7       
+Band 6: 200ms:8       400ms:0       600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:0
+Workload Name    : VDA1
+Run time           300
+Ops/sec                817.80
+Avg Latency          1.222
+Total file ops         245340
+Read throughput    139741.450 Kbytes/sec
+Write throughput    48468.267 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      30864 	Avg Latency:   0.002418
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =      92566 	Avg Latency:   0.001958
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      60955	Avg Latency:   Not collected
+	Close file                          ops =      60955	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:0        40us:220      60us:2453     80us:1211    100us:1307    
+Band 2: 200us:6312    400us:13179   600us:8358    800us:8089      1ms:6197    
+Band 3:   2ms:20295     4ms:38705     6ms:14723     8ms:2057     10ms:222     
+Band 4:  12ms:25       14ms:5        16ms:2        18ms:1        20ms:2       
+Band 5:  40ms:25       60ms:11       80ms:13      100ms:5       
+Band 6: 200ms:13      400ms:0       600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+
+--------------------------------------------------------------------
+Client centos7-216    ID:2
+Workload Name    : VDA1
+Run time           300
+Ops/sec                803.33
+Avg Latency          1.244
+Total file ops         240999
+Read throughput    137083.743 Kbytes/sec
+Write throughput    47693.653 Kbytes/sec
+Min Direct I/O size = 512
+
+Details
+	Write                               ops =      30360 	Avg Latency:   0.002442
+	Write_file                          ops =          0 	Avg Latency:   Not collected
+	Mmap_write                          ops =          0 	Avg Latency:   Not collected
+	Mmap_read                           ops =          0 	Avg Latency:   Not collected
+	Read                                ops =      90867 	Avg Latency:   0.001977
+	Read_file                           ops =          0 	Avg Latency:   Not collected
+	Mkdir                               ops =          0 	Avg Latency:   Not collected
+	Unlink                              ops =          0 	Avg Latency:   Not collected
+	Create                              ops =          0 	Avg Latency:   Not collected
+	Stat                                ops =          0 	Avg Latency:   Not collected
+	Append                              ops =          0 	Avg Latency:   Not collected
+	Lock                                ops =          0 	Avg Latency:   Not collected
+	Access                              ops =          0 	Avg Latency:   Not collected
+	Chmod                               ops =          0 	Avg Latency:   Not collected
+	Readdir                             ops =          0 	Avg Latency:   Not collected
+	Random_write                        ops =          0 	Avg Latency:   Not collected
+	Random_read                         ops =          0 	Avg Latency:   Not collected
+	Read_modify_write                   ops =          0 	Avg Latency:   Not collected
+	Open file                           ops =      59886	Avg Latency:   Not collected
+	Close file                          ops =      59886	Avg Latency:   Not collected
+	Copyfile                            ops =          0 	Avg Latency:   Not collected
+	Rename                              ops =          0 	Avg Latency:   Not collected
+	Statfs                              ops =          0 	Avg Latency:   Not collected
+	Pathconf                            ops =          0 	Avg Latency:   Not collected
+	Custom1                             ops =          0 	Avg Latency:   Not collected
+	Custom2                             ops =          0 	Avg Latency:   Not collected
+
+Band 1:  20us:1        40us:217      60us:2305     80us:1237    100us:1221    
+Band 2: 200us:6211    400us:12816   600us:8273    800us:7575      1ms:6082    
+Band 3:   2ms:20035     4ms:37962     6ms:14890     8ms:2069     10ms:239     
+Band 4:  12ms:18       14ms:3        16ms:2        18ms:1        20ms:2       
+Band 5:  40ms:19       60ms:18       80ms:8       100ms:6       
+Band 6: 200ms:17      400ms:0       600ms:0       800ms:0          1s:0       
+Band 7:    2s:0          4s:0          6s:0          8s:0         10s:0       
+Band 8:   20s:0         40s:0         60s:0         80s:0        120s:0       
+Band 9: 120+s:0       
+
+

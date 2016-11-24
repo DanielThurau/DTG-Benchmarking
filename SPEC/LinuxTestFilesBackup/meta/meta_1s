@@ -1,0 +1,67 @@
+##############################################################################
+#
+#	sfs_rc
+#
+# Specify netmist parameters for generic runs in this file.
+#
+# The following parameters are configurable within the SFS run and
+# reporting rules.
+#
+# Official BENCHMARK values are 
+#	-SWBUILD
+#	-VDA
+#	-VDI
+#	-DATABASE
+#
+##############################################################################
+BENCHMARK=VDA1
+LOAD=100000
+INCR_LOAD=0
+NUM_RUNS=2
+CLIENT_MOUNTPOINTS=10.0.40.196:/mnt/mfs/ec4+1/
+EXEC_PATH=/mnt/eng/Software/SPEC.org/SPECsfs_copy/SPEC/binaries/linux/x64/netmist
+USER=root
+WARMUP_TIME=100
+IPV6_ENABLE=0
+PRIME_MON_SCRIPT=
+PRIME_MON_ARGS=
+NETMIST_LOGS=
+##############################################################################
+# 
+# Specifying a password is only required for Windows clients
+#
+##############################################################################
+PASSWORD=
+##############################################################################
+#
+#  DO NOT EDIT BELOW THIS LINE FOR AN OFFICIAL BENCHMARK SUBMISSION
+#
+#  Constraints and overrides on the values below this line can be found in the
+#  benchmark XML file (default is benchmarks.xml).  To bypass all overrides
+#  use the --ignore-overrides flag in SfsManager.  Using the flag will make
+#  the results invalid for formal submission.
+#
+##############################################################################
+RUNTIME=300
+WORKLOAD_FILE=LinuxTestFiles/meta/wmeta.txt
+OPRATE_MULTIPLIER=
+CLIENT_MEM=1g
+AGGR_CAP=1g
+FILE_SIZE=
+DIR_COUNT=10
+FILES_PER_DIR=100
+UNLINK_FILES=0
+LATENCY_GRAPH=1
+HEARTBEAT_NOTIFICATIONS=1
+DISABLE_FSYNCS=0
+USE_RSHRCP=0
+BYTE_OFFSET=0
+MAX_FD=
+PIT_SERVER=
+PIT_PORT=
+LOCAL_ONLY=0
+FILE_ACCESS_LIST=0
+SHARING_MODE=0
+SOCK_DEBUG=0
+TRACEDEBUG=0
+

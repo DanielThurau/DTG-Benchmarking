@@ -1,0 +1,37 @@
+#!/bin/bash
+# Master shell script for vidio
+
+# Removes any old file for Depthteseter script, then creates a new one
+rm tester.txt
+touch tester.txt
+
+for i in {0..15}; do mkdir -p /mnt/rozofs01/vidio/$i/; done
+
+# Runs the Depth tester script that outputs to test.txt
+./VIDIODEPTHTESTER
+
+# Removes old best.txt and creates new empty one
+rm best.txt
+touch best.txt
+
+# runs python parser to get best Depth tester
+python BestQueueDepth.py tester.txt best.txt
+
+# Add to history to see what its like from this point on I
+best.txt >> bestHistory.txt
+#
+rm res.txt
+touch res.txt
+
+#Runs script with best.txt result as macro
+./VIDIOBASH
+
+# makes a new file for final results of big test
+rm RESULTS.txt
+touch RESULTS.txt
+
+
+python vidioResultsParser.py test.txt RESULTS.txt
+
+cat RESULTS.txt
+

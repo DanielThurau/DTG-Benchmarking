@@ -1,0 +1,384 @@
+
+/opt/vidio: Timing 1 stream of 2000 frames of 50987008 byte direct writes queued 8 deep
+
+stream[0] {
+
+Seconds           375.90
+Number of frames    2000
+Frames/sec          5.32
+MBytes          101974.02
+MBytes/sec        271.28
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/0/
+
+
+/opt/vidio: Timing 1 stream of 2000 frames of 50987008 byte direct writes queued 8 deep
+
+stream[0] {
+
+Seconds           362.71
+Number of frames    2000
+Frames/sec          5.51
+MBytes          101974.02
+MBytes/sec        281.14
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/1/
+
+
+/opt/vidio: Timing 1 stream of 2000 frames of 50987008 byte direct writes queued 8 deep
+
+stream[0] {
+
+Seconds           362.91
+Number of frames    2000
+Frames/sec          5.51
+MBytes          101974.02
+MBytes/sec        280.99
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/2/
+
+
+/opt/vidio: Timing 1 stream of 2000 frames of 50987008 byte direct reads queued 8 deep
+
+stream[0] {
+
+Seconds           114.93
+Number of frames    2000
+Frames/sec         17.40
+MBytes          101974.02
+MBytes/sec        887.23
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/0/
+
+
+/opt/vidio: Timing 1 stream of 2000 frames of 50987008 byte direct reads queued 8 deep
+
+stream[0] {
+
+Seconds           115.90
+Number of frames    2000
+Frames/sec         17.26
+MBytes          101974.02
+MBytes/sec        879.85
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/1/
+
+
+/opt/vidio: Timing 1 stream of 2000 frames of 50987008 byte direct reads queued 8 deep
+
+stream[0] {
+
+Seconds           115.24
+Number of frames    2000
+Frames/sec         17.35
+MBytes          101974.02
+MBytes/sec        884.85
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/2/
+
+
+/opt/vidio: Timing 4 streams of 2000 frames of 50987008 byte direct writes queued 8 deep
+
+stream[0] {
+
+Seconds          1774.40
+Number of frames    2000
+Frames/sec          1.13
+MBytes          101974.02
+MBytes/sec         57.47
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/3/
+
+
+stream[1] {
+
+Seconds          1786.26
+Number of frames    2000
+Frames/sec          1.12
+MBytes          101974.02
+MBytes/sec         57.09
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/4/
+
+
+stream[2] {
+
+Seconds          1783.36
+Number of frames    2000
+Frames/sec          1.12
+MBytes          101974.02
+MBytes/sec         57.18
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/5/
+
+
+stream[3] {
+
+Seconds          1778.44
+Number of frames    2000
+Frames/sec          1.12
+MBytes          101974.02
+MBytes/sec         57.34
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/6/
+
+
+/opt/vidio: Timing 4 streams of 2000 frames of 50987008 byte direct writes queued 8 deep
+
+stream[0] {
+
+Seconds          1761.65
+Number of frames    2000
+Frames/sec          1.14
+MBytes          101974.02
+MBytes/sec         57.89
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/3/
+
+
+stream[1] {
+
+Seconds          1764.82
+Number of frames    2000
+Frames/sec          1.13
+MBytes          101974.02
+MBytes/sec         57.78
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/4/
+
+
+stream[2] {
+
+Seconds          1762.40
+Number of frames    2000
+Frames/sec          1.13
+MBytes          101974.02
+MBytes/sec         57.86
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/5/
+
+
+stream[3] {
+
+Seconds          1756.85
+Number of frames    2000
+Frames/sec          1.14
+MBytes          101974.02
+MBytes/sec         58.04
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/6/
+
+
+/opt/vidio: Timing 4 streams of 2000 frames of 50987008 byte direct writes queued 8 deep
+
+stream[0] {
+
+Seconds          1756.76
+Number of frames    2000
+Frames/sec          1.14
+MBytes          101974.02
+MBytes/sec         58.05
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/3/
+
+
+stream[1] {
+
+Seconds          1756.71
+Number of frames    2000
+Frames/sec          1.14
+MBytes          101974.02
+MBytes/sec         58.05
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/4/
+
+
+stream[2] {
+
+Seconds          1748.81
+Number of frames    2000
+Frames/sec          1.14
+MBytes          101974.02
+MBytes/sec         58.31
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/5/
+
+
+stream[3] {
+
+Seconds          1753.93
+Number of frames    2000
+Frames/sec          1.14
+MBytes          101974.02
+MBytes/sec         58.14
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/6/
+
+
+/opt/vidio: Timing 4 streams of 2000 frames of 50987008 byte direct reads queued 8 deep
+
+stream[0] {
+
+Seconds           413.68
+Number of frames    2000
+Frames/sec          4.83
+MBytes          101974.02
+MBytes/sec        246.50
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/3/
+
+
+stream[1] {
+
+Seconds           414.71
+Number of frames    2000
+Frames/sec          4.82
+MBytes          101974.02
+MBytes/sec        245.89
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/4/
+
+
+stream[2] {
+
+Seconds           414.24
+Number of frames    2000
+Frames/sec          4.83
+MBytes          101974.02
+MBytes/sec        246.17
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/5/
+
+
+stream[3] {
+
+Seconds           413.71
+Number of frames    2000
+Frames/sec          4.83
+MBytes          101974.02
+MBytes/sec        246.49
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/6/
+
+
+/opt/vidio: Timing 4 streams of 2000 frames of 50987008 byte direct reads queued 8 deep
+
+stream[0] {
+
+Seconds           415.81
+Number of frames    2000
+Frames/sec          4.81
+MBytes          101974.02
+MBytes/sec        245.24
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/3/
+
+
+stream[1] {
+
+Seconds           415.85
+Number of frames    2000
+Frames/sec          4.81
+MBytes          101974.02
+MBytes/sec        245.22
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/4/
+
+
+stream[2] {
+
+Seconds           415.67
+Number of frames    2000
+Frames/sec          4.81
+MBytes          101974.02
+MBytes/sec        245.32
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/5/
+
+
+stream[3] {
+
+Seconds           413.88
+Number of frames    2000
+Frames/sec          4.83
+MBytes          101974.02
+MBytes/sec        246.38
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/6/
+
+
+/opt/vidio: Timing 4 streams of 2000 frames of 50987008 byte direct reads queued 8 deep
+
+stream[0] {
+
+Seconds           414.92
+Number of frames    2000
+Frames/sec          4.82
+MBytes          101974.02
+MBytes/sec        245.77
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/3/
+
+
+stream[1] {
+
+Seconds           414.59
+Number of frames    2000
+Frames/sec          4.82
+MBytes          101974.02
+MBytes/sec        245.96
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/4/
+
+
+stream[2] {
+
+Seconds           414.39
+Number of frames    2000
+Frames/sec          4.83
+MBytes          101974.02
+MBytes/sec        246.08
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/5/
+
+
+stream[3] {
+
+Seconds           415.15
+Number of frames    2000
+Frames/sec          4.82
+MBytes          101974.02
+MBytes/sec        245.63
+Dropped frames         0
+
+}  /mnt/mfs/ec4+1/vidio/6/
+
