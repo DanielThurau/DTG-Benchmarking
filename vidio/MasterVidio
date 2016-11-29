@@ -8,7 +8,7 @@ touch DepthTest.txt
 for i in {0..15}; do sudo mkdir -p /mnt/!!<Target Dir>!!/vidio/$i/; done
 
 # Runs the Depth tester script that outputs to test.txt
-sudo .!!<Working Dir>!!/scripts/VIDIODEPTHTESTER
+sudo !!<Working Dir>!!/scripts/VIDIODEPTHTESTER
 
 # Removes old best.txt and creates new empty one
 sudo rm !!<Working Dir>!!/resources/BestDepth.txt
@@ -21,7 +21,7 @@ sudo python !!<Working Dir>!!/scripts/BestQueueDepth.py !!<Working Dir>!!/resour
 sudo !!<Working Dir>!!/resources/BestDepth.txt >> !!<Working Dir>!!/resources/history/bestHistory.txt
 
 #Runs script with best.txt result as macro
-sudo .!!<Working Dir>!!/scripts/VIDIOBASH
+sudo !!<Working Dir>!!/scripts/VIDIOBASH
 
 # makes a new file for final results of big test
 sudo cp !!<Working Dir>!!/results/vidioResults.txt !!<Working Dir>!!/results/backupResults.txt
