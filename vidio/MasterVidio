@@ -5,34 +5,34 @@
 rm DepthTest.txt
 touch DepthTest.txt
 
-for i in {0..15}; do mkdir -p /mnt/!!<Target Dir>!!/vidio/$i/; done
+for i in {0..15}; do sudo mkdir -p /mnt/!!<Target Dir>!!/vidio/$i/; done
 
 # Runs the Depth tester script that outputs to test.txt
-.!!<Working Dir>!!/scripts/VIDIODEPTHTESTER
+sudo .!!<Working Dir>!!/scripts/VIDIODEPTHTESTER
 
 # Removes old best.txt and creates new empty one
-rm !!<Working Dir>!!/resources/BestDepth.txt
-touch !!<Working Dir>!!/resources/BestDepth.txt
+sudo rm !!<Working Dir>!!/resources/BestDepth.txt
+sudo touch !!<Working Dir>!!/resources/BestDepth.txt
 
 # runs python parser to get best Depth tester
-python !!<Working Dir>!!/scripts/BestQueueDepth.py !!<Working Dir>!!/resources/DepthTest.txt !!<Working Dir>!!/resources/BestDepth.txt
+sudo python !!<Working Dir>!!/scripts/BestQueueDepth.py !!<Working Dir>!!/resources/DepthTest.txt !!<Working Dir>!!/resources/BestDepth.txt
 
 # Add to history to see what its like from this point on I
-!!<Working Dir>!!/resources/BestDepth.txt >> !!<Working Dir>!!/resources/history/bestHistory.txt
+sudo !!<Working Dir>!!/resources/BestDepth.txt >> !!<Working Dir>!!/resources/history/bestHistory.txt
 
 #Runs script with best.txt result as macro
-.!!<Working Dir>!!/scripts/VIDIOBASH
+sudo .!!<Working Dir>!!/scripts/VIDIOBASH
 
 # makes a new file for final results of big test
-cp !!<Working Dir>!!/results/vidioResults.txt !!<Working Dir>!!/results/backupResults.txt
-rm !!<Working Dir>!!/results/vidioResults.txt
-touch !!<Working Dir>!!/results/vidioResults.txt
-cp !!<Working Dir>!!/results/vidioMetaResults.txt !!<Working Dir>!!/results/backupMetaResults.txt
-rm !!<Working Dir>!!/results/vidioMetaResults.txt
-touch !!<Working Dir>!!/results/vidioMetaResults.txt
+sudo cp !!<Working Dir>!!/results/vidioResults.txt !!<Working Dir>!!/results/backupResults.txt
+sudo rm !!<Working Dir>!!/results/vidioResults.txt
+sudo touch !!<Working Dir>!!/results/vidioResults.txt
+sudo cp !!<Working Dir>!!/results/vidioMetaResults.txt !!<Working Dir>!!/results/backupMetaResults.txt
+sudo rm !!<Working Dir>!!/results/vidioMetaResults.txt
+sudo touch !!<Working Dir>!!/results/vidioMetaResults.txt
 
-python !!<Working Dir>!!/scripts/vidioResultsParser.py !!<Working Dir>!!/resources/test.txt !!<Working Dir>!!/results/vidioResults.txt
-python !!<Working Dir>!!/scripts/vidioMeta Parser.py !!<Working Dir>!!/resources/test.txt !!<Working Dir>!!/results/vidioMetaResults.txt
-cat !!<Working Dir>!!/results/vidioResults.txt
-cat !!<Working Dir>!!/results/vidioMetaResults.txt
+sudo python !!<Working Dir>!!/scripts/vidioResultsParser.py !!<Working Dir>!!/resources/test.txt !!<Working Dir>!!/results/vidioResults.txt
+sudo python !!<Working Dir>!!/scripts/vidioMeta Parser.py !!<Working Dir>!!/resources/test.txt !!<Working Dir>!!/results/vidioMetaResults.txt
+sudo cat !!<Working Dir>!!/results/vidioResults.txt
+sudo cat !!<Working Dir>!!/results/vidioMetaResults.txt
 
