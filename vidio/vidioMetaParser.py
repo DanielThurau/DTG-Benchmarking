@@ -1,5 +1,44 @@
 import sys
 import math;
+
+def findBestAverage(a,b,c):
+	winner1 = min(float(a), float(b));
+	if(winner1 == a):
+		winner = min(float(a), float(c));
+	else:
+		winner = min(float(b), float(c));
+
+	return winner;
+
+
+def addWinner(a, b, c, array, winner):
+	# print(array)
+	if(winner==a[2]):
+		array.append(a);
+	elif(winner == b[2]):
+		array.append(b);
+	else:
+		array.append(c);
+
+def addWinnerFourStreamA(i, j, k, l):
+	temp = [];
+	temp.append(preFinal1[i][0])
+	temp.append(str((float(preFinal1[i][1]) + float(preFinal1[j][1]) + float(preFinal1[k][1]) + float(preFinal1[l][1]))/4));
+	temp.append(str((float(preFinal1[i][2]) + float(preFinal1[j][2]) + float(preFinal1[k][2]) + float(preFinal1[l][2]))/4));
+	temp.append(str((float(preFinal1[i][3]) + float(preFinal1[j][3]) + float(preFinal1[k][3]) + float(preFinal1[l][3]))/4));
+	return temp;
+
+def addWinnerFourStreamB(i, j, k, l):
+	temp = [];
+	temp.append(preFinal2[i][0])
+	temp.append(str((float(preFinal2[i][1]) + float(preFinal2[j][1]) + float(preFinal2[k][1]) + float(preFinal2[l][1]))/4));
+	temp.append(str((float(preFinal2[i][2]) + float(preFinal2[j][2]) + float(preFinal2[k][2]) + float(preFinal2[l][2]))/4));
+	temp.append(str((float(preFinal2[i][3]) + float(preFinal2[j][3]) + float(preFinal2[k][3]) + float(preFinal2[l][3]))/4));
+	return temp;
+
+
+
+
 infile, outfile = sys.argv[1], sys.argv[2]
 
 inf = open(infile)
@@ -26,34 +65,16 @@ for i in range(0, len(open_words)):
 last = [];
 
 
-winner1 = min(float(preFinal1[0][2]), float(preFinal1[1][2]));
-
-if(winner1 == preFinal1[0][2]):
-	winner = min(float(preFinal1[0][2]), float(preFinal1[2][2]));
-else:
-	winner = min(float(preFinal1[1][2]), float(preFinal1[2][2]));
-
-if(winner==preFinal1[0][2]):
-	last.append(preFinal1[0]);
-elif(winner == preFinal1[1][2]):
-	last.append(preFinal1[1]);
-else:
-	last.append(preFinal1[2]);
+winner = findBestAverage(preFinal1[0][2], preFinal1[1][2], preFinal1[2][2])
 
 
-winner1 = min(float(preFinal1[3][2]), float(preFinal1[3][2]));
+addWinner(preFinal1[0], preFinal1[1], preFinal1[2], last, winner);
 
-if(winner1 == preFinal1[3][2]):
-	winner = min(float(preFinal1[3][2]), float(preFinal1[5][2]));
-else:
-	winner = min(float(preFinal1[4][2]), float(preFinal1[5][2]));
 
-if(winner==preFinal1[3][2]):
-	last.append(preFinal1[3]);
-elif(winner == preFinal1[4][2]):
-	last.append(preFinal1[4]);
-else:
-	last.append(preFinal1[5]);
+
+winner = findBestAverage(preFinal1[3][2], preFinal1[4][2], preFinal1[5][2]);
+addWinner(preFinal1[3], preFinal1[4], preFinal1[5], last, winner);
+
 
 
 avgOne = (float(preFinal1[6][2]) + float(preFinal1[7][2]) + float(preFinal1[8][2]) + float(preFinal1[9][2]))/4;
@@ -61,104 +82,52 @@ avgTwo = (float(preFinal1[10][2]) + float(preFinal1[11][2]) + float(preFinal1[12
 avgThree = (float(preFinal1[14][2]) + float(preFinal1[15][2]) + float(preFinal1[16][2]) + float(preFinal1[17][2]))/4;
 
 
-winner1 = min(avgOne, avgTwo);
 
-
-
-if(winner1==avgOne):
-	winner = min(avgOne, avgThree);
-else:
-	winner = min(avgTwo, avgThree);
+winner = findBestAverage(avgOne, avgTwo, avgThree);
 
 temp = [];
 if(winner == avgTwo):
 	#avg2 won 10...13
-	temp.append(preFinal1[10][0])
-	temp.append(str((float(preFinal1[10][1]) + float(preFinal1[11][1]) + float(preFinal1[12][1]) + float(preFinal1[13][1]))/4));
-	temp.append(str((float(preFinal1[10][2]) + float(preFinal1[11][2]) + float(preFinal1[12][2]) + float(preFinal1[13][2]))/4));
-	temp.append(str((float(preFinal1[10][3]) + float(preFinal1[11][3]) + float(preFinal1[12][3]) + float(preFinal1[13][3]))/4));
-	last.append(temp);
+	last.append(addWinnerFourStreamA(10, 11, 12, 13));
 elif(winner == avgThree):
 	#avg3 won 14...17
-	temp.append(preFinal1[14][0])
-	temp.append(str((float(preFinal1[14][1]) + float(preFinal1[15][1]) + float(preFinal1[16][1]) + float(preFinal1[17][1]))/4));
-	temp.append(str((float(preFinal1[14][2]) + float(preFinal1[15][2]) + float(preFinal1[16][2]) + float(preFinal1[17][2]))/4));
-	temp.append(str((float(preFinal1[14][3]) + float(preFinal1[15][3]) + float(preFinal1[16][3]) + float(preFinal1[17][3]))/4));
-	last.append(temp)
+	last.append(addWinnerFourStreamA(14, 15, 16, 17))
 else:
 	#avg1 won 6..10
-	temp.append(preFinal1[6][0])
-	temp.append(str((float(preFinal1[6][1]) + float(preFinal1[7][1]) + float(preFinal1[8][1]) + float(preFinal1[9][1]))/4));
-	temp.append(str((float(preFinal1[6][2]) + float(preFinal1[7][2]) + float(preFinal1[8][2]) + float(preFinal1[9][2]))/4));
-	temp.append(str((float(preFinal1[6][3]) + float(preFinal1[7][3]) + float(preFinal1[8][3]) + float(preFinal1[9][3]))/4));
-	last.append(temp);
+	last.append(addWinnerFourStreamA(6, 7, 8, 9));
 
 
 avgOne = (float(preFinal1[18][2]) + float(preFinal1[19][2]) + float(preFinal1[20][2]) + float(preFinal1[21][2]))/4;
 avgTwo = (float(preFinal1[22][2]) + float(preFinal1[23][2]) + float(preFinal1[24][2]) + float(preFinal1[25][2]))/4;
 avgThree = (float(preFinal1[26][2]) + float(preFinal1[27][2]) + float(preFinal1[28][2]) + float(preFinal1[29][2]))/4;
 
-if(winner1==avgOne):
-	winner = min(avgOne, avgThree);
-else:
-	winner = min(avgTwo, avgThree);
+winner = findBestAverage(avgOne, avgTwo, avgThree);
 
 temp = [];
 if(winner == avgTwo):
 	#avg2 won 22..25
-	temp.append(preFinal1[22][0])
-	temp.append(str((float(preFinal1[22][1]) + float(preFinal1[23][1]) + float(preFinal1[24][1]) + float(preFinal1[25][1]))/4));
-	temp.append(str((float(preFinal1[22][2]) + float(preFinal1[23][2]) + float(preFinal1[24][2]) + float(preFinal1[25][2]))/4));
-	temp.append(str((float(preFinal1[22][3]) + float(preFinal1[23][3]) + float(preFinal1[24][3]) + float(preFinal1[25][3]))/4));
-	last.append(temp);
+	last.append(addWinnerFourStreamA(22, 23, 24, 25));
 elif(winner == avgThree):
 	#avg3 won 26..29
-	temp.append(preFinal1[26][0])
-	temp.append(str((float(preFinal1[26][1]) + float(preFinal1[27][1]) + float(preFinal1[28][1]) + float(preFinal1[29][1]))/4));
-	temp.append(str((float(preFinal1[26][2]) + float(preFinal1[27][2]) + float(preFinal1[28][2]) + float(preFinal1[29][2]))/4));
-	temp.append(str((float(preFinal1[26][3]) + float(preFinal1[27][3]) + float(preFinal1[28][3]) + float(preFinal1[29][3]))/4));
-	last.append(temp);
+	last.append(addWinnerFourStreamA(26, 27, 28, 29));
 else:
-	temp.append(preFinal1[18][0])
-	temp.append(str((float(preFinal1[18][1]) + float(preFinal1[19][1]) + float(preFinal1[20][1]) + float(preFinal1[21][1]))/4));
-	temp.append(str((float(preFinal1[18][2]) + float(preFinal1[19][2]) + float(preFinal1[20][2]) + float(preFinal1[21][2]))/4));
-	temp.append(str((float(preFinal1[18][3]) + float(preFinal1[19][3]) + float(preFinal1[20][3]) + float(preFinal1[21][3]))/4));
-	last.append(temp)
+	last.append(addWinnerFourStreamA(18, 19, 20, 21))
 	#avg1 won 18..21
 
 
 last2 = [];
 
 
-
-winner1 = min(float(preFinal2[0][2]), float(preFinal2[1][2]));
-
-if(winner1 == preFinal2[0][2]):
-	winner = min(float(preFinal2[0][2]), float(preFinal2[2][2]));
-else:
-	winner = min(float(preFinal2[1][2]), float(preFinal2[2][2]));
-
-if(winner==preFinal2[0][2]):
-	last2.append(preFinal2[0]);
-elif(winner == preFinal2[1][2]):
-	last2.append(preFinal2[1]);
-else:
-	last2.append(preFinal2[2]);
+winner = findBestAverage(preFinal2[0][2], preFinal2[1][2], preFinal2[2][2])
 
 
-winner1 = min(float(preFinal2[3][2]), float(preFinal2[3][2]));
+addWinner(preFinal2[0], preFinal2[1], preFinal2[2], last2, winner);
 
-if(winner1 == preFinal2[3][2]):
-	winner = min(float(preFinal2[3][2]), float(preFinal2[5][2]));
-else:
-	winner = min(float(preFinal2[4][2]), float(preFinal2[5][2]));
 
-if(winner==preFinal2[3][2]):
-	last2.append(preFinal2[3]);
-elif(winner == preFinal2[4][2]):
-	last2.append(preFinal2[4]);
-else:
-	last2.append(preFinal2[5]);
+
+winner = findBestAverage(preFinal2[3][2], preFinal2[4][2], preFinal2[5][2]);
+addWinner(preFinal2[3], preFinal2[4], preFinal2[5], last2, winner);
+
 
 
 avgOne = (float(preFinal2[6][2]) + float(preFinal2[7][2]) + float(preFinal2[8][2]) + float(preFinal2[9][2]))/4;
@@ -166,74 +135,37 @@ avgTwo = (float(preFinal2[10][2]) + float(preFinal2[11][2]) + float(preFinal2[12
 avgThree = (float(preFinal2[14][2]) + float(preFinal2[15][2]) + float(preFinal2[16][2]) + float(preFinal2[17][2]))/4;
 
 
-winner1 = min(avgOne, avgTwo);
 
-
-
-if(winner1==avgOne):
-	winner = min(avgOne, avgThree);
-else:
-	winner = min(avgTwo, avgThree);
+winner = findBestAverage(avgOne, avgTwo, avgThree);
 
 temp = [];
 if(winner == avgTwo):
 	#avg2 won 10...13
-	temp.append(preFinal2[10][0])
-	temp.append(str((float(preFinal2[10][1]) + float(preFinal2[11][1]) + float(preFinal2[12][1]) + float(preFinal2[13][1]))/4));
-	temp.append(str((float(preFinal2[10][2]) + float(preFinal2[11][2]) + float(preFinal2[12][2]) + float(preFinal2[13][2]))/4));
-	temp.append(str((float(preFinal2[10][3]) + float(preFinal2[11][3]) + float(preFinal2[12][3]) + float(preFinal2[13][3]))/4));
-	last2.append(temp);
+	last2.append(addWinnerFourStreamA(10, 11, 12, 13));
 elif(winner == avgThree):
 	#avg3 won 14...17
-	temp.append(preFinal2[14][0])
-	temp.append(str((float(preFinal2[14][1]) + float(preFinal2[15][1]) + float(preFinal2[16][1]) + float(preFinal2[17][1]))/4));
-	temp.append(str((float(preFinal2[14][2]) + float(preFinal2[15][2]) + float(preFinal2[16][2]) + float(preFinal2[17][2]))/4));
-	temp.append(str((float(preFinal2[14][3]) + float(preFinal2[15][3]) + float(preFinal2[16][3]) + float(preFinal2[17][3]))/4));
-	last2.append(temp)
+	last2.append(addWinnerFourStreamA(14, 15, 16, 17))
 else:
 	#avg1 won 6..10
-	temp.append(preFinal2[6][0])
-	temp.append(str((float(preFinal2[6][1]) + float(preFinal2[7][1]) + float(preFinal2[8][1]) + float(preFinal2[9][1]))/4));
-	temp.append(str((float(preFinal2[6][2]) + float(preFinal2[7][2]) + float(preFinal2[8][2]) + float(preFinal2[9][2]))/4));
-	temp.append(str((float(preFinal2[6][3]) + float(preFinal2[7][3]) + float(preFinal2[8][3]) + float(preFinal2[9][3]))/4));
-	last2.append(temp);
+	last2.append(addWinnerFourStreamA(6, 7, 8, 9));
 
 
 avgOne = (float(preFinal2[18][2]) + float(preFinal2[19][2]) + float(preFinal2[20][2]) + float(preFinal2[21][2]))/4;
 avgTwo = (float(preFinal2[22][2]) + float(preFinal2[23][2]) + float(preFinal2[24][2]) + float(preFinal2[25][2]))/4;
 avgThree = (float(preFinal2[26][2]) + float(preFinal2[27][2]) + float(preFinal2[28][2]) + float(preFinal2[29][2]))/4;
 
-if(winner1==avgOne):
-	winner = min(avgOne, avgThree);
-else:
-	winner = min(avgTwo, avgThree);
+winner = findBestAverage(avgOne, avgTwo, avgThree);
 
 temp = [];
 if(winner == avgTwo):
 	#avg2 won 22..25
-	temp.append(preFinal2[22][0])
-	temp.append(str((float(preFinal2[22][1]) + float(preFinal2[23][1]) + float(preFinal2[24][1]) + float(preFinal2[25][1]))/4));
-	temp.append(str((float(preFinal2[22][2]) + float(preFinal2[23][2]) + float(preFinal2[24][2]) + float(preFinal2[25][2]))/4));
-	temp.append(str((float(preFinal2[22][3]) + float(preFinal2[23][3]) + float(preFinal2[24][3]) + float(preFinal2[25][3]))/4));
-	last2.append(temp);
+	last2.append(addWinnerFourStreamA(22, 23, 24, 25));
 elif(winner == avgThree):
 	#avg3 won 26..29
-	temp.append(preFinal2[26][0])
-	temp.append(str((float(preFinal2[26][1]) + float(preFinal2[27][1]) + float(preFinal2[28][1]) + float(preFinal2[29][1]))/4));
-	temp.append(str((float(preFinal2[26][2]) + float(preFinal2[27][2]) + float(preFinal2[28][2]) + float(preFinal2[29][2]))/4));
-	temp.append(str((float(preFinal2[26][3]) + float(preFinal2[27][3]) + float(preFinal2[28][3]) + float(preFinal2[29][3]))/4));
-	last2.append(temp);
+	last2.append(addWinnerFourStreamA(26, 27, 28, 29));
 else:
-	temp.append(preFinal2[18][0])
-	temp.append(str((float(preFinal2[18][1]) + float(preFinal2[19][1]) + float(preFinal2[20][1]) + float(preFinal2[21][1]))/4));
-	temp.append(str((float(preFinal2[18][2]) + float(preFinal2[19][2]) + float(preFinal2[20][2]) + float(preFinal2[21][2]))/4));
-	temp.append(str((float(preFinal2[18][3]) + float(preFinal2[19][3]) + float(preFinal2[20][3]) + float(preFinal2[21][3]))/4));
-	last2.append(temp)
+	last2.append(addWinnerFourStreamA(18, 19, 20, 21))
 	#avg1 won 18..21
-
-
-
-
 
 
 
@@ -281,3 +213,7 @@ for i in range(0,len(last2)):
 
 for i in final:
 	outf.write("%s\n" % i);
+
+
+
+
