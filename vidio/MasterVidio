@@ -2,36 +2,37 @@
 # Master shell script for vidio
 
 # Removes any old file for Depthteseter script, then creates a new one
-rm tester.txt
-touch tester.txt
+rm DepthTest.txt
+touch DepthTest.txt
 
-for i in {0..15}; do mkdir -p /mnt/rozofs01/vidio/$i/; done
+for i in {0..15}; do mkdir -p /mnt/!!<Target Dir>!!/vidio/$i/; done
 
 # Runs the Depth tester script that outputs to test.txt
-./VIDIODEPTHTESTER
+.!!<Working Dir>!!/scripts/VIDIODEPTHTESTER
 
 # Removes old best.txt and creates new empty one
-rm best.txt
-touch best.txt
+rm !!<Working Dir>!!/resources/BestDepth.txt
+touch !!<Working Dir>!!/resources/BestDepth.txt
 
 # runs python parser to get best Depth tester
-python BestQueueDepth.py tester.txt best.txt
+python !!<Working Dir>!!/scripts/BestQueueDepth.py !!<Working Dir>!!/resources/DepthTest.txt !!<Working Dir>!!/resources/BestDepth.txt
 
 # Add to history to see what its like from this point on I
-best.txt >> bestHistory.txt
-#
-rm res.txt
-touch res.txt
+!!<Working Dir>!!/resources/BestDepth.txt >> !!<Working Dir>!!/resources/history/bestHistory.txt
 
 #Runs script with best.txt result as macro
-./VIDIOBASH
+.!!<Working Dir>!!/scripts/VIDIOBASH
 
 # makes a new file for final results of big test
-rm RESULTS.txt
-touch RESULTS.txt
+cp !!<Working Dir>!!/results/vidioResults.txt !!<Working Dir>!!/results/backupResults.txt
+rm !!<Working Dir>!!/results/vidioResults.txt
+touch !!<Working Dir>!!/results/vidioResults.txt
+cp !!<Working Dir>!!/results/vidioMetaResults.txt !!<Working Dir>!!/results/backupMetaResults.txt
+rm !!<Working Dir>!!/results/vidioMetaResults.txt
+touch !!<Working Dir>!!/results/vidioMetaResults.txt
 
-
-python vidioResultsParser.py test.txt RESULTS.txt
-
-cat RESULTS.txt
+python !!<Working Dir>!!/scripts/vidioResultsParser.py !!<Working Dir>!!/resources/test.txt !!<Working Dir>!!/results/vidioResults.txt
+python !!<Working Dir>!!/scripts/vidioMeta Parser.py !!<Working Dir>!!/resources/test.txt !!<Working Dir>!!/results/vidioMetaResults.txt
+cat !!<Working Dir>!!/results/vidioResults.txt
+cat !!<Working Dir>!!/results/vidioMetaResults.txt
 

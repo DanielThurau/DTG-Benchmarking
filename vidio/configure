@@ -1,0 +1,25 @@
+#!/bin/bash
+
+
+
+echo "Desired Directory: "
+read input_variable
+repo=$input_variable
+
+workingDir="$(pwd)";
+
+echo $repo
+echo $workingDir
+
+
+
+
+
+
+
+sudo python scripts/findAndReplace.py $workingDir/scripts/BestQueueDepth.py $workingDir/scripts/BestQueueDepth.py  $workingDir $repo
+sudo python scripts/findAndReplace.py $workingDir/scripts/VIDIOBASH $workingDir/scripts/VIDIOBASH $workingDir $repo
+sudo python scripts/findAndReplace.py $workingDir/scripts/VIDIODEPTHTESTER $workingDir/scripts/VIDIODEPTHTESTER $workingDir $repo
+sudo python scripts/findAndReplace.py $workingDir/scripts/vidioMetaParser.py $workingDir/scripts/vidioMetaParser.py $workingDir $repo
+sudo python scripts/findAndReplace.py $workingDir/scripts/vidioResultsParser.py $workingDir/scripts/vidioResultsParser.py $workingDir $repo
+sudo python scripts/findAndReplace.py $workingDir/MasterVidio $workingDir/MasterVidio $workingDir $repo
