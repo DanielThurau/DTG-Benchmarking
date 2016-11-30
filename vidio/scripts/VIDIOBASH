@@ -65,7 +65,7 @@ done < <(/opt/vidio -D -f fa4k -q $best -v -n 2000 /mnt/!!<Target Dir>!!/vidio/3
 
 while read -r line
 do
-        echo "$line">>!!<Working Dir>!!/resources/test.txttest.txt
+        echo "$line">>!!<Working Dir>!!/resources/test.txt
 done < <(/opt/vidio -D -f fa4k -q $best -v -n 2000 /mnt/!!<Target Dir>!!/vidio/3/ /mnt/!!<Target Dir>!!/vidio/4/ /mnt/!!<Target Dir>!!/vidio/5/ /mnt/!!<Target Dir>!!/vidio/6/)
 
 
