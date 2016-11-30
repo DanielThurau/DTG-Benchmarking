@@ -2,11 +2,12 @@
 # Master shell script for vidio
 
 # Removes any old file for Depthteseter script, then creates a new one
-rm DepthTest.txt
-touch DepthTest.txt
+
 
 for i in {0..15}; do sudo mkdir -p /mnt/!!<Target Dir>!!/vidio/$i/; done
 
+sudo rm !!<Working Dir>!!/resources/DepthTest.txt
+sudo touch !!<Working Dir>!!/resources/DepthTest.txt
 # Runs the Depth tester script that outputs to test.txt
 sudo !!<Working Dir>!!/scripts/VIDIODEPTHTESTER
 
