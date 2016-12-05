@@ -1,0 +1,30 @@
+#!/bin/bash
+echo "Desired Directory: "
+read input_variable
+repo=$input_variable
+
+echo "Size of files in Bytes: "
+read input_variable
+fileSize=$input_variable
+
+echo "Number of files: "
+read input_variable
+numFiles=$input_variable
+
+
+
+workingDir="$(pwd)";
+
+echo $repo
+echo $fileSize
+echo $workingDir
+echo $numFiles
+
+
+# working Dir
+# Targer dir
+# Num files
+# Size
+
+sudo python $workingDir/findAndReplace.py $workingDir/fileCreate $workingDir/fileCreate $workingDir $repo $numFiles $fileSize
+
