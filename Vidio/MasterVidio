@@ -33,7 +33,7 @@ sudo rm !!<Working Dir>!!/results/vidioMetaResults.txt
 sudo touch !!<Working Dir>!!/results/vidioMetaResults.txt
 
 sudo python !!<Working Dir>!!/scripts/vidioResultsParser.py !!<Working Dir>!!/resources/test.txt !!<Working Dir>!!/results/vidioResults.txt
-sudo python !!<Working Dir>!!/scripts/vidioMeta Parser.py !!<Working Dir>!!/resources/test.txt !!<Working Dir>!!/results/vidioMetaResults.txt
+sudo python !!<Working Dir>!!/scripts/vidioMetaParser.py !!<Working Dir>!!/resources/test.txt !!<Working Dir>!!/results/vidioMetaResults.txt
 sudo cat !!<Working Dir>!!/results/vidioResults.txt
 sudo cat !!<Working Dir>!!/results/vidioMetaResults.txt
 

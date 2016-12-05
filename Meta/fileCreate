@@ -3,7 +3,7 @@
 
 rm Avgtimes.txt
 touch Avgtimes.txt
-
+mkdir ~/testfiles
 
 total1=$(date +'%s * 1000 + %-N / 1000000');
 
@@ -13,7 +13,7 @@ do
 echo $i
 
 (date +'%s * 1000 + %-N / 1000000') >> Avgtimes.txt
-dd < /dev/zero bs=64000 count=1 > /root/testfiles/testfile$1
+dd < /dev/zero bs=64000 count=1 > ~/testfiles/testfile$1
 
 (date +'%s * 1000 + %-N / 1000000') >> Avgtimes.txt
 
