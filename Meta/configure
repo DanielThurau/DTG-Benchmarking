@@ -26,5 +26,8 @@ echo $numFiles
 # Num files
 # Size
 
-sudo python $workingDir/findAndReplace.py $workingDir/fileCreate $workingDir/fileCreate $workingDir $repo $numFiles $fileSize
+sudo rm -f  $workingDir/scripts/fileCreate
 
+sudo python $workingDir/scripts/findAndReplace.py $workingDir/resources/blanks/fileCreate $workingDir/scripts/fileCreate $workingDir $repo $numFiles $fileSize
+
+sudo chmod 777 $workingDir/scripts/fileCreate

@@ -6,12 +6,12 @@
 # Overall time is printed at the end
 
 # Deletes the old Values
-rm !!<Working Dir>!!/Avgtimes.txt
-touch !!<Working Dir>!!/Avgtimes.txt
+sudo rm !!<Working Dir>!!/resources/Avgtimes.txt
+sudo touch !!<Working Dir>!!/resources/Avgtimes.txt
 
 
-sudo rm !!<Target Dir>!!/Meta/testfiles 
-sudo mkdir !!<Target Dir>!!/Meta/testfiles
+sudo rm -rf /mnt/!!<Target Dir>!!/Meta/testfiles 
+sudo mkdir -p /mnt/!!<Target Dir>!!/Meta/testfiles
 
 # Records start of file Creation
 total1=$(($(date +'%s * 1000 + %-N')/ 1000000));
@@ -20,13 +20,13 @@ total1=$(($(date +'%s * 1000 + %-N')/ 1000000));
 for i in {1..!!<Number Files>!!};
 do
 
-echo $(($(date +'%s * 1000 + %-N')/ 1000000)) >> Avgtimes.txt
+sudo echo $(($(date +'%s * 1000 + %-N')/ 1000000)) | sudo tee -a  !!<Working Dir>!!/resources/Avgtimes.txt
 
 # Creates 1 file size !!<Size>!!
-dd < /dev/zero bs=!!<Size>!! count=1 > !!<Target Dir>!!/testfiles/testfile$i
+dd < /dev/zero bs=!!<Size>!! count=1 | sudo tee -a /mnt/!!<Target Dir>!!/Meta/testfiles/testfile$i
 
 
-echo $(($(date +'%s * 1000 + %-N')/ 1000000)) >> Avgtimes.txt
+sudo echo $(($(date +'%s * 1000 + %-N')/ 1000000)) | sudo tee -a  !!<Working Dir>!!/resources/Avgtimes.txt
 
 
 done
