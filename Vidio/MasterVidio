@@ -19,7 +19,7 @@ sudo touch !!<Working Dir>!!/resources/BestDepth.txt
 sudo python !!<Working Dir>!!/scripts/BestQueueDepth.py !!<Working Dir>!!/resources/DepthTest.txt !!<Working Dir>!!/resources/BestDepth.txt
 
 # Add to history to see what its like from this point on I
-sudo !!<Working Dir>!!/resources/BestDepth.txt >> !!<Working Dir>!!/resources/history/bestHistory.txt
+#sudo !!<Working Dir>!!/resources/BestDepth.txt >> !!<Working Dir>!!/resources/history/bestHistory.txt
 
 #Runs script with best.txt result as macro
 sudo !!<Working Dir>!!/scripts/VIDIOBASH

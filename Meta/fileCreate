@@ -1,0 +1,25 @@
+#!/bin/bash
+
+
+rm Avgtimes.txt
+touch Avgtimes.txt
+
+
+total1=$(date +'%s * 1000 + %-N / 1000000');
+
+for i in {1..15};
+do
+
+echo $i
+
+(date +'%s * 1000 + %-N / 1000000') >> Avgtimes.txt
+dd < /dev/zero bs=64000 count=1 > /root/testfiles/testfile$1
+
+(date +'%s * 1000 + %-N / 1000000') >> Avgtimes.txt
+
+done
+
+total2=$(date +'%s * 1000 + %-N / 1000000');
+
+echo "$(($total2-$total1))"
+                      
