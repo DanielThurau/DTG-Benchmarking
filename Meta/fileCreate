@@ -6,12 +6,12 @@
 # Overall time is printed at the end
 
 # Deletes the old Values
-rm !!<Working Dir>!!/Meta/Avgtimes.txt
-touch !!<Working Dir>!!/Meta/Avgtimes.txt
+rm !!<Working Dir>!!/Avgtimes.txt
+touch !!<Working Dir>!!/Avgtimes.txt
 
 
-rm !!<Target Dir>!!/testfiles 
-mkdir !!<Target Dir>!!/testfiles
+rm !!<Target Dir>!!/Meta/testfiles 
+mkdir -p !!<Target Dir>!!/Meta/testfiles
 
 # Records start of file Creation
 total1=$(($(date +'%s * 1000 + %-N')/ 1000000));
