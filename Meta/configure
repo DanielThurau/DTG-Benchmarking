@@ -27,7 +27,12 @@ echo $numFiles
 # Size
 
 sudo rm -f  $workingDir/scripts/fileCreate
+sudo rm -f  $workingDir/scripts/countFiles
+
 
 sudo python $workingDir/scripts/findAndReplace.py $workingDir/resources/blanks/fileCreate $workingDir/scripts/fileCreate $workingDir $repo $numFiles $fileSize
+sudo python $workingDir/scripts/findAndReplace.py $workingDir/resources/blanks/countFiles $workingDir/scripts/countFiles $workingDir $repo $numFiles $fileSize
+
 
 sudo chmod 777 $workingDir/scripts/fileCreate
+sudo chmod 777 $workingDir/scripts/createFiles
