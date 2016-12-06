@@ -39,6 +39,8 @@ done
 
 total2=$(($(date +'%s * 1000 + %-N')/ 1000000));
 echo "total time: $(($total2-$total1)) milliseconds"
+echo "total time: $(($total2-$total1)) milliseconds" >> !!<Working Dir>!!/resources/results.txt
 
-sudo python !!<Working Dir>!!/scripts/avgResults.py !!<Working Dir>!!/resources/Avgtimes.txt
+
+sudo python !!<Working Dir>!!/scripts/avgResults.py !!<Working Dir>!!/resources/Avgtimes.txt >> !!<Working Dir>!!/resources/results.txt
 

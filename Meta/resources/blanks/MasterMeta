@@ -1,0 +1,10 @@
+#!/bin/bash
+
+sudo rm !!<Working Dir>!!/resources/results.txt
+sudo touch !!<Working Dir>!!/resources/results.txt
+
+!!<Working Dir>!!/scripts/fileCreate 
+!!<Working Dir>!!/scripts/fileList | sudo tee -a !!<Working Dir>!!/resources/results.txt
+!!<Working Dir>!!/scripts/fileCount |  sudo tee -a !!<Working Dir>!!/resources/results.txt
+!!<Working Dir>!!/scripts/fileDelete |  sudo tee -a !!<Working Dir>!!/resources/results.txt
+
