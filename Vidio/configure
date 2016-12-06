@@ -12,6 +12,12 @@ echo $repo
 echo $workingDir
 
 
+sudo rm $workingDir/MasterVidio
+sudo rm $workingDir/scripts/VIDIOBASH
+sudo rm $workingDir/scripts/VIDIOMETA
+sudo rm $workingDir/scripts/VIDIODEPTHTESTER
+
+
 sudo python scripts/findAndReplace.py $workingDir/resources/blanks/VIDIOBASH $workingDir/scripts/VIDIOBASH $workingDir $repo
 sudo python scripts/findAndReplace.py $workingDir/resources/blanks/VIDIODEPTHTESTER $workingDir/scripts/VIDIODEPTHTESTER $workingDir $repo
 sudo python scripts/findAndReplace.py $workingDir/resources/blanks/VIDIOMETA $workingDir/scripts/VIDIOMETA $workingDir $repo
