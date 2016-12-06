@@ -28,11 +28,14 @@ echo $numFiles
 
 sudo rm -f  $workingDir/scripts/fileCreate
 sudo rm -f  $workingDir/scripts/fileCount
-
+sudo rm -f  $workingDir/scripts/fileList
 
 sudo python $workingDir/scripts/findAndReplace.py $workingDir/resources/blanks/fileCreate $workingDir/scripts/fileCreate $workingDir $repo $numFiles $fileSize
 sudo python $workingDir/scripts/findAndReplace.py $workingDir/resources/blanks/fileCount $workingDir/scripts/fileCount $workingDir $repo $numFiles $fileSize
+udo python $workingDir/scripts/findAndReplace.py $workingDir/resources/blanks/fileList $workingDir/scripts/fileList $workingDir $repo $numFiles $fileSize
 
 
 sudo chmod 777 $workingDir/scripts/fileCreate
 sudo chmod 777 $workingDir/scripts/fileCount
+sudo chmod 777 $workingDir/scripts/fileList
+

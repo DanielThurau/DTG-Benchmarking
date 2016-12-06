@@ -1,0 +1,10 @@
+#!bin/bash/
+
+total1=$(($(date +'%s * 1000 + %-N')/ 1000000));
+
+files=$(sudo ls /mnt/!!<Target Dir>!!/Meta/testfiles/)
+
+total2=$(($(date +'%s * 1000 + %-N')/ 1000000));
+
+echo "It took $(($total2-$total1)) milliseconds to find $files files"
+
