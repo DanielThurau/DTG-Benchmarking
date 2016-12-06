@@ -2,7 +2,7 @@
 
 total1=$(($(date +'%s * 1000 + %-N')/ 1000000));
 
-(sudo du-sh /mnt/!!<Target Dir>!!/Meta/testfiles/) > /dev/null
+(sudo du -sh /mnt/!!<Target Dir>!!/Meta/testfiles/) > /dev/null
 
 total2=$(($(date +'%s * 1000 + %-N')/ 1000000));
 
