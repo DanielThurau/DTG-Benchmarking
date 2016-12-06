@@ -9,6 +9,11 @@
 sudo rm !!<Working Dir>!!/resources/Avgtimes.txt
 sudo touch !!<Working Dir>!!/resources/Avgtimes.txt
 
+two=(2)
+n=$(($Size * $two))
+
+echo n | sudo tee -a  !!<Working Dir>!!/resources/Avgtimes.txt
+
 
 sudo rm -rf /mnt/!!<Target Dir>!!/Meta/testfiles 
 sudo mkdir -p /mnt/!!<Target Dir>!!/Meta/testfiles
