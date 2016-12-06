@@ -9,10 +9,11 @@
 sudo rm !!<Working Dir>!!/resources/Avgtimes.txt
 sudo touch !!<Working Dir>!!/resources/Avgtimes.txt
 
+sudo chmod 777 !!<Working Dir>!!/resources/Avgtimes.txt
 two=(2)
-n=$(($Size * $two))
+n=$((!!<Number Files>!! * $two))
 
-echo n | sudo tee -a  !!<Working Dir>!!/resources/Avgtimes.txt
+echo $n | sudo tee -a  !!<Working Dir>!!/resources/Avgtimes.txt
 
 
 sudo rm -rf /mnt/!!<Target Dir>!!/Meta/testfiles 
@@ -37,12 +38,7 @@ sudo echo $(($(date +'%s * 1000 + %-N')/ 1000000)) | sudo tee -a  !!<Working Dir
 done
 
 total2=$(($(date +'%s * 1000 + %-N')/ 1000000));
+echo "total time: $(($total2-$total1)) milliseconds"
 
-echo " "
-echo " "
-echo "total time: "
-
-echo "$(($total2-$total1)) milliseconds"
-
-
+sudo python !!<Working Dir>!!/scripts/avgResults.py !!<Working Dir>!!/resources/Avgtimes.txt
 
