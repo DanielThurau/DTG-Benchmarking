@@ -12,14 +12,12 @@ echo $repo
 echo $workingDir
 
 
+sudo python scripts/findAndReplace.py $workingDir/resources/blanks/VIDIOBASH $workingDir/scripts/VIDIOBASH $workingDir $repo
+sudo python scripts/findAndReplace.py $workingDir/resources/blanks/VIDIODEPTHTESTER $workingDir/scripts/VIDIODEPTHTESTER $workingDir $repo
+sudo python scripts/findAndReplace.py $workingDir/resources/blanks/VIDIOMETA $workingDir/scripts/VIDIOMETA $workingDir $repo
+sudo python scripts/findAndReplace.py $workingDir/resources/blanks/MasterVidio $workingDir/MasterVidio $workingDir $repo
 
-
-
-
-
-sudo python scripts/findAndReplace.py $workingDir/scripts/BestQueueDepth.py $workingDir/scripts/BestQueueDepth.py  $workingDir $repo
-sudo python scripts/findAndReplace.py $workingDir/scripts/VIDIOBASH $workingDir/scripts/VIDIOBASH $workingDir $repo
-sudo python scripts/findAndReplace.py $workingDir/scripts/VIDIODEPTHTESTER $workingDir/scripts/VIDIODEPTHTESTER $workingDir $repo
-sudo python scripts/findAndReplace.py $workingDir/scripts/vidioMetaParser.py $workingDir/scripts/vidioMetaParser.py $workingDir $repo
-sudo python scripts/findAndReplace.py $workingDir/scripts/vidioResultsParser.py $workingDir/scripts/vidioResultsParser.py $workingDir $repo
-sudo python scripts/findAndReplace.py $workingDir/MasterVidio $workingDir/MasterVidio $workingDir $repo
+sudo chmod 777 $workingDir/scripts/VIDIOBASH
+sudo chmod 777 $workingDir/scripts/VIDIODEPTHTESTER
+sudo chmod 777 $workingDir/scripts/VIDIOMETA
+sudo chmod 777 $workingDir/MasterVidio
