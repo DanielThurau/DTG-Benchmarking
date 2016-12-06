@@ -2,7 +2,7 @@
 
 total1=$(($(date +'%s * 1000 + %-N')/ 1000000));
 
-files=$(sudo find /mnt/!!<Target Dir>!!/Meta/testfiles -type f | wc -l)
+files=$(sudo find /mnt/!!<Target Dir>!!/Meta/testfiles/ -type f | wc -l)
 
 total2=$(($(date +'%s * 1000 + %-N')/ 1000000));
 
