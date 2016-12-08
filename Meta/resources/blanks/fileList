@@ -1,10 +1,14 @@
 #!/bin/bash
 
+# Records epoch time in milliseconds
 total1=$(($(date +'%s * 1000 + %-N')/ 1000000));
 
+# Lists the contents of the directory
 (sudo ls /mnt/!!<Target Dir>!!/Meta/testfiles/) > /dev/null
 
+# Records epoch times in milliseconds
 total2=$(($(date +'%s * 1000 + %-N')/ 1000000));
 
+# Prints the result
 echo "It took $(($total2-$total1)) milliseconds to list !!<Number Files>!! files"
 

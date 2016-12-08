@@ -1,10 +1,14 @@
 #!/bin/bash
 
+# Records epoch time in milliseconds
 total1=$(($(date +'%s * 1000 + %-N')/ 1000000));
 
+# Removes the test directory
 sudo rm -rf /mnt/!!<Target Dir>!!/Meta/testfiles/
 
+# Records epoch time in miliseconds
 total2=$(($(date +'%s * 1000 + %-N')/ 1000000));
 
+# prints results
 echo "It took $(($total2-$total1)) milliseconds to remove !!<Number Files>!! files"
 

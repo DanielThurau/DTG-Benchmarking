@@ -1,10 +1,14 @@
 #!/bin/bash
 
+# Captures epoch time in milliseconds
 total1=$(($(date +'%s * 1000 + %-N')/ 1000000));
 
+# Finds files 
 (sudo find /mnt/!!<Target Dir>!!/Meta/testfiles/ -type f | wc -l) > /dev/null
 
+# Captures epoch time in milliseconds
 total2=$(($(date +'%s * 1000 + %-N')/ 1000000));
 
+# Prints time
 echo "It took $(($total2-$total1)) milliseconds to find !!<Number Files>!! files"
 
