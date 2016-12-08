@@ -17,7 +17,7 @@ sudo touch !!<Working Dir>!!/resources/BestDepth.txt
 
 # runs python parser to get best Depth tester
 sudo python !!<Working Dir>!!/scripts/BestQueueDepth.py !!<Working Dir>!!/resources/DepthTest.txt !!<Working Dir>!!/resources/BestDepth.txt
-
+sudo python !!<Working Dir>!!/scripts/BestFileSize.py !!<Working Dir>!!/resources/SizeTest.txt !!<Working Dir>!!/resources/BestSize.txt
 # Add to history to see what its like from this point on I
 #sudo !!<Working Dir>!!/resources/BestDepth.txt >> !!<Working Dir>!!/resources/history/bestHistory.txt
 
