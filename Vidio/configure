@@ -1,30 +1,30 @@
 #!/bin/bash
 
-echo "Desired Directory: "
-# Reads input and sets it to target Directory
-read input_variable
-targetDir=$input_variable
 
-# Sets working Dir to your current DTG-Benchmarking/Vidio
+
+echo "Desired Directory: "
+read input_variable
+repo=$input_variable
+
 workingDir="$(pwd)";
 
-# Removes old files w/ previous config
+echo $repo
+echo $workingDir
+
+
 sudo rm $workingDir/MasterVidio
 sudo rm $workingDir/scripts/VIDIOBASH.sh
 sudo rm $workingDir/scripts/VIDIOMETA.sh
 sudo rm $workingDir/scripts/VIDIODEPTHTESTER.sh
-sudo rm $workingDir/scripts/VIDIOFILESIZE.sh
+sudo rm $workingDir/scripts/VIDIOSIZETESTER.sh
 
-# Creates the new scripts with the correct variables
-sudo python scripts/findAndReplace.py $workingDir/resources/blanks/VIDIOBASH.sh $workingDir/scripts/VIDIOBASH.sh $workingDir $targetDir
-sudo python scripts/findAndReplace.py $workingDir/resources/blanks/VIDIODEPTHTESTER.sh $workingDir/scripts/VIDIODEPTHTESTER.sh $workingDir $targetDir
-sudo python scripts/findAndReplace.py $workingDir/resources/blanks/VIDIOMETA.sh $workingDir/scripts/VIDIOMETA.sh $workingDir $targetDir
-sudo python scripts/findAndReplace.py $workingDir/resources/blanks/MasterVidio $workingDir/MasterVidio $workingDir $targetDir
-sudo python scripts/findAndReplace.py $workingDir/resources/blanks/VIDIOFILESIZE.sh $workingDir/scripts/VIDIOFILESIZE.sh $workingDir $targetDir
+sudo python scripts/findAndReplace.py $workingDir/resources/blanks/VIDIOBASH.sh $workingDir/scripts/VIDIOBASH.sh $workingDir $repo
+sudo python scripts/findAndReplace.py $workingDir/resources/blanks/VIDIODEPTHTESTER.sh $workingDir/scripts/VIDIODEPTHTESTER.sh $workingDir $repo
+sudo python scripts/findAndReplace.py $workingDir/resources/blanks/VIDIOSIZETESTER.sh $workingDir/scripts/VIDIOSIZETESTER.sh $workingDir $repo
+sudo python scripts/findAndReplace.py $workingDir/resources/blanks/VIDIOMETA.sh $workingDir/scripts/VIDIOMETA.sh $workingDir $repo
+sudo python scripts/findAndReplace.py $workingDir/resources/blanks/MasterVidio $workingDir/MasterVidio $workingDir $repo
 
-# Fixes Permisssions
 sudo chmod 777 $workingDir/scripts/VIDIOBASH.sh
 sudo chmod 777 $workingDir/scripts/VIDIODEPTHTESTER.sh
 sudo chmod 777 $workingDir/scripts/VIDIOMETA.sh
-sudo chmod 777 $workingDir/scripts/VIDIOFILESIZE.sh
 sudo chmod 777 $workingDir/MasterVidio

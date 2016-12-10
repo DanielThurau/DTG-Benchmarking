@@ -4,7 +4,7 @@
 echo "Starting Depth Testing"
 while read -r line
 do
-	 echo "$line">>!!<Working Dir>!!/resources/DepthTest.txt
+	echo "$line">>!!<Working Dir>!!/resources/DepthTest.txt
 done < <(/opt/vidio -D -f fa4k -q 4 -n 2000 /mnt/!!<Target Dir>!!/vidio/10/)
 
 while read -r line

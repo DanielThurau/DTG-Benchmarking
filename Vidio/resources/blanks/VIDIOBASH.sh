@@ -1,92 +1,106 @@
 #!/bin/bash
-
-# Clears and re-creates file that data is written too
 rm !!<Working Dir>!!/resources/test.txt
 touch !!<Working Dir>!!/resources/test.txt
 
-# Results of the DepthTester is stored in this file
-# Parse for Best Depth to run at
+
 best="$(cat !!<Working Dir>!!/resources/BestDepth.txt)"
-# Results of the Frame size is stored in this file
-# Parse for Best Frame size to run at
 frame="$(cat !!<Working Dir>!!/resources/BestSize.txt)"
 
-echo "Tests use $best Queue Depth and $frame size frames"
-echo "Tests use $best Queue Depth and $frame size frames" |  sudo tee -a !!<Working Dir>!!/results/vidioResults.txt 
+#-------------------------------------------------------------------------
+#Single stream writes
+echo "Starting single stream writes"
+while read -r line
+do
+	echo "$line">>!!<Working Dir>!!/resources/test.txt
+done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 /mnt/!!<Target Dir>!!/vidio/0/)
+
+while read -r line
+do
+        echo "$line">>!!<Working Dir>!!/resources/test.txt
+done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 /mnt/!!<Target Dir>!!/vidio/1/)
+
+while read -r line
+do
+        echo "$line">>!!<Working Dir>!!/resources/test.txt
+done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 /mnt/!!<Target Dir>!!/vidio/2/)
+
+echo "Finished Single Stream writes"
+#-------------------------------------------------------------------------
+# flush
+#echo 3 > /proc/sys/vm/drop_caches; sleep 2
 
 
-# Single Stream Bench Marking
-benchSingleStream() {
-	
-	# Arg[0] is either -w or -r (write or read respectively)
-	IO=$1
-	
-	echo "Staring a single stream $1 test"
+#Single stream reads
 
-	# Three tests are outputted to test.txt
-	for i in range {0..2}
-	do
-		# Run a single test and output data to test.txt
-		while read -r line
-		do
-        		echo "$line">>!!<Working Dir>!!/resources/test.txt
-		done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 $1 /mnt/!!<Target Dir>!!/vidio/$i/)
-	done
+echo "Starting single stream reads"
 
-	echo "Finished a single Stream test"
-	
-	# Flush cache 
-	# Taken from Pierre Evenou
-	echo 3 > /proc/sys/vm/drop_caches; sleep 2;
+while read -r line
+do
+        echo "$line">>!!<Working Dir>!!/resources/test.txt
+done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 -r /mnt/!!<Target Dir>!!/vidio/0/)
 
-}
+while read -r line
+do
+        echo "$line">>!!<Working Dir>!!/resources/test.txt
+done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 -r /mnt/!!<Target Dir>!!/vidio/1/)
 
-# Calls
-benchSingleStream -w;
-benchSingleStream -r;
+while read -r line
+do
+        echo "$line">>!!<Working Dir>!!/resources/test.txt
+done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 -r /mnt/!!<Target Dir>!!/vidio/2/)
+
+echo "Finishing single stream reads"
+
+#-------------------------------------------------------------------------
+# Four stream writes
+
+echo "Starting four stream writes"
 
 
-# Four Stream Bench Marking
-benchFourStream (){
-	IO=$1
-	
-	echo "Starting a four stream $1 test"
+while read -r line
+do
+        echo "$line">>!!<Working Dir>!!/resources/test.txt
+done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 /mnt/!!<Target Dir>!!/vidio/3/ /mnt/!!<Target Dir>!!/vidio/4/ /mnt/!!<Target Dir>!!/vidio/5/ /mnt/!!<Target Dir>!!/vidio/6/)
 
-	for i in range{0..2};
-	do
-		while read -r line
-		do
-        		echo "$line">>!!<Working Dir>!!/resources/test.txt
-		done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 $1 /mnt/!!<Target Dir>!!/vidio/3/ /mnt/!!<Target Dir>!!/vidio/4/ /mnt/!!<Target Dir>!!/vidio/5/ /mnt/!!<Target Dir>!!/vidio/6/)
+while read -r line
+do
+        echo "$line">>!!<Working Dir>!!/resources/test.txt
+done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 /mnt/!!<Target Dir>!!/vidio/3/ /mnt/!!<Target Dir>!!/vidio/4/ /mnt/!!<Target Dir>!!/vidio/5/ /mnt/!!<Target Dir>!!/vidio/6/)
 
-	done;
-	
-	echo 3 > /proc/sys/vm/drop_caches; sleep 2
+while read -r line
+do
+        echo "$line">>!!<Working Dir>!!/resources/test.txt
+done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 /mnt/!!<Target Dir>!!/vidio/3/ /mnt/!!<Target Dir>!!/vidio/4/ /mnt/!!<Target Dir>!!/vidio/5/ /mnt/!!<Target Dir>!!/vidio/6/)
 
 
-}
+echo "Finishing four stream writes"
 
+#--------------------------------------------------------------------------
 
-benchFourMount (){
-        IO=$1
+# flush
+#echo 3 > /proc/sys/vm/drop_caches; sleep 2
 
-        echo "Starting a four stream $1 test"
+# Four stream reads
 
-        for i in range{0..2};
-        do
-                while read -r line
-                do
-                        echo "$line">>!!<Working Dir>!!/resources/test.txt
-                done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 $1 /mnt/!!<Target Dir>!!A/vidio/3/ /mnt/!!<Target Dir>!!B/vidio/4/ /mnt/!!<Target Dir>!!C/vidio/5/ /mnt/!!<Target Dir>!!D/vidio/6/)
+echo "Starting four stream reads"
 
-        done;
+while read -r line
+do
+        echo "$line">>!!<Working Dir>!!/resources/test.txt
+done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 -r /mnt/!!<Target Dir>!!/vidio/3/ /mnt/!!<Target Dir>!!/vidio/4/ /mnt/!!<Target Dir>!!/vidio/5/ /mnt/!!<Target Dir>!!/vidio/6/)
 
-        echo 3 > /proc/sys/vm/drop_caches; sleep 2
+while read -r line
+do
+        echo "$line">>!!<Working Dir>!!/resources/test.txt
+done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 -r /mnt/!!<Target Dir>!!/vidio/3/ /mnt/!!<Target Dir>!!/vidio/4/ /mnt/!!<Target Dir>!!/vidio/5/ /mnt/!!<Target Dir>!!/vidio/6/)
 
+while read -r line
+do
+        echo "$line">>!!<Working Dir>!!/resources/test.txt
+done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 -r /mnt/!!<Target Dir>!!/vidio/3/ /mnt/!!<Target Dir>!!/vidio/4/ /mnt/!!<Target Dir>!!/vidio/5/ /mnt/!!<Target Dir>!!/vidio/6/)
 
-}
+echo "Finished four stream reads"
 
-#benchFourMount -w
-#benchFourMount -r
-
+#------------------------------------------------------------------------
+#Clean up and print results
 

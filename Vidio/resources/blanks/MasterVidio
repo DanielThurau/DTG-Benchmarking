@@ -1,25 +1,16 @@
 #!/bin/bash
 # Master shell script for vidio
 
+# Removes any old file for Depthteseter script, then creates a new one
 
 
-for i in {0..15}; 
-do 
-	sudo mkdir -p /mnt/!!<Target Dir>!!/vidio/$i/; 
-	#sudo mkdir -p /mnt/!!<Target Dir>!!/vidio/$i/;
-	#sudo mkdir -p /mnt/!!<Target Dir>!!/vidio/$i/;
-	#sudo mkdir -p /mnt/!!<Target Dir>!!/vidio/$i/;
+for i in {0..15}; do sudo mkdir -p /mnt/!!<Target Dir>!!/vidio/$i/; done
 
-done
-
-#--------------------------------------------------------------------------------
-# Sets up and executes DepthTesting
-
-# Create DepthTest.txt
+#------------------------------------------------------------------------------------------------------------------------------------------
+# Depth Testing
 sudo rm !!<Working Dir>!!/resources/DepthTest.txt
 sudo touch !!<Working Dir>!!/resources/DepthTest.txt
-
-# Runs DepthTest
+# Runs the Depth tester script that outputs to test.txt
 sudo !!<Working Dir>!!/scripts/VIDIODEPTHTESTER.sh
 
 # Removes old best.txt and creates new empty one
@@ -28,29 +19,23 @@ sudo touch !!<Working Dir>!!/resources/BestDepth.txt
 
 # runs python parser to get best Depth tester
 sudo python !!<Working Dir>!!/scripts/BestQueueDepth.py !!<Working Dir>!!/resources/DepthTest.txt !!<Working Dir>!!/resources/BestDepth.txt
-#--------------------------------------------------------------------------------
-# Sets up ad executes Frame Size Testing
 
-# Creates SizeTest.txt
+
+#--------------------------------------------------------------------------------------------------------------------------------------------
+# Size testing 
 sudo rm !!<Working Dir>!!/resources/SizeTest.txt
 sudo touch !!<Working Dir>!!/resources/SizeTest.txt
 
-# Runs VIDIOFILESIZE
-sudo !!<Working Dir>!!/scripts/VIDIOFILESIZE.sh
+sudo !!<Working>!!/scripts/VIDIOSIZETESTER.sh
 
-# Removes old BestSize.txt and creates new empty one
 sudo rm !!<Working Dir>!!/resources/BestSize.txt
-sudo touch !!<Working Dir>!!/resources/BestSize.txt
+sudo touch !!<Working>!!/resources/BestSize.txt
 
-# Runs python parser to get best file size
 sudo python !!<Working Dir>!!/scripts/BestFileSize.py !!<Working Dir>!!/resources/SizeTest.txt !!<Working Dir>!!/resources/BestSize.txt
-#---------------------------------------------------------------------------------
-
-# Add to history to see what its like from this point on I
-echo !!<Working Dir>!!/resources/BestDepth.txt | sudo tee -a !!<Working Dir>!!/resources/history/bestHistory.txt
+#-------------------------------------------------------------------------------------------------------------------------------------------
 
 #Runs script with best.txt result as macro
-sudo !!<Working Dir>!!/scripts/VIDIOBASH
+sudo !!<Working Dir>!!/scripts/VIDIOBASH.sh
 
 # makes a new file for final results of big test
 sudo cp !!<Working Dir>!!/results/vidioResults.txt !!<Working Dir>!!/results/backupResults.txt

@@ -1,13 +1,9 @@
 #!/bin/bash
 
-# Records time in milliseconds
 total1=$(($(date +'%s * 1000 + %-N')/ 1000000));
 
-# Ouputs the size of the directory
 (sudo du -sh /mnt/!!<Target Dir>!!/Meta/testfiles/) > /dev/null
 
-# Records epoch time in milliseconds
 total2=$(($(date +'%s * 1000 + %-N')/ 1000000));
 
-# Prints out results
 echo "It took $(($total2-$total1)) milliseconds to calculate !!<Number Files>!! files"
