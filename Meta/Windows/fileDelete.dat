@@ -1,0 +1,5 @@
+echo %time%
+
+rmdir _sharedFolder_\Meta\testfiles\
+
+echo %time%
