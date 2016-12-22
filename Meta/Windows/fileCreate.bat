@@ -1,3 +1,4 @@
+@echo off
 mkdir !!<Shared Folder>!!:\Meta\testfiles\dir1\dir5;
 mkdir !!<Shared Folder>!!:\Meta\testfiles\dir2\dir6;
 mkdir !!<Shared Folder>!!:\Meta\testfiles\dir3\dir7;
