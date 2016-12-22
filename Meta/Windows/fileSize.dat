@@ -1,5 +1,0 @@
-echo %time%
-
-powershell -noprofile -command "ls -r|measure -s Length"
-
-echo %time%

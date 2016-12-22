@@ -1,7 +1,7 @@
 #!/bin/bash
 #-------------------------------------------------------------------------
 #Single stream writes
-echo "Starting Depth Testing"
+echo "Starting Size Testing"
 while read -r line
 do
         echo "$line">>!!<Working Dir>!!/resources/SizeTest.txt
