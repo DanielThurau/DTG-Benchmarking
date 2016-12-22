@@ -1,7 +1,6 @@
 echo %time%
 
-for /f %%A in ('dir ^| find "File(s)"') do set cnt=%%A
-echo File count = %cnt%
+dir /s !!<Shared Folder>\Meta\testfiles\ | findstr /i testfile
 
 echo %time%
 
