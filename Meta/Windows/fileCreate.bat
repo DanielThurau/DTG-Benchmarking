@@ -4,7 +4,7 @@ mkdir !!<Shared Folder>!!:\Meta\testfiles\dir2\dir6;
 mkdir !!<Shared Folder>!!:\Meta\testfiles\dir3\dir7;
 mkdir !!<Shared Folder>!!:\Meta\testfiles\dir4\dir8;
 
-SET tota1=%time%
+SET total1=%time%
 
 start \resources\fileMake1.bat /c
 start \resources\fileMake2.bat /c

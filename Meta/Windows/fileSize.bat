@@ -1,4 +1,5 @@
-SET tota1=%time%
+@echo off
+SET total1=%time%
 
 du64.exe -v !!<Share folder>!!:\Meta\testfiles\
 
