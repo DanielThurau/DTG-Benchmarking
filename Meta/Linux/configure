@@ -1,17 +1,19 @@
 #!/bin/bash
-echo "Desired Directory: "
-read input_variable
-repo=$input_variable
+# echo "Desired Directory: "
+# read input_variable
+# repo=$input_variable
 
-echo "Size of files in Bytes: "
-read input_variable
-fileSize=$input_variable
+# echo "Size of files in Bytes: "
+# read input_variable
+# fileSize=$input_variable
 
-echo "Number of files: "
-read input_variable
-numFiles=$input_variable
+# echo "Number of files: "
+# read input_variable
+# numFiles=$input_variable
 
-
+repo=$1
+fileSize=$2
+numFiles=$3
 
 workingDir="$(pwd)";
 

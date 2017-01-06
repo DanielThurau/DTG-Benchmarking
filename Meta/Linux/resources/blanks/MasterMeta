@@ -2,7 +2,7 @@
 
 sudo rm !!<Working Dir>!!/resources/results.txt
 sudo touch !!<Working Dir>!!/resources/results.txt
-chmod 777 !!<Working Dir>!!/resources/results.txt
+sudo chmod 777 !!<Working Dir>!!/resources/results.txt
 
 
 
