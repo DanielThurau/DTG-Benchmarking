@@ -32,7 +32,9 @@ sudo rm -f  $workingDir/scripts/fileList
 sudo rm -f  $workingDir/scripts/fileDelete
 sudo rm -f  $workingDir/scripts/fileSize
 sudo rm -f  $workingDir/MasterMeta
+sudo rm -f  $workingDir/fileInit
 
+cp $workingDir/resources/blanks/fileInit $workingDir/scripts/fileInit
 
 sudo python $workingDir/scripts/findAndReplace.py $workingDir/resources/blanks/fileCreate $workingDir/scripts/fileCreate $workingDir $repo $numFiles $fileSize
 sudo python $workingDir/scripts/findAndReplace.py $workingDir/resources/blanks/fileCount $workingDir/scripts/fileCount $workingDir $repo $numFiles $fileSize

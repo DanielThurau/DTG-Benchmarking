@@ -1,0 +1,11 @@
+#!/bin/bash
+
+
+
+sudo echo $(($(date +'%s * 1000 + %-N')/ 1000000)) | sudo tee -a  $1/resources/Avgtimes.txt
+
+sudo dd if=/dev/zero of=$2  bs=$3  count=1 
+
+
+sudo echo $(($(date +'%s * 1000 + %-N')/ 1000000)) | sudo tee -a  $1/resources/Avgtimes.txt
+
