@@ -11,7 +11,7 @@ sudo touch !!<Working Dir>!!/resources/Avgtimes.txt
 
 sudo chmod 777 !!<Working Dir>!!/resources/Avgtimes.txt
 two=(2)
-n=$((!!<Number Files>!! * $two))
+n=$((!!<Number Files>!!))
 
 half=$((!!<Number Files>!! / $two));
 halfplus1=$(($half + 1))
@@ -33,7 +33,7 @@ sudo mkdir -p /mnt/!!<Target Dir>!!/Meta/testfiles/dir4/dir8
 total1=$(($(date +'%s * 1000 + %-N')/ 1000000));
 
 # Number of files 
-for ((i=1; i<=$half; i=i+8));
+for ((i=1; i<=$n; i=i+8));
 do
 
 sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir1/testfile$i !!<Size>!! &
@@ -44,6 +44,8 @@ sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/
 sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir2/dir6/testfile$(($i+5)) !!<Size>!! &
 sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir3/dir7/testfile$(($i+6)) !!<Size>!! &
 sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir4/dir8/testfile$(($i+7)) !!<Size>!! &
+PID=$!
+wait $PID
 
 
 
@@ -70,5 +72,5 @@ echo "total time: $(($total2-$total1)) milliseconds"
 echo "total time: $(($total2-$total1)) milliseconds" | sudo tee -a !!<Working Dir>!!/resources/results.txt
 
 
-sudo python !!<Working Dir>!!/scripts/avgResults.py !!<Working Dir>!!/resources/Avgtimes.txt | sudo tee -a !!<Working Dir>!!/resources/results.txt
+# sudo python !!<Working Dir>!!/scripts/avgResults.py !!<Working Dir>!!/resources/Avgtimes.txt | sudo tee -a !!<Working Dir>!!/resources/results.txt
 
