@@ -2,9 +2,12 @@
 
 
 
-echo "Desired Directory: "
-read input_variable
-repo=$input_variable
+#echo "Desired Directory: "
+#read input_variable
+#repo=$input_variable
+
+repo=$1
+
 
 workingDir="$(pwd)";
 
@@ -20,7 +23,7 @@ sudo rm $workingDir/scripts/VIDIOFILESIZE.sh
 
 sudo python scripts/findAndReplace.py $workingDir/resources/blanks/VIDIOBASH.sh $workingDir/scripts/VIDIOBASH.sh $workingDir $repo
 sudo python scripts/findAndReplace.py $workingDir/resources/blanks/VIDIODEPTHTESTER.sh $workingDir/scripts/VIDIODEPTHTESTER.sh $workingDir $repo
-sudo python scripts/findAndReplace.py $workingDir/resources/blanks/VIDIOFILESIE.sh $workingDir/scripts/VIDIOFILESIZE.sh $workingDir $repo
+sudo python scripts/findAndReplace.py $workingDir/resources/blanks/VIDIOFILESIZE.sh $workingDir/scripts/VIDIOFILESIZE.sh $workingDir $repo
 sudo python scripts/findAndReplace.py $workingDir/resources/blanks/VIDIOMETA.sh $workingDir/scripts/VIDIOMETA.sh $workingDir $repo
 sudo python scripts/findAndReplace.py $workingDir/resources/blanks/MasterVidio $workingDir/MasterVidio $workingDir $repo
 
