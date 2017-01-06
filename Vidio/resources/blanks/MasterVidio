@@ -49,3 +49,5 @@ sudo python !!<Working Dir>!!/scripts/vidioResultsParser.py !!<Working Dir>!!/re
 sudo python !!<Working Dir>!!/scripts/vidioMetaParser.py !!<Working Dir>!!/resources/test.txt !!<Working Dir>!!/results/vidioMetaResults.txt
 sudo cat !!<Working Dir>!!/results/vidioResults.txt
 sudo cat !!<Working Dir>!!/results/vidioMetaResults.txt
+
+/mnt/!!<Target Dir>!!/vidio
