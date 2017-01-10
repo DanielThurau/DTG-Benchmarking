@@ -68,7 +68,7 @@ while [ $(( $(date +%s) - 3600 )) -lt $START ]; do
 	sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir4/dir8/testfile$(($i+7)) !!<Size>!! &
 	PID=$!
 	wait $PID 
-	$i=$i+8
+	i=$(($i+8))
 done
 
 
