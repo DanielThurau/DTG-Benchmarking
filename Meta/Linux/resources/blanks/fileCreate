@@ -1,26 +1,49 @@
 #!/bin/bash
-# fileCreate measures the time it takes to create a 64kB file.
+# fileCreate measures the time it takes to create
+# 		variable size x variable number 
+# of files
 # Create is defined at: open file, write to file, close file.  
 # Each indivdual file time is written to Avgtimes.txt in form: 
 # Start time, finish time
 # Overall time is printed at the end
+# 4 modes.  Timed or not timed, concurrent or sequential.  Larger loads can damage
+# what you are testing.
 
-# Deletes the old Values
+# Deletes the files containing average times of file creation
 sudo rm !!<Working Dir>!!/resources/Avgtimes.txt
 sudo touch !!<Working Dir>!!/resources/Avgtimes.txt
-
 sudo chmod 777 !!<Working Dir>!!/resources/Avgtimes.txt
-two=(2)
+
+
 n=$((!!<Number Files>!!))
 
-half=$((!!<Number Files>!! / $two));
-halfplus1=$(($half + 1))
+# Sends number of files created there will be
+# echo $n | sudo tee -a  !!<Working Dir>!!/resources/Avgtimes.txt
+
+# Puts all args into a array
+DEPENDENCIES=( "$@" )
+
+selector=0 
+vers=0
+
+for i in {0..2}
+do
+if [ ${DEPENDENCIES[$i]} == "-t" ]; then
+	 time=${DEPENDENCIES[$(($i + 1))]}
+	 selector=1
+fi
 
 
-echo $half
-echo $halfplus1
+if [ ${DEPENDENCIES[$i]} == "-c" ]; then
+	 vers=0
+fi
 
-echo $n | sudo tee -a  !!<Working Dir>!!/resources/Avgtimes.txt
+
+if [ ${DEPENDENCIES[$i]} == "-s" ]; then
+	vers=1
+fi 
+done
+
 
 
 sudo rm -rf /mnt/!!<Target Dir>!!/Meta/testfiles 
@@ -29,71 +52,82 @@ sudo mkdir -p /mnt/!!<Target Dir>!!/Meta/testfiles/dir2/dir6
 sudo mkdir -p /mnt/!!<Target Dir>!!/Meta/testfiles/dir3/dir7
 sudo mkdir -p /mnt/!!<Target Dir>!!/Meta/testfiles/dir4/dir8
 
-# Records start of file Creation
-
-# total1=$(($(date +'%s * 1000 + %-N')/ 1000000));
-# Number of files 
-# for ((i=1; i<=$n; i=i+8));
-# do
-
-# sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir1/testfile$i !!<Size>!! &
-# sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir2/testfile$(($i+1)) !!<Size>!! &
-# sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir3/testfile$(($i+2)) !!<Size>!! &
-# sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir4/testfile$(($i+3)) !!<Size>!! &
-# sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir1/dir5/testfile$(($i+4)) !!<Size>!! &
-# sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir2/dir6/testfile$(($i+5)) !!<Size>!! &
-# sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir3/dir7/testfile$(($i+6)) !!<Size>!! &
-# sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir4/dir8/testfile$(($i+7)) !!<Size>!! &
-# PID=$!
-# wait $PID
 
 
+# Timed Meta Data
+if [ $selector = 1 ]; then
 
-# done
+	if [ $vers = 0 ]; then
+		echo "went to the right place"
+		START=`date +%s`
+		total1=$(($(date +'%s * 1000 + %-N')/ 1000000));
+		while [ $(( $(date +%s) - $time )) -lt $START ]; do
+		    sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir1/testfile$i !!<Size>!! &
+			sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir2/testfile$(($i+1)) !!<Size>!! &
+			sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir3/testfile$(($i+2)) !!<Size>!! &
+			sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir4/testfile$(($i+3)) !!<Size>!! &
+			sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir1/dir5/testfile$(($i+4)) !!<Size>!! &
+			sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir2/dir6/testfile$(($i+5)) !!<Size>!! &
+			sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir3/dir7/testfile$(($i+6)) !!<Size>!! &
+			sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir4/dir8/testfile$(($i+7)) !!<Size>!! &
+			PID=$!
+			wait $PID 
+			i=$(($i+8))
+		done
+		total2=$(($(date +'%s * 1000 + %-N')/ 1000000));
+		echo "total files $i" | sudo tee -a !!<Working Dir>!!/resources/results.txt
+	else 
+		START=`date +%s`
+		total1=$(($(date +'%s * 1000 + %-N')/ 1000000));
+		while [ $(( $(date +%s) - $time )) -lt $START ]; do
+			sudo echo $(($(date +'%s * 1000 + %-N')/ 1000000)) | sudo tee -a  !!<Working Dir>!!/resources/Avgtimes.txt
+			dd < /dev/zero bs=!!<Size>!! count=1 | sudo tee -a /mnt/!!<Target Dir>!!/Meta/testfiles/testfile$i
+			sudo echo $(($(date +'%s * 1000 + %-N')/ 1000000)) | sudo tee -a  !!<Working Dir>!!/resources/Avgtimes.txt
+			i=$(($i+1))
+		done
+		total2=$(($(date +'%s * 1000 + %-N')/ 1000000));
+		echo "total files $i" | sudo tee -a !!<Working Dir>!!/resources/results.txt
 
 
-
-# Number of files 
-i=0;
-total1=$(($(date +'%s * 1000 + %-N')/ 1000000));
-START=`date +%s`
-while [ $(( $(date +%s) - 3600 )) -lt $START ]; do
-    sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir1/testfile$i !!<Size>!! &
-	sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir2/testfile$(($i+1)) !!<Size>!! &
-	sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir3/testfile$(($i+2)) !!<Size>!! &
-	sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir4/testfile$(($i+3)) !!<Size>!! &
-	sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir1/dir5/testfile$(($i+4)) !!<Size>!! &
-	sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir2/dir6/testfile$(($i+5)) !!<Size>!! &
-	sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir3/dir7/testfile$(($i+6)) !!<Size>!! &
-	sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir4/dir8/testfile$(($i+7)) !!<Size>!! &
-	PID=$!
-	wait $PID 
-	i=$(($i+8))
-done
+	fi
+fi
 
 
 
 
-# for ((i=$halfplus1; i<=!!<Number Files>!!; i++));
-# do
 
-# sudo echo $(($(date +'%s * 1000 + %-N')/ 1000000)) | sudo tee -a  !!<Working Dir>!!/resources/Avgtimes.txt
+if [ $selector = 0 ]; then
 
-# # Creates 1 file size !!<Size>!!
-# dd < /dev/zero bs=!!<Size>!! count=1 | sudo tee -a /mnt/!!<Target Dir>!!/Meta/testfiles/testfile$i
+	if [ $vers = 0 ]; then
+		total1=$(($(date +'%s * 1000 + %-N')/ 1000000));
+		for ((i=1; i<=$n; i=i+8));
+		do
+			sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir1/testfile$i !!<Size>!! &
+			sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir2/testfile$(($i+1)) !!<Size>!! &
+			sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir3/testfile$(($i+2)) !!<Size>!! &
+			sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir4/testfile$(($i+3)) !!<Size>!! &
+			sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir1/dir5/testfile$(($i+4)) !!<Size>!! &
+			sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir2/dir6/testfile$(($i+5)) !!<Size>!! &
+			sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir3/dir7/testfile$(($i+6)) !!<Size>!! &
+			sudo !!<Working Dir>!!/scripts/fileInit !!<Working Dir>!! /mnt/!!<Target Dir>!!/Meta/testfiles/dir4/dir8/testfile$(($i+7)) !!<Size>!! &
+			PID=$!
+			wait $PID
+		done
+		total2=$(($(date +'%s * 1000 + %-N')/ 1000000));
+	else 
+		total1=$(($(date +'%s * 1000 + %-N')/ 1000000));
+		for ((i=1; i -lt $half; i++)); do
+			sudo echo $(($(date +'%s * 1000 + %-N')/ 1000000)) | sudo tee -a  !!<Working Dir>!!/resources/Avgtimes.txt
+			# Creates 1 file size !!<Size>!!
+			dd < /dev/zero bs=!!<Size>!! count=1 | sudo tee -a /mnt/!!<Target Dir>!!/Meta/testfiles/testfile$i
+			sudo echo $(($(date +'%s * 1000 + %-N')/ 1000000)) | sudo tee -a  !!<Working Dir>!!/resources/Avgtimes.txt
+		done
+		total2=$(($(date +'%s * 1000 + %-N')/ 1000000));
 
+	fi
+fi
 
-# sudo echo $(($(date +'%s * 1000 + %-N')/ 1000000)) | sudo tee -a  !!<Working Dir>!!/resources/Avgtimes.txt
-
-
-# done
-
-
-total2=$(($(date +'%s * 1000 + %-N')/ 1000000));
-echo "total files $i" | sudo tee -a !!<Working Dir>!!/resources/results.txt
-# echo "total time: $(($total2-$total1)) milliseconds"
 echo "total time: $(($total2-$total1)) milliseconds" | sudo tee -a !!<Working Dir>!!/resources/results.txt
 
 
-# sudo python !!<Working Dir>!!/scripts/avgResults.py !!<Working Dir>!!/resources/Avgtimes.txt | sudo tee -a !!<Working Dir>!!/resources/results.txt
 
