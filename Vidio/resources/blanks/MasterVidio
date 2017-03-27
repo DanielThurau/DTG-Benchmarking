@@ -4,7 +4,7 @@
 # Removes any old file for Depthteseter script, then creates a new one
 
 
-for i in {0..15}; do sudo mkdir -p /mnt/!!<Target Dir>!!/vidio/$i/; done
+for i in {0..15}; do sudo mkdir -p /mnt/!!<Target Dir>!!/Vidio/$i/; done
 
 #------------------------------------------------------------------------------------------------------------------------------------------
 # Depth Testing
@@ -50,4 +50,4 @@ sudo python !!<Working Dir>!!/scripts/vidioMetaParser.py !!<Working Dir>!!/resou
 sudo cat !!<Working Dir>!!/results/vidioResults.txt
 sudo cat !!<Working Dir>!!/results/vidioMetaResults.txt
 
-/mnt/!!<Target Dir>!!/vidio
+# /mnt/!!<Target Dir>!!/vidio
