@@ -37,20 +37,21 @@ echo "Starting single stream reads"
 while read -r line
 do
         echo "$line">>!!<Working Dir>!!/resources/test.txt
-done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 -r /mnt/!!<Target Dir>!!/Vidio/0/)
+done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 -r /mnt/!!<Target Dir>!!/Vidio/3/)
 
 while read -r line
 do
         echo "$line">>!!<Working Dir>!!/resources/test.txt
-done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 -r /mnt/!!<Target Dir>!!/Vidio/1/)
+done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 -r /mnt/!!<Target Dir>!!/Vidio/4/)
 
 while read -r line
 do
         echo "$line">>!!<Working Dir>!!/resources/test.txt
-done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 -r /mnt/!!<Target Dir>!!/Vidio/2/)
+done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 -r /mnt/!!<Target Dir>!!/Vidio/5/)
 
 echo "Finishing single stream reads"
 
+sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/0/ /mnt/!!<Target Dir>!!/Vidio/1/ /mnt/!!<Target Dir>!!/Vidio/2/ /mnt/!!<Target Dir>!!/Vidio/3/ /mnt/!!<Target Dir>!!/Vidio/4/ /mnt/!!<Target Dir>!!/Vidio/5/
 #-------------------------------------------------------------------------
 # Four stream writes
 
@@ -60,21 +61,22 @@ echo "Starting four stream writes"
 while read -r line
 do
         echo "$line">>!!<Working Dir>!!/resources/test.txt
-done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 /mnt/!!<Target Dir>!!/Vidio/3/ /mnt/!!<Target Dir>!!/Vidio/4/ /mnt/!!<Target Dir>!!/Vidio/5/ /mnt/!!<Target Dir>!!/Vidio/6/)
+done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 /mnt/!!<Target Dir>!!/Vidio/0/ /mnt/!!<Target Dir>!!/Vidio/1/ /mnt/!!<Target Dir>!!/Vidio/2/ /mnt/!!<Target Dir>!!/Vidio/3/)
 
 while read -r line
 do
         echo "$line">>!!<Working Dir>!!/resources/test.txt
-done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 /mnt/!!<Target Dir>!!/Vidio/3/ /mnt/!!<Target Dir>!!/Vidio/4/ /mnt/!!<Target Dir>!!/Vidio/5/ /mnt/!!<Target Dir>!!/Vidio/6/)
+done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 /mnt/!!<Target Dir>!!/Vidio/4/ /mnt/!!<Target Dir>!!/Vidio/5/ /mnt/!!<Target Dir>!!/Vidio/6/ /mnt/!!<Target Dir>!!/Vidio/7/)
 
 while read -r line
 do
         echo "$line">>!!<Working Dir>!!/resources/test.txt
-done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 /mnt/!!<Target Dir>!!/Vidio/3/ /mnt/!!<Target Dir>!!/Vidio/4/ /mnt/!!<Target Dir>!!/Vidio/5/ /mnt/!!<Target Dir>!!/Vidio/6/)
+done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 /mnt/!!<Target Dir>!!/Vidio/8/ /mnt/!!<Target Dir>!!/Vidio/9/ /mnt/!!<Target Dir>!!/Vidio/10/ /mnt/!!<Target Dir>!!/Vidio/11/)
 
 
 echo "Finishing four stream writes"
-
+sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/0/ /mnt/!!<Target Dir>!!/Vidio/1/ /mnt/!!<Target Dir>!!/Vidio/2/ /mnt/!!<Target Dir>!!/Vidio/3/ /mnt/!!<Target Dir>!!/Vidio/4/ /mnt/!!<Target Dir>!!/Vidio/5/
+sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/6/ /mnt/!!<Target Dir>!!/Vidio/7/ /mnt/!!<Target Dir>!!/Vidio/8/ /mnt/!!<Target Dir>!!/Vidio/9/ /mnt/!!<Target Dir>!!/Vidio/10/ /mnt/!!<Target Dir>!!/Vidio/11/
 #--------------------------------------------------------------------------
 
 # flush
@@ -87,17 +89,17 @@ echo "Starting four stream reads"
 while read -r line
 do
         echo "$line">>!!<Working Dir>!!/resources/test.txt
-done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 -r /mnt/!!<Target Dir>!!/Vidio/3/ /mnt/!!<Target Dir>!!/Vidio/4/ /mnt/!!<Target Dir>!!/Vidio/5/ /mnt/!!<Target Dir>!!/Vidio/6/)
+done < <(/opt/vidio -D -r -f $frame -q $best -v -n 2000 /mnt/!!<Target Dir>!!/Vidio/0/ /mnt/!!<Target Dir>!!/Vidio/1/ /mnt/!!<Target Dir>!!/Vidio/2/ /mnt/!!<Target Dir>!!/Vidio/3/)
 
 while read -r line
 do
         echo "$line">>!!<Working Dir>!!/resources/test.txt
-done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 -r /mnt/!!<Target Dir>!!/Vidio/3/ /mnt/!!<Target Dir>!!/Vidio/4/ /mnt/!!<Target Dir>!!/Vidio/5/ /mnt/!!<Target Dir>!!/Vidio/6/)
+done < <(/opt/vidio -D -r -f $frame -q $best -v -n 2000 /mnt/!!<Target Dir>!!/Vidio/4/ /mnt/!!<Target Dir>!!/Vidio/5/ /mnt/!!<Target Dir>!!/Vidio/6/ /mnt/!!<Target Dir>!!/Vidio/7/)
 
 while read -r line
 do
         echo "$line">>!!<Working Dir>!!/resources/test.txt
-done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 -r /mnt/!!<Target Dir>!!/Vidio/3/ /mnt/!!<Target Dir>!!/Vidio/4/ /mnt/!!<Target Dir>!!/Vidio/5/ /mnt/!!<Target Dir>!!/Vidio/6/)
+done < <(/opt/vidio -D -r -f $frame -q $best -v -n 2000 /mnt/!!<Target Dir>!!/Vidio/8/ /mnt/!!<Target Dir>!!/Vidio/9/ /mnt/!!<Target Dir>!!/Vidio/10/ /mnt/!!<Target Dir>!!/Vidio/11/)
 
 echo "Finished four stream reads"
 
