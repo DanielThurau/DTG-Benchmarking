@@ -22,4 +22,7 @@ do
         echo "$line">>!!<Working Dir>!!/resources/DepthTest.txt
 done < <(/opt/vidio -D -f fa4k -q 32 -n 2000 /mnt/!!<Target Dir>!!/Vidio/3/)
 
-sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/0/* /mnt/!!<Target Dir>!!/Vidio/1/* /mnt/!!<Target Dir>!!/Vidio/2/* /mnt/!!<Target Dir>!!/Vidio/3/* 
+sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/0/* 
+sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/1/* 
+sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/2/* 
+sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/3/* 

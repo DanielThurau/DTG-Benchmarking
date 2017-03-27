@@ -51,7 +51,12 @@ done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 -r /mnt/!!<Target Dir>!!/Vi
 
 echo "Finishing single stream reads"
 
-sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/0/* /mnt/!!<Target Dir>!!/Vidio/1/* /mnt/!!<Target Dir>!!/Vidio/2/* /mnt/!!<Target Dir>!!/Vidio/3/* /mnt/!!<Target Dir>!!/Vidio/4/* /mnt/!!<Target Dir>!!/Vidio/5/*
+sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/0/* 
+sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/1/* 
+sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/2/* 
+sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/3/* 
+sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/4/* 
+sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/5/*
 #-------------------------------------------------------------------------
 # Four stream writes
 
@@ -75,8 +80,18 @@ done < <(/opt/vidio -D -f $frame -q $best -v -n 2000 /mnt/!!<Target Dir>!!/Vidio
 
 
 echo "Finishing four stream writes"
-sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/0/* /mnt/!!<Target Dir>!!/Vidio/1/* /mnt/!!<Target Dir>!!/Vidio/2/* /mnt/!!<Target Dir>!!/Vidio/3/* /mnt/!!<Target Dir>!!/Vidio/4/* /mnt/!!<Target Dir>!!/Vidio/5/*
-sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/6/* /mnt/!!<Target Dir>!!/Vidio/7/* /mnt/!!<Target Dir>!!/Vidio/8/* /mnt/!!<Target Dir>!!/Vidio/9/* /mnt/!!<Target Dir>!!/Vidio/10/* /mnt/!!<Target Dir>!!/Vidio/11/*
+sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/0/* 
+sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/1/* 
+sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/2/* 
+sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/3/* 
+sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/4/* 
+sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/5/*
+sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/6/* 
+sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/7/* 
+sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/8/* 
+sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/9/* 
+sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/10/* 
+sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/11/*
 #--------------------------------------------------------------------------
 
 # flush
