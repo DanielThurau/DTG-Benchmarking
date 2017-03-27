@@ -121,4 +121,4 @@ echo "Finished four stream reads"
 #------------------------------------------------------------------------
 #Clean up and print results
 
-sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/
+# sudo rm -rf /mnt/!!<Target Dir>!!/Vidio/
